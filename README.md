@@ -1,18 +1,22 @@
-#  CityMap #
+# Nazwa aplikacji: "CityMap" #
 
-Opis ogólny: Aplikacja wyszukująca miejsca w Szczecinie odpowiednie do wybranych kategorii.
+W tym repozytorium znajduje się projekt w ramach kursu infoShare Academy
 
-Funkcje:
+## AUTORZY: ##
 
-1. Wyszukiwanie miejsca spełniającego wybrane kryteria
-2. Wytyczanie optymalenj trasy
-3. Pokazuje informacje o wyszukanych miejscach
+- Patryk
+- Kasia
+- Asia
+- Bartosz
 
+## API: API Map Google ##
 
+## Funkcjonalność:
 
-Użycie Google Maps API
+- Aplikacja będzie wyszukiwała miejsca w Szczecinie spełniające wybrane kryteria (np. spędzenie czasu z rodziną, przyjaciółmi, aktywne spędzenie czasu). Kolejną funkcją będzie możliwość wytyczenia drogi do wybranego miejsca biorąc pod uwagę czy użytkownik ma zamiar pokonać daną trasę pieszo, samochodem, rowerem oraz jaki czas chce na to przeznaczyć. 
 
-Definition of done: 
+## Definition of done: ## 
+
 1. Obsługuje wyszukiwarki Chrome i Firefox 
 2. Code Review 
 3. RWD  
