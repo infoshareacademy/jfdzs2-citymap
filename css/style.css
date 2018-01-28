@@ -1,0 +1,33 @@
+/* STYLE do JFDZS2CI-2 - Dodtakowe informacje na produkcie, podzial na dwie kolumny */
+.product-info {
+    background-color: lightgray;
+    opacity: 0.8;
+}
+
+.box1 {
+    border-color: black;
+    border: 1px;
+    margin: 20px;
+}
+
+.box2 {
+    border-color: black;
+    border: 1px;
+    margin: 20px;
+}
+
+.title {
+    text-align: center;
+    margin: 15px;
+}
+
+.style1 {
+    list-style: none;
+}
+.img {
+    text-align: center;
+}
+.icon {
+    width: 150px;
+    height: 150px;
+}
