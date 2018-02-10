@@ -1,0 +1,33 @@
+.team {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+
+}
+.team:hover {
+    border-color: #f1f1f1;
+}
+.namepadding{
+
+    font-size: 200%;
+    color: #7B8FA1;
+}
+.teampart{
+    background-color: rgb(251, 253, 253);
+}
+.asiacontainer {
+    padding: 80px 120px 20px 120px;
+    color:#BFCDC5;
+    font-size:200%;
+}
+.member{
+    color: #7B8FA1;
+
+}
+.line{
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
