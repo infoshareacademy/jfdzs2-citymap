@@ -1,28 +1,56 @@
 /* STYLE do JFDZS2CI-2 - Dodtakowe informacje na produkcie, podzial na dwie kolumny */
-.product-info {
-    background-color: lightgray;
-    opacity: 0.8;
-}
-
-.box1 {
-    border-color: black;
-    border: 1px;
-    margin: 20px;
-}
-
-.box2 {
-    border-color: black;
-    border: 1px;
-    margin: 20px;
-}
-
 .title {
     text-align: center;
     margin: 15px;
+    font-family: 'Helvetica', sans-serif;
+    text-transform: uppercase;
+    color: #3b404f;
+    margin-bottom: 70px;
 }
 
-.style1 {
+.title h1 {
+    font-size: 33px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.title h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 1px;
+    margin-left: -250px;
+    background-color: black;
+}
+
+.product-info {
+    background-color: darkgray;
+    opacity: 0.8;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.box1, .box2 {
+}
+
+.style1 li {
     list-style: none;
+    border-top: solid 1px black;
+    padding: 0.6em 0;
+}
+.style1 li p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 15px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    line-height: 1.4;
 }
 .img {
     text-align: center;
