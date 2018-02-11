@@ -9,7 +9,7 @@
 }
 
 .title h1 {
-    font-size: 50px;
+    font-size: 32px;
     margin-top: 60px;
     margin-bottom: 25px;
     font-weight: 300;
@@ -18,7 +18,7 @@
 
 
 .title h2 {
-    font-size: 32px;
+    font-size: 20px;
     margin-bottom: 25px;
     font-weight: 300;
 }
@@ -33,11 +33,10 @@
 }*/
 .product-info-title {
        background-color: lightgray;
-       height: 200px;
-       margin: 20px;
+       /*height: 200px;*/
 }
 .product-info {
-    margin-top: 220px;
+    /*margin-top: 200px;*/
     background-color: #FFFFFF;
     opacity: 0.8;
     padding-top: 6em;
@@ -46,16 +45,19 @@
 
 .box1, .box2 {
 }
-
+.style1 {
+    padding: 0;
+}
 .style1 li {
     list-style: none;
-    border-top: solid 1px black;
-    padding: 0.6em 0;
+    border-top: solid 1px lightgray;
 }
+
 .style1 li p {
     font-family: 'Helvetica', sans-serif;
-    font-size: 15px;
-    margin-bottom: 25px;
+    font-size: 16px;
+    margin-top:10px;
+    margin-bottom: 10px;
     font-weight: 300;
     line-height: 1.4;
 }
@@ -65,5 +67,8 @@
 .icon {
     width: 60px;
     height: 60px;
-    opacity: 0.4;
+    opacity: 0.8;
+}
+.style1 ul li p span .glyphicon {
+    margin-right: 20px;
 }
