@@ -9,18 +9,20 @@
 }
 
 .title h1 {
-    font-size: 33px;
+    font-size: 50px;
+    margin-top: 60px;
     margin-bottom: 25px;
     font-weight: 300;
     line-height: 1.4;
 }
 
+
 .title h2 {
-    font-size: 20px;
+    font-size: 32px;
     margin-bottom: 25px;
     font-weight: 300;
 }
-
+/*
 .title::after {
     content: "";
     position: absolute;
@@ -28,10 +30,15 @@
     height: 1px;
     margin-left: -250px;
     background-color: black;
+}*/
+.product-info-title {
+       background-color: lightgray;
+       height: 200px;
+       margin: 20px;
 }
-
 .product-info {
-    background-color: darkgray;
+    margin-top: 220px;
+    background-color: #FFFFFF;
     opacity: 0.8;
     padding-top: 6em;
     padding-bottom: 6em;
@@ -56,6 +63,7 @@
     text-align: center;
 }
 .icon {
-    width: 150px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.4;
 }
