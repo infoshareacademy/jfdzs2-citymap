@@ -1,0 +1,58 @@
+.zajawka img {
+    width: 100%;
+    position: absolute;
+}
+
+.zajawka_tablet {
+    display: none;
+}
+
+.zajawka_desktop {
+    display: none;
+}
+
+.zajawka_logo {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+@media all and (min-width: 992px) {
+    .zajawka_tablet {
+        display: block;
+    }
+    .zajawka_desktop {
+        display: none;
+    }
+    .zajawka_phones {
+        display: none;
+    }
+
+    .zajawka_logo {
+        width: 70%;
+        position: relative;
+        margin: 10px;
+        margin-top: 15px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .zajawka_tablet {
+        display: none;
+    }
+    .zajawka_desktop {
+        display: block;
+    }
+    .zajawka_phones {
+        display: none;
+    }
+
+    .zajawka_logo {
+        width: 65%;
+        position: relative;
+        margin: 10px;
+        margin-top: 15px;
+    }
+}
