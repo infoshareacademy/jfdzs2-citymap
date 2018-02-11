@@ -1,0 +1,37 @@
+body {
+    padding-top: 70px;
+}
+
+/***************************************************************************/
+/*                                navi                                     */
+/***************************************************************************/
+
+.navbar-default {
+    background-color: black;
+}
+
+.navbar-brand {
+    padding-top: 10px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.logo {
+    height: 30px;
+}
+
+/***************************************************************************/
+/*                                footer                                   */
+/***************************************************************************/
+footer {
+    margin-top: 484px; /*do usunięcia*/
+}
+
+.panel-footer {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+}
