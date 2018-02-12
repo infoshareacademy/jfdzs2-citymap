@@ -1,0 +1,8 @@
+.container-fluid.registration {
+    padding: 0;
+    background-image: url("https://pixabay.com/photo-1616791");
+}
+.container-fluid.registration .registration-img {
+    width: 100%;
+    opacity: 0.75;
+}
