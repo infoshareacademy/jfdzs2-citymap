@@ -1,3 +1,24 @@
+/***************************************************************************/
+/*                                navi                                     */
+/***************************************************************************/
+.navbar-default {
+    background-color: black;
+}
+
+.navbar-brand {
+    padding-top: 10px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.logo {
+    height: 30px;
+}
+/***************************************************************************/
+/*                                zajawka                                  */
+/***************************************************************************/
 .feature_z img {
     width: 100%;
     position: absolute;
@@ -48,7 +69,6 @@
     .feature_z-phones {
         display: none;
     }
-
     .feature_z-logo {
         width: 65%;
         position: relative;
@@ -56,7 +76,55 @@
         margin-top: 15px;
     }
 }
-
+/***************************************************************************/
+/*                         zapis na premierę                               */
+/***************************************************************************/
+.container-fluid.registration {
+    padding: 0;
+    background-image: url("../images/spear.jpg");
+    opacity: 0.75;
+    height: 400px;
+}
+.container.registration {
+    padding-top: 120px;
+}
+.container-fluid.registration h2 {
+    font-size: 32px;
+    font-family: Pontano, Arial, sans-serif;
+    color: darkorange;
+    font-weight: 700;
+    text-align: center;
+}
+.container-fluid.registration p {
+    font-size: 20px;
+    font-family: Pontano, Arial, sans-serif;
+    color: darkorange;
+    font-weight: 500;
+    text-align: center;
+}
+label{
+    color: darkorange;
+    font-size: 20px;
+    font-family: Pontano, Arial, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+form input {
+    background: transparent;
+    border: 1px solid darkorange;
+    color: #ffffff;
+}
+.btn {
+    background: darkorange;
+    color: black;
+    width: 100%;
+    font-size: 20px;
+    font-family: Pontano, Arial, sans-serif;
+    font-weight: 500;
+}
+/***************************************************************************/
+/*                            info o zespole                               */
+/***************************************************************************/
 .team {
     border: 10px solid transparent;
     margin-bottom: 25px;
@@ -94,37 +162,13 @@
 body {
     padding-top: 70px;
 }
-
-/***************************************************************************/
-/*                                navi                                     */
-/***************************************************************************/
-
-.navbar-default {
-    background-color: black;
-}
-
-.navbar-brand {
-    padding-top: 10px;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: white;
-}
-
-.logo {
-    height: 30px;
-}
-
 /***************************************************************************/
 /*                                footer                                   */
 /***************************************************************************/
-footer {
-    margin-top: 484px; /*do usunięcia*/
-}
-
 .panel-footer {
     font-size: 20px;
     background-color: black;
     color: white;
     padding-top: 30px;
 }
+
