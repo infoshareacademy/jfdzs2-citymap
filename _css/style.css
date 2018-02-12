@@ -1,17 +1,17 @@
-.zajawka img {
+.feature_z img {
     width: 100%;
     position: absolute;
 }
 
-.zajawka_tablet {
+.feature_z-tablet {
     display: none;
 }
 
-.zajawka_desktop {
+.feature_z-desktop {
     display: none;
 }
 
-.zajawka_logo {
+.feature_z-logo {
     width: 90%;
     position: relative;
     margin: 0 auto;
@@ -20,36 +20,36 @@
 
 
 @media all and (min-width: 992px) {
-    .zajawka_tablet {
+    .feature_z-tablet {
         display: block;
     }
-    .zajawka_desktop {
+    .feature_z-desktop {
         display: none;
     }
-    .zajawka_phones {
+    .feature_z-phones {
         display: none;
     }
 
-    .zajawka_logo {
+    .feature_z-logo {
         width: 70%;
         position: relative;
-        margin: 10px;
+        margin: 8px;
         margin-top: 15px;
     }
 }
 
 @media all and (min-width: 1200px) {
-    .zajawka_tablet {
+    .feature_z-tablet {
         display: none;
     }
-    .zajawka_desktop {
+    .feature_z-desktop {
         display: block;
     }
-    .zajawka_phones {
+    .feature_z-phones {
         display: none;
     }
 
-    .zajawka_logo {
+    .feature_z-logo {
         width: 65%;
         position: relative;
         margin: 10px;
