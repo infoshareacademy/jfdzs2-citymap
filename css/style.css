@@ -1,3 +1,61 @@
+.feature_z img {
+    width: 100%;
+    position: absolute;
+}
+
+.feature_z-tablet {
+    display: none;
+}
+
+.feature_z-desktop {
+    display: none;
+}
+
+.feature_z-logo {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+@media all and (min-width: 992px) {
+    .feature_z-tablet {
+        display: block;
+    }
+    .feature_z-desktop {
+        display: none;
+    }
+    .feature_z-phones {
+        display: none;
+    }
+
+    .feature_z-logo {
+        width: 70%;
+        position: relative;
+        margin: 8px;
+        margin-top: 15px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .feature_z-tablet {
+        display: none;
+    }
+    .feature_z-desktop {
+        display: block;
+    }
+    .feature_z-phones {
+        display: none;
+    }
+
+    .feature_z-logo {
+        width: 65%;
+        position: relative;
+        margin: 10px;
+        margin-top: 15px;
+    }
+}
 
 .team {
     border: 10px solid transparent;
