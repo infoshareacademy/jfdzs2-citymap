@@ -1,6 +1,6 @@
 .container-fluid.registration {
     padding: 0;
-    background-image: url("/images/spear.jpg");
+    background-image: url("../images/spear.jpg");
 }
 .container-fluid.registration .registration-img {
     width: 100%;
