@@ -2,7 +2,7 @@
 /*                                navi                                     */
 /***************************************************************************/
 .navbar-default {
-    background-color: black;
+    background-color: rgb(39, 38, 38);
 }
 
 .navbar-brand {
@@ -10,7 +10,7 @@
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #18ff8f;
+    color: #74fab3;
     font-size: 20px;
 }
 
@@ -92,19 +92,19 @@
 .container-fluid.registration h2 {
     font-size: 32px;
     font-family: Pontano, Arial, sans-serif;
-    color: darkorange;
+    color: #74fab3;
     font-weight: 700;
     text-align: center;
 }
 .container-fluid.registration p {
     font-size: 20px;
     font-family: Pontano, Arial, sans-serif;
-    color: darkorange;
+    color: #74fab3;
     font-weight: 500;
     text-align: center;
 }
 label{
-    color: darkorange;
+    color: #74fab3;
     font-size: 20px;
     font-family: Pontano, Arial, sans-serif;
     font-weight: 500;
@@ -112,11 +112,11 @@ label{
 }
 form input {
     background: transparent;
-    border: 1px solid darkorange;
+    border: 1px solid #74fab3;
     color: #ffffff;
 }
 .btn {
-    background: darkorange;
+    background: #74fab3;
     color: black;
     width: 100%;
     font-size: 20px;
@@ -152,11 +152,6 @@ form input {
 .member{
     color: #7B8FA1;
 
-}
-.line{
-    height: 10px;
-    border: 0;
-    box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
 
 
