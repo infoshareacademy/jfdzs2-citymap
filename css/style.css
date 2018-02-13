@@ -10,7 +10,8 @@
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: white;
+    color: #18ff8f;
+    font-size: 20px;
 }
 
 .logo {
@@ -163,6 +164,82 @@ body {
     padding-top: 70px;
 }
 /***************************************************************************/
+/*                    dodatkowe info o produkcie                           */
+/***************************************************************************/
+.title {
+    text-align: center;
+    margin: 15px;
+    font-family: 'Helvetica', sans-serif;
+    text-transform: uppercase;
+    color: #3b404f;
+    margin-bottom: 70px;
+}
+
+.title h1 {
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+
+.title h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+/*
+.title::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 1px;
+    margin-left: -250px;
+    background-color: black;
+}*/
+.product-info-title {
+    background-color: lightgray;
+    /*height: 200px;*/
+}
+.product-info {
+    /*margin-top: 200px;*/
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.box1, .box2 {
+}
+.style1 {
+    padding: 0;
+}
+.style1 li {
+    list-style: none;
+    border-top: solid 1px lightgray;
+}
+
+.style1 li p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.img {
+    text-align: center;
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    opacity: 0.8;
+}
+.style1 ul li p span .glyphicon {
+    margin-right: 20px;
+}
+/***************************************************************************/
 /*                                footer                                   */
 /***************************************************************************/
 .panel-footer {
@@ -171,4 +248,3 @@ body {
     color: white;
     padding-top: 30px;
 }
-
