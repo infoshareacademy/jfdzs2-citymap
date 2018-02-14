@@ -2,20 +2,30 @@
 /*                                navi                                     */
 /***************************************************************************/
 .navbar-default {
-    background-color: black;
+    background-color: #757575;
+    min-height:120px;
 }
 
 .navbar-brand {
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #18ff8f;
+    color: #cff8de;
     font-size: 20px;
+    padding-top: 50px;
 }
 
+.navbar-header{
+    height:120px;
+}
+.navbar-toggle{
+    padding: 20px 20px;
+    margin-top: 20px;
+    margin-right: 40px
+}
 .logo {
-    height: 30px;
+    height: 50px;
 }
 /***************************************************************************/
 /*                                zajawka                                  */
@@ -32,78 +42,98 @@
     display: none;
 }
 
-.feature_z-logo {
-    width: 90%;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 15px;
+.zajawka2 {
+    background-image: url(../images/zajawka2_bg.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
+p {
+    text-align: center;
+    font-size: 2.5em;
+    color:white;
+    font-family: "Open Sans";
+    text-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.86);
+}
 
-@media all and (min-width: 992px) {
+.zajawka2 .btn {
+    background: #2e6da4;
+    color: white;
+    margin: 10px;
+}
+@media all and (min-width: 768px) {
     .feature_z-tablet {
         display: block;
     }
+
     .feature_z-desktop {
         display: none;
+    }
+
+    .feature_z-phones {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .feature_z-tablet {
+        display: none;
+    }
+    .feature_z-desktop {
+        display: block;
     }
     .feature_z-phones {
         display: none;
     }
-
-    .feature_z-logo {
-        width: 70%;
-        position: relative;
-        margin: 8px;
-        margin-top: 15px;
-    }
 }
 
-@media all and (min-width: 1200px) {
-    .feature_z-tablet {
-        display: none;
-    }
-    .feature_z-desktop {
-        display: block;
-    }
-    .feature_z-phones {
-        display: none;
-    }
-    .feature_z-logo {
-        width: 65%;
-        position: relative;
-        margin: 10px;
-        margin-top: 15px;
-    }
+ /***************************************************************************/
+/*                         4 ikony                              */
+/***************************************************************************/
+.feature-producktInfo {
+    background-color: white;
+    min-height: 200px;
+    text-align: center;
 }
+
+.feature-producktInfo  {
+    color: white;
+    margin: 10px;
+}
+.img {
+    margin: 20px;
+}
+
 /***************************************************************************/
 /*                         zapis na premierę                               */
 /***************************************************************************/
 .container-fluid.registration {
     padding: 0;
-    background-image: url("../images/spear.jpg");
-    opacity: 0.75;
-    height: 400px;
+    background-image: url("../images/spear.png");
+    opacity: 0.95;
+    min-height: 550px;
+    border: solid 10px #87fab1;
 }
 .container.registration {
-    padding-top: 120px;
+    padding-top: 140px;
 }
 .container-fluid.registration h2 {
     font-size: 32px;
     font-family: Pontano, Arial, sans-serif;
-    color: darkorange;
+    color: rgb(0, 0, 0);
     font-weight: 700;
     text-align: center;
 }
 .container-fluid.registration p {
     font-size: 20px;
     font-family: Pontano, Arial, sans-serif;
-    color: darkorange;
+    color: rgb(41, 40, 40);
     font-weight: 500;
     text-align: center;
 }
 label{
-    color: darkorange;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-family: Pontano, Arial, sans-serif;
     font-weight: 500;
@@ -114,8 +144,8 @@ form input {
     border: 1px solid darkorange;
     color: #ffffff;
 }
-.btn {
-    background: darkorange;
+.btnpremiera {
+    background: #87fab1;
     color: black;
     width: 100%;
     font-size: 20px;
@@ -128,39 +158,45 @@ form input {
 .team {
     border: 10px solid transparent;
     margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
+    width: 250px;
+    height: 250px;
 
 }
 .team:hover {
-    border-color: #f1f1f1;
+    border-color: #87fab1;
 }
 .namepadding{
-
+    
     font-size: 200%;
-    color: #7B8FA1;
+    color: #757575;
 }
 .teampart{
-    background-color: rgb(251, 253, 253);
+    background-color: rgb(255, 255, 255);
+    padding-bottom:40px;
+   
 }
 .asiacontainer {
-    padding: 80px 120px 20px 120px;
-    color:#BFCDC5;
+    padding: 60px 120px 20px 120px;
+    color:#757575;
     font-size:200%;
 }
 .member{
     color: #7B8FA1;
+    padding: 20px;
+    font-size:130%;
 
 }
-.line{
-    height: 10px;
-    border: 0;
-    box-shadow: 0 10px 10px -10px #8c8b8b inset;
-}
-
 
 body {
     padding-top: 70px;
+}
+
+.teamtext{
+    min-height: 200px;
+}
+@media (min-width: 992px) and (max-width: 1280px){
+.col-md-3 {
+    width: 50%;}
 }
 /***************************************************************************/
 /*                    dodatkowe info o produkcie                           */
@@ -224,8 +260,8 @@ body {
     font-size: 16px;
     margin-top:10px;
     margin-bottom: 10px;
-    font-weight: 300;
-    line-height: 1.4;
+    font-weight: 300%;
+    line-height: 40px;
 }
 .img {
     text-align: center;
@@ -237,13 +273,22 @@ body {
 }
 .style1 ul li p span .glyphicon {
     margin-right: 20px;
+    
+}
+.function{
+    padding: 40px;
+}
+#details{
+    background-color: #cff8de;
+    padding-bottom: 40px;
+    
 }
 /***************************************************************************/
 /*                                footer                                   */
 /***************************************************************************/
 .panel-footer {
     font-size: 20px;
-    background-color: black;
+    background-color: #757575;
     color: white;
-    padding-top: 30px;
+    padding: 50px;
 }

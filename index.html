@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>City Map</title>
 </head>
 
@@ -44,21 +45,51 @@
 <!----------------------------------Zajawka--------------------------------------->
 <!-------------------------------------------------------------------------------->
 <section id="sneak_peak">
+
+
     <div class="feature_z">
-        <img src="images/zajawka1_Small.png" alt="" class="feature_z-phones">
-        <img src="images/zajawka1.png" alt="" class="feature_z-desktop">
-        <img src="images/zajawka1_Medium.png" alt="" class="feature_z-tablet">
+        <img src="images/zajawka1_kom.png" alt="" class="feature_z-phones">
+        <img src="images/zajawka1_desktop2.png" alt="" class="feature_z-desktop">
+        <img src="images/zajawka1_tablet_2.png" alt="" class="feature_z-tablet">
     </div>
 
-    <div class="feature_z-logo">
-        <img src="images/City_map_logo_napis.png" alt="City_map_logo">
+    <div class="container zajawka2">
+        <div class="row">
+            <p class="col-xs-12 col-md-6 col-lg-6">Z CityMap zobaczysz Szczecin jakiego jeszcze nie znałeś. </p>
+            <p class="col-xs-12 col-md-6 col-lg-6">Pozwól nam pokazać Ci jak sprawnie, szybko i w jednym miejscu znaleźć to czego szukasz w naszym pięknym portowym mieście.</p>
+            <div class="container button">
+                <button type="button" class="col-xs-12 col-md-12 col-lg-12 btn-lg btn-primary ">Zapisy na premierę</button>
+            </div>
+        </div>
     </div>
 </section>
 <!-------------------------------------------------------------------------------->
 <!---------------------------------4ikony---------------------------------------->
 <!-------------------------------------------------------------------------------->
 <section id="4_ikons">
-
+   
+    <div class="feature-producktInfo">
+    <div class="container">
+       <div class="row">
+           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+               <img class="img" src="images/feature-info-icon1.png"/>
+               <p>Przykładowy tekst 1</p>
+           </div>
+           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+               <img class="img" src="images/feature-info-icon2.png"/>
+               <p>Przykładowy tekst 2</p>
+           </div>
+           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+               <img class="img" src="images/feature-info-icon3.png"/>
+               <p>Przykładowy tekst 3</p>
+           </div>
+           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+               <img class="img" src="images/feature-info-icon4.png"/>
+               <p>Przykładowy tekst 4</p>
+           </div>
+       </div>
+    </div>
+    </div
 </section>
 <!-------------------------------------------------------------------------------->
 <!--------------------------Zapis na premierę - formularz------------------------->
@@ -83,7 +114,7 @@
                             <label for="email">E-mail:</label>
                             <input type="email" class="form-control" id="email">
                         </div>
-                        <button type="submit" class="btn">Wyślij</button>
+                        <button type="submit" class="btn btnpremiera">Wyślij</button>
                     </div>
                 </form>
             </div>
@@ -99,22 +130,38 @@
         <p><em>Sprawdź naszą aplikację już dziś!</em></p><br>
         <p>Stworzyli ją dla Ciebie:</p>
     </div>
-    <hr class="line">
+  
     <section class="container-fluid text-center sec-title text-center wow fadeInUp animated">
         <div class="row teampart">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
                 <a href="#demo" data-toggle="collapse">
                     <img src="images/Kasia.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
                 </a>
-                <p class="text-center namepadding"><strong>Kasia</strong></p>
+                <p class="text-center namepadding"><strong>Kasia S.</strong></p>
                 <div id="demo" class="collapse">
-                    <p>Z zawodu architekt, lubi wyzwania</p>
-                    <p>Pije dużo zielonej herbaty, uczy się kodowania</p>
-                    <p>Nie znosi nudy, ani siedzenia w miejscu- </p>
-                    <p>stara się być zawsze krok do przodu</p>
+                    <div class="teamtext">
+                        <p>Z zawodu architekt</p>
+                        <p>Pije dużo zielonej herbaty, uczy się kodowania</p>
+                        <p>Nie znosi nudy, ani siedzenia w miejscu </p>
+                        <p>Jest zawsze krok do przodu</p>
+                    </div>
+
                     <a href="https://web.facebook.com/kate.step" target="_blank">
-                        <span class="label label-primary">facebook</span>
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-facebook"></span> Facebook
+                          </button>
                     </a>
+                    <a href="https://github.com/katarzyna-stepczynska" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-github"></span> GitHub
+                          </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/katarzynastepczynska/" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-facebook"></span> Facebook
+                          </button>
+                    </a>
+                    
                 </div>
             </div>
 
@@ -122,15 +169,29 @@
                 <a href="#demo2" data-toggle="collapse">
                     <img src="images/Asia.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
                 </a>
-                <p class="text-center namepadding"><strong>Asia</strong></p>
+                <p class="text-center namepadding"><strong>Asia D.</strong></p>
                 <div id="demo2" class="collapse">
-                    <p>Zakochana w podróżach</p>
-                    <p>Roztrzepana i zawsze w biegu</p>
-                    <p>Pilnie uczy się kodowania,</p>
-                    <p>wiążąc z nim swoją przyszłość</p>
+                        <div class="teamtext">
+                            <p>Zakochana w podróżach</p>
+                            <p>Roztrzepana i zawsze w biegu</p>
+                            <p>Pilnie uczy się kodowania,</p>
+                            <p>wiążąc z nim swoją przyszłość</p>
+                           </div> 
                     <a href="https://web.facebook.com/joanna.ds.14" target="_blank">
-                        <span class="label label-primary">facebook</span>
-                    </a>
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-facebook"></span> Facebook
+                          </button>
+                          </a>
+                          <a href="https://github.com/JoannaDS" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-github"></span> GitHub
+                              </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joanna-dabrowska-slaby-bb2723ab/" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-linkedin-square"></span> LinkedIn
+                              </button>
+                        </a>
                 </div>
             </div>
 
@@ -138,49 +199,75 @@
                 <a href="#demo3" data-toggle="collapse">
                     <img src="images/Patryk.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
                 </a>
-                <p class="text-center namepadding"><strong>Patryk</strong></p>
+                <p class="text-center namepadding"><strong>Patryk M.</strong></p>
                 <div id="demo3" class="collapse">
-                    <p>Fajny chłopak.</p>
-                    <p>Nie chciał mi dać swoich danych.</p>
-                    <p>Więc jest co jest.</p>
-                    <p>Czekam na info.</p>
+                        <div class="teamtext">
+                            <p>Fajny chłopak.</p>
+                            <p>Nie chciał mi dać swoich danych.</p>
+                            <p>Więc jest co jest.</p>
+                            <p>Czekam na info.</p>
+                            </div>
                     <a href="https://web.facebook.com/hrs.szn" target="_blank">
-                        <span class="label label-primary">facebook</span>
-                    </a>
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-facebook"></span> Facebook
+                          </button>
+                          </a>
+                          <a href="https://github.com/patrykmielcarz" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-github"></span> GitHub
+                              </button>
+                        </a>
+                        <a href="#" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-linkedin-square"></span> LinkedIn
+                              </button>
+                        </a>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
                 <a href="#demo4" data-toggle="collapse">
-                    <img src="images/Bartek.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
+                    <img src="images/Bartek.jpg" class="img-circle team" alt="Random Name" width="200" height="200">
                 </a>
-                <p class="text-center namepadding"><strong>Bartek</strong></p>
+                <p class="text-center namepadding"><strong>Bartek S.</strong></p>
                 <div id="demo4" class="collapse">
-                    <p>Fajny chłopak</p>
-                    <p>Nie chciał mi dać swoich danych</p>
-                    <p>Więc jest co jest.</p>
-                    <p>Czekam na info</p>
+                        <div class="teamtext">
+                            <p>Fajny chłopak</p>
+                            <p>Nie chciał mi dać swoich danych</p>
+                            <p>Więc jest co jest.</p>
+                            <p>Czekam na info</p>
+                           </div> 
                     <a href="https://web.facebook.com/bartosz.sierakowski.9" target="_blank">
-                        <span class="label label-primary">facebook</span>
-                    </a>
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-facebook"></span> Facebook
+                          </button>
+                          </a>
+                          <a href="https://github.com/BartoszSierakowski" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-github"></span> GitHub
+                              </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bartosz-sierakowski-281445101/" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-linkedin-square"></span> LinkedIn
+                              </button>
+                        </a>
                 </div>
             </div>
         </div>
     </section>
 </section>
-<hr class="line">
+
 <!-------------------------------------------------------------------------------->
 <!-------------------------Dodatkowe info o produkcie----------------------------->
 <!-------------------------------------------------------------------------------->
 <section class="container-fluid" id="details">
     <div class="row">
-        <div class="product-info-title col-xs-12">
-            <div class="title">
-                <h1>Używając CITYMAP możesz:</h1>
-            </div>
+        <div class="asiacontainer text-center">
+            <h2>CityMap zrobi to za Ciebie!</h2>
         </div>
     </div>
-    <section class="product-info">
+    <div class="function">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="box1">
                 <div class="img"><img class="icon" src="images/map.png"></div>
@@ -188,8 +275,8 @@
                     <h2>Bez problemu:</h2>
                 </div>
                 <ul class="style1">
-                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Zlokalizuje to co Ciebie interesuje</p></li>
-                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Szybko wyszuka najbliżej położony interesujący obiekt</p></li>
+                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Zlokalizuje to, czego potrzebujesz</p></li>
+                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Szybko wyszuka najbliżej położony interesujący Cię obiekt</p></li>
                     <li><p><span class="glyphicon glyphicon-arrow-right"></span> Sprawdzi w jakim czasie możesz dojść od Twojej aktualnej lokalizacji</p></li>
                     <li><p><span class="glyphicon glyphicon-arrow-right"></span> Poda Ci ważne informacje miejsca takie jak: godziny otwarcia, dokładniejszy adres, telefon kontaktowy, zdjęcie obiektu, adres strony www</p></li>
                     <li><p><span class="glyphicon glyphicon-arrow-right"></span> Nie ma reklam :)</p></li>
@@ -200,7 +287,7 @@
             <div class="box2">
                 <div class="img"><img class="icon" src="images/location.png"></div>
                 <div class="title">
-                    <h2>Znaleźć:</h2>
+                    <h2>Pomoże znaleźć:</h2>
                 </div>
                 <ul class="style1">
                     <li><p><span class="glyphicon glyphicon-plus"></span> Apteki</p></li>
@@ -212,7 +299,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </div>
 </section>
 <footer>
     <div class="panel-footer text-center">
