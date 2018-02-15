@@ -11,7 +11,7 @@
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #cff8de;
+    color: #daf8e5;
     font-size: 20px;
     padding-top: 50px;
 }
@@ -51,7 +51,7 @@
 
 #sneak_peak p {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.2em;
     color:white;
     font-family: "Open Sans";
     text-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.86);
@@ -98,7 +98,7 @@
 }
 
 .feature-producktInfo  {
-    color: white;
+    color: #757575;
     margin: 10px;
 }
 .img {
@@ -113,7 +113,7 @@
     background-image: url("../images/spear.png");
     opacity: 0.95;
     min-height: 550px;
-    border: solid 10px #87fab1;
+    border: solid 10px #a5f8c3;
 }
 .container.registration {
     padding-top: 140px;
@@ -145,7 +145,7 @@ form input {
     color: #ffffff;
 }
 .btnpremiera {
-    background: #87fab1;
+    background: #a5f8c3;
     color: black;
     width: 100%;
     font-size: 20px;
@@ -163,7 +163,7 @@ form input {
 
 }
 .team:hover {
-    border-color: #87fab1;
+    border-color: #a5f8c3;
 }
 .namepadding{
     
@@ -194,6 +194,14 @@ body {
 .teamtext{
     min-height: 200px;
 }
+
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+
 @media (min-width: 992px) and (max-width: 1280px){
 .col-md-3 {
     width: 50%;}
@@ -279,7 +287,7 @@ body {
     padding: 40px;
 }
 #details{
-    background-color: #cff8de;
+    background-color: #daf8e5;
     padding-bottom: 40px;
     
 }
