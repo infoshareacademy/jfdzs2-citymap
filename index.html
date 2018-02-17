@@ -2,42 +2,311 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>City Map</title>
 </head>
 
 <body>
 <header>
-    <!--Przyklejona nawigacja-->
-    <nav>
-        <ul>
-            <li><a href="#">Sekcja 1</a></li>
-            <li><a href="#">Sekcja 2</a></li>
-            <li><a href="#">Sekcja 3</a></li>
-            <li><a href="#">Sekcja 4</a></li>
-        </ul>
+    <!-------------------------------------------------------------------------------->
+    <!------------------------------Przyklejona nawigacja----------------------------->
+    <!-------------------------------------------------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#sneak_peak">
+                    <img alt="logo" class="logo" src="images/City_map_logo_napis.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Funkcje</a></li>
+                    <li><a href="#form">Zapis na premierę</a></li>
+                    <li><a href="#team">Nasz zespół</a></li>
+                    <li><a href="#details">Szczegóły</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
-<!-- Zajawka -->
-<div>
+<!-------------------------------------------------------------------------------->
+<!----------------------------------Zajawka--------------------------------------->
+<!-------------------------------------------------------------------------------->
+<section id="sneak_peak">
 
-</div>
-<!-- 4 ikony -->
-<div>
 
-</div>
-<!--Zapis na premiere - formularz-->
-<div>
+    <div class="feature_z">
+        <img src="images/zajawka1_kom.png" alt="" class="feature_z-phones">
+        <img src="images/zajawka1_desktop2.png" alt="" class="feature_z-desktop">
+        <img src="images/zajawka1_tablet_2.png" alt="" class="feature_z-tablet">
+    </div>
 
-</div>
-<!--Informacje o Zespole-->
-<div>
+    <div class="container zajawka2">
+        <div class="row">
+            <p class="col-xs-12 col-md-6 col-lg-6">Z CityMap zobaczysz Szczecin jakiego jeszcze nie znałeś. </p>
+            <p class="col-xs-12 col-md-6 col-lg-6">Pozwól nam pokazać Ci jak sprawnie, szybko i w jednym miejscu znaleźć to czego szukasz w naszym pięknym portowym mieście.</p>
+            <div class="container button">
+                <button type="button" class="col-xs-12 col-md-12 col-lg-12 btn-lg btn-primary ">Zapisy na premierę</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------------------------------------------------------------->
+<!---------------------------------4ikony---------------------------------------->
+<!-------------------------------------------------------------------------------->
+<section id="4_ikons">
+   
+    <div class="feature-producktInfo">
+    <div class="container">
+       <div class="row">
+           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+               <img class="img" src="images/feature-info-icon1.png"/>
+               <p>Przykładowy tekst 1</p>
+           </div>
+           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+               <img class="img" src="images/feature-info-icon2.png"/>
+               <p>Przykładowy tekst 2</p>
+           </div>
+           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+               <img class="img" src="images/feature-info-icon3.png"/>
+               <p>Przykładowy tekst 3</p>
+           </div>
+           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+               <img class="img" src="images/feature-info-icon4.png"/>
+               <p>Przykładowy tekst 4</p>
+           </div>
+       </div>
+    </div>
+    </div
+</section>
+<!-------------------------------------------------------------------------------->
+<!--------------------------Zapis na premierę - formularz------------------------->
+<!-------------------------------------------------------------------------------->
+<section class="container-fluid registration" id="form">
+    <div class="container registration">
+        <div class="row justify-content-between">
+            <div class="col-xs-6">
+                <h2>Zapisz się na premierę</h2>
+                <h2>i bądź z nami!</h2>
+                <p>Twój adres emailowy zostanie użyty przez nas tylko RAZ.</p>
+                <p>Twoje dane są chronione i nie będą użyte do innego celu.</p>
+            </div>
+            <div class="col-xs-6">
+                <form>
+                    <div class="row">
+                        <div class="form-group col-xs-6">
+                            <label for="name">Imię:</label>
+                            <input type="name" class="form-control" id="name">
+                        </div>
+                        <div class="form-group col-xs-6">
+                            <label for="email">E-mail:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <button type="submit" class="btn btnpremiera">Wyślij</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------------------------------------------------------------->
+<!-------------------------------Info o zespole----------------------------------->
+<!-------------------------------------------------------------------------------->
+<section id="team">
+    <div class="asiacontainer text-center">
+        <h3>Nasz team to gupa pasjonatów!</h3>
+        <p><em>Sprawdź naszą aplikację już dziś!</em></p><br>
+        <p>Stworzyli ją dla Ciebie:</p>
+    </div>
+  
+    <section class="container-fluid text-center sec-title text-center wow fadeInUp animated">
+        <div class="row equal teampart">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
+                <a href="#demo" data-toggle="collapse">
+                    <img src="images/Kasia.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
+                </a>
+                <p class="text-center namepadding"><strong>Kasia S.</strong></p>
+                <div id="demo" class="collapse">
+                    <div class="teamtext">
+                        <p>Z zawodu architekt</p>
+                        <p>Pije dużo zielonej herbaty, uczy się kodowania</p>
+                        <p>Nie znosi nudy, ani siedzenia w miejscu </p>
+                        <p>Jest zawsze krok do przodu</p>
+                    </div>
 
-</div>
-<!--Dodtakowe informacje na produkcie, podzial na dwie kolumny-->
+                    <a href="https://web.facebook.com/kate.step" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-facebook"></span> Facebook
+                          </button>
+                    </a>
+                    <a href="https://github.com/katarzyna-stepczynska" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-github"></span> GitHub
+                          </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/katarzynastepczynska/" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-facebook"></span> Facebook
+                          </button>
+                    </a>
+                    
+                </div>
+            </div>
 
-</body>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
+                <a href="#demo2" data-toggle="collapse">
+                    <img src="images/Asia.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
+                </a>
+                <p class="text-center namepadding"><strong>Asia D.</strong></p>
+                <div id="demo2" class="collapse">
+                        <div class="teamtext">
+                            <p>Zakochana w podróżach</p>
+                            <p>Roztrzepana i zawsze w biegu</p>
+                            <p>Pilnie uczy się kodowania,</p>
+                            <p>wiążąc z nim swoją przyszłość</p>
+                           </div> 
+                    <a href="https://web.facebook.com/joanna.ds.14" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-facebook"></span> Facebook
+                          </button>
+                          </a>
+                          <a href="https://github.com/JoannaDS" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-github"></span> GitHub
+                              </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joanna-dabrowska-slaby-bb2723ab/" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-linkedin-square"></span> LinkedIn
+                              </button>
+                        </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
+                <a href="#demo3" data-toggle="collapse">
+                    <img src="images/Patryk.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
+                </a>
+                <p class="text-center namepadding"><strong>Patryk M.</strong></p>
+                <div id="demo3" class="collapse">
+                        <div class="teamtext">
+                            <p>Fajny chłopak.</p>
+                            <p>Nie chciał mi dać swoich danych.</p>
+                            <p>Więc jest co jest.</p>
+                            <p>Czekam na info.</p>
+                            </div>
+                    <a href="https://web.facebook.com/hrs.szn" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-facebook"></span> Facebook
+                          </button>
+                          </a>
+                          <a href="https://github.com/patrykmielcarz" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-github"></span> GitHub
+                              </button>
+                        </a>
+                        <a href="#" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-linkedin-square"></span> LinkedIn
+                              </button>
+                        </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
+                <a href="#demo4" data-toggle="collapse">
+                    <img src="images/Bartek.jpg" class="img-circle team" alt="Random Name" width="200" height="200">
+                </a>
+                <p class="text-center namepadding"><strong>Bartek S.</strong></p>
+                <div id="demo4" class="collapse">
+                        <div class="teamtext">
+                            <p>Fajny chłopak</p>
+                            <p>Nie chciał mi dać swoich danych</p>
+                            <p>Więc jest co jest.</p>
+                            <p>Czekam na info</p>
+                           </div> 
+                    <a href="https://web.facebook.com/bartosz.sierakowski.9" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-facebook"></span> Facebook
+                          </button>
+                          </a>
+                          <a href="https://github.com/BartoszSierakowski" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-github"></span> GitHub
+                              </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bartosz-sierakowski-281445101/" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-linkedin-square"></span> LinkedIn
+                              </button>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<!-------------------------------------------------------------------------------->
+<!-------------------------Dodatkowe info o produkcie----------------------------->
+<!-------------------------------------------------------------------------------->
+<section class="container-fluid" id="details">
+    <div class="row">
+        <div class="asiacontainer text-center">
+            <h2>CityMap zrobi to za Ciebie!</h2>
+        </div>
+    </div>
+    <div class="function">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="box1">
+                <div class="img"><img class="icon" src="images/map.png"></div>
+                <div class="title">
+                    <h2>Bez problemu:</h2>
+                </div>
+                <ul class="style1">
+                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Zlokalizuje to, czego potrzebujesz</p></li>
+                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Szybko wyszuka najbliżej położony interesujący Cię obiekt</p></li>
+                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Sprawdzi w jakim czasie możesz dojść od Twojej aktualnej lokalizacji</p></li>
+                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Poda Ci ważne informacje miejsca takie jak: godziny otwarcia, dokładniejszy adres, telefon kontaktowy, zdjęcie obiektu, adres strony www</p></li>
+                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Nie ma reklam :)</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="box2">
+                <div class="img"><img class="icon" src="images/location.png"></div>
+                <div class="title">
+                    <h2>Pomoże znaleźć:</h2>
+                </div>
+                <ul class="style1">
+                    <li><p><span class="glyphicon glyphicon-plus"></span> Apteki</p></li>
+                    <li><p><span class="glyphicon glyphicon-cutlery"></span> Restauracje</p></li>
+                    <li><p><span class="glyphicon glyphicon-bed"></span> Hotele</p></li>
+                    <li><p><span class="glyphicon glyphicon-shopping-cart"></span> Sklepy</p></li>
+                    <li><p><span class="glyphicon glyphicon-usd"></span> Banki</p></li>
+                    <li><p><span class="glyphicon glyphicon-education"></span> Obiekty sportowe</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 <footer>
-
+    <div class="panel-footer text-center">
+        <p class="copyright">&copy; COPYRIGHT 2018 - CITYMAP</p>
+    </div>
 </footer>
+<script src="bootstrap/jquery.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
+</body>
 </html>

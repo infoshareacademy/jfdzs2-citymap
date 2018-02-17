@@ -1,0 +1,302 @@
+/***************************************************************************/
+/*                                navi                                     */
+/***************************************************************************/
+.navbar-default {
+    background-color: #757575;
+    min-height:120px;
+}
+
+.navbar-brand {
+    padding-top: 30px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #daf8e5;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.navbar-header{
+    height:120px;
+}
+.navbar-toggle{
+    padding: 20px 20px;
+    margin-top: 20px;
+    margin-right: 40px
+}
+.logo {
+    height: 50px;
+}
+/***************************************************************************/
+/*                                zajawka                                  */
+/***************************************************************************/
+.feature_z img {
+    width: 100%;
+}
+
+.feature_z-tablet {
+    display: none;
+}
+
+.feature_z-desktop {
+    display: none;
+}
+
+.zajawka2 {
+    background-image: url(../images/zajawka2_bg.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+#sneak_peak p {
+    text-align: center;
+    font-size: 2.2em;
+    color:white;
+    font-family: "Open Sans";
+    text-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.86);
+}
+
+.zajawka2 .btn {
+    background: #2e6da4;
+    color: white;
+    margin: 10px;
+}
+@media all and (min-width: 768px) {
+    .feature_z-tablet {
+        display: block;
+    }
+
+    .feature_z-desktop {
+        display: none;
+    }
+
+    .feature_z-phones {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .feature_z-tablet {
+        display: none;
+    }
+    .feature_z-desktop {
+        display: block;
+    }
+    .feature_z-phones {
+        display: none;
+    }
+}
+
+ /***************************************************************************/
+/*                         4 ikony                              */
+/***************************************************************************/
+.feature-producktInfo {
+    background-color: white;
+    min-height: 200px;
+    text-align: center;
+}
+
+.feature-producktInfo  {
+    color: #757575;
+    margin: 10px;
+}
+.img {
+    margin: 20px;
+}
+
+/***************************************************************************/
+/*                         zapis na premierę                               */
+/***************************************************************************/
+.container-fluid.registration {
+    padding: 0;
+    background-image: url("../images/spear.png");
+    opacity: 0.95;
+    min-height: 550px;
+    border: solid 10px #a5f8c3;
+}
+.container.registration {
+    padding-top: 140px;
+}
+.container-fluid.registration h2 {
+    font-size: 32px;
+    font-family: Pontano, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-align: center;
+}
+.container-fluid.registration p {
+    font-size: 20px;
+    font-family: Pontano, Arial, sans-serif;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    text-align: center;
+}
+label{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Pontano, Arial, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+form input {
+    background: transparent;
+    border: 1px solid darkorange;
+    color: #ffffff;
+}
+.btnpremiera {
+    background: #a5f8c3;
+    color: black;
+    width: 100%;
+    font-size: 20px;
+    font-family: Pontano, Arial, sans-serif;
+    font-weight: 500;
+}
+/***************************************************************************/
+/*                            info o zespole                               */
+/***************************************************************************/
+.team {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 250px;
+
+}
+.team:hover {
+    border-color: #a5f8c3;
+}
+.namepadding{
+    
+    font-size: 200%;
+    color: #757575;
+}
+.teampart{
+    background-color: rgb(255, 255, 255);
+    padding-bottom:40px;
+   
+}
+.asiacontainer {
+    padding: 60px 120px 20px 120px;
+    color:#757575;
+    font-size:200%;
+}
+.member{
+    color: #7B8FA1;
+    padding: 20px;
+    font-size:130%;
+
+}
+
+body {
+    padding-top: 70px;
+}
+
+.teamtext{
+    min-height: 200px;
+}
+
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+
+@media (min-width: 992px) and (max-width: 1280px){
+.col-md-3 {
+    width: 50%;}
+}
+/***************************************************************************/
+/*                    dodatkowe info o produkcie                           */
+/***************************************************************************/
+.title {
+    text-align: center;
+    margin: 15px;
+    font-family: 'Helvetica', sans-serif;
+    text-transform: uppercase;
+    color: #3b404f;
+    margin-bottom: 70px;
+}
+
+.title h1 {
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+
+.title h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+/*
+.title::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 1px;
+    margin-left: -250px;
+    background-color: black;
+}*/
+.product-info-title {
+    background-color: lightgray;
+    /*height: 200px;*/
+}
+.product-info {
+    /*margin-top: 200px;*/
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.box1, .box2 {
+}
+.style1 {
+    padding: 0;
+}
+.style1 li {
+    list-style: none;
+    border-top: solid 1px lightgray;
+}
+
+.style1 li p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-weight: 300%;
+    line-height: 40px;
+}
+.img {
+    text-align: center;
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    opacity: 0.8;
+}
+.style1 ul li p span .glyphicon {
+    margin-right: 20px;
+    
+}
+.function{
+    padding: 40px;
+}
+#details{
+    background-color: #daf8e5;
+    padding-bottom: 40px;
+    
+}
+/***************************************************************************/
+/*                                footer                                   */
+/***************************************************************************/
+.panel-footer {
+    font-size: 20px;
+    background-color: #757575;
+    color: white;
+    padding: 50px;
+}
