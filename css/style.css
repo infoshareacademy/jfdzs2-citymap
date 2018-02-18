@@ -151,6 +151,8 @@ form input {
     font-size: 20px;
     font-family: Pontano, Arial, sans-serif;
     font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 140px;
 }
 /***************************************************************************/
 /*                            info o zespole                               */
@@ -243,10 +245,8 @@ body {
 }*/
 .product-info-title {
     background-color: lightgray;
-    /*height: 200px;*/
 }
 .product-info {
-    /*margin-top: 200px;*/
     background-color: #FFFFFF;
     opacity: 0.8;
     padding-top: 6em;
@@ -254,6 +254,7 @@ body {
 }
 
 .box1, .box2 {
+    margin-bottom: 60px;
 }
 .style1 {
     padding: 0;
@@ -284,7 +285,8 @@ body {
     
 }
 .function{
-    padding: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 #details{
     background-color: #daf8e5;
