@@ -46,21 +46,28 @@
     background-image: url(../images/zajawka2_bg.png);
     background-repeat: repeat-x;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
-#sneak_peak p {
+.zajawka2 p {
     text-align: center;
-    font-size: 2.2em;
+    font-size: 2.5em;
     color:white;
     font-family: "Open Sans";
     text-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.86);
+    padding-bottom: 60px;
 }
 
-.zajawka2 .btn {
-    background: #2e6da4;
-    color: white;
+.zajawka2 a {
+    border: white solid;
+    box-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.46);
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    color:white;
+    font-family: "Open Sans";
     margin: 10px;
+    text-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.86);
 }
 @media all and (min-width: 768px) {
     .feature_z-tablet {
