@@ -95,6 +95,8 @@
     background-color: white;
     min-height: 200px;
     text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30 px;
 }
 
 .feature-producktInfo  {
@@ -196,6 +198,9 @@ form input {
     padding: 20px;
     font-size:130%;
 
+}
+.btn{
+    margin-bottom: 5px;
 }
 
 body {
