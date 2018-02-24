@@ -32,7 +32,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Funkcje</a></li>
+                    <li><a href="#4_ikons">Funkcje</a></li>
                     <li><a href="#form">Zapis na premierę</a></li>
                     <li><a href="#team">Nasz zespół</a></li>
                     <li><a href="#details">Szczegóły</a></li>
@@ -306,7 +306,21 @@
         <p class="copyright">&copy; COPYRIGHT 2018 - CITYMAP</p>
     </div>
 </footer>
+
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('a[href^="#"]').on('click', function(event) {
+            var target = $( $(this).attr('href') );
+            if( target.length ) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 2000);
+            }
+        });
+    });
+</script>
 </body>
 </html>
