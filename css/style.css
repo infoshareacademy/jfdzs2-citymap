@@ -120,14 +120,14 @@
 }
 .container-fluid.registration h2 {
     font-size: 32px;
-    font-family: Pontano, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: 700;
     text-align: center;
 }
 .container-fluid.registration p {
     font-size: 20px;
-    font-family: Pontano, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(41, 40, 40);
     font-weight: 500;
     text-align: center;
@@ -135,22 +135,27 @@
 label{
     color: rgb(0, 0, 0);
     font-size: 20px;
-    font-family: Pontano, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     text-align: center;
 }
-form input {
-    background: transparent;
-    border: 1px solid darkorange;
+.form-control {
+    background: rgba(256, 256, 256, 0.6);
     color: #ffffff;
+    text-align: center;
+    border: solid #a5f8c3 2px;
+    font-size: 16px;
+
 }
 .btnpremiera {
     background: #a5f8c3;
     color: black;
     width: 100%;
     font-size: 20px;
-    font-family: Pontano, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 140px;
 }
 /***************************************************************************/
 /*                            info o zespole                               */
@@ -212,48 +217,30 @@ body {
 .title {
     text-align: center;
     margin: 15px;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     color: #3b404f;
-    margin-bottom: 70px;
 }
 
-.title h1 {
+#details h1 {
     font-size: 32px;
-    margin-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
     margin-bottom: 25px;
     font-weight: 300;
     line-height: 1.4;
+    text-transform: uppercase;
+    color: #3b404f;
 }
-
 
 .title h2 {
     font-size: 20px;
     margin-bottom: 25px;
     font-weight: 300;
+    font-family: 'Open Sans', sans-serif;;
 }
-/*
-.title::after {
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 1px;
-    margin-left: -250px;
-    background-color: black;
-}*/
-.product-info-title {
-    background-color: lightgray;
-    /*height: 200px;*/
-}
-.product-info {
-    /*margin-top: 200px;*/
-    background-color: #FFFFFF;
-    opacity: 0.8;
-    padding-top: 6em;
-    padding-bottom: 6em;
-}
-
 .box1, .box2 {
+    margin-bottom: 60px;
 }
 .style1 {
     padding: 0;
@@ -264,11 +251,11 @@ body {
 }
 
 .style1 li p {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    font-weight: 300%;
+    font-weight: 300;
     line-height: 40px;
 }
 .img {
@@ -279,17 +266,14 @@ body {
     height: 60px;
     opacity: 0.8;
 }
-.style1 ul li p span .glyphicon {
-    margin-right: 20px;
-    
-}
+
 .function{
-    padding: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 #details{
     background-color: #daf8e5;
     padding-bottom: 40px;
-    
 }
 /***************************************************************************/
 /*                                footer                                   */
