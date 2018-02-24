@@ -306,7 +306,7 @@
         <p class="copyright">&copy; COPYRIGHT 2018 - CITYMAP</p>
     </div>
 </footer>
-
+<a href="#sneak_peak" title="to_top" id="scroll-to-top"><img src="images/scrollup.png" alt="strzałka do góry"/></a>
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
 <script>
@@ -321,7 +321,22 @@
             }
         });
     });
+    $(function(){
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 100) {
+                $('#scroll-to-top').addClass('show');
+            } else {
+                $('#scroll-to-top').removeClass('show');
+            }
+        });
+
+        $('#scroll-to-top').click(function() {
+            $('body').animate({scrollTop: 0}, 400, 'linear');
+        });
+    });
 </script>
+
 </body>
 </html>
 

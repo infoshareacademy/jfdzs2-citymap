@@ -1,3 +1,13 @@
+body {
+    padding-top: 85px;
+}
+
+@media all and (min-width: 768px) {
+    body {
+        padding-top: 120px;
+    }
+}
+
 /***************************************************************************/
 /*                                navi                                     */
 /***************************************************************************/
@@ -201,10 +211,6 @@ form input {
 
 }
 
-body {
-    padding-top: 70px;
-}
-
 .teamtext{
     min-height: 200px;
 }
@@ -314,3 +320,42 @@ body {
     color: white;
     padding: 50px;
 }
+
+/***************************************************************************/
+/*                         scroll to top                                   */
+/***************************************************************************/
+
+
+
+#scroll-to-top {
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    /*visibility: hidden;*/
+    /*overflow: hidden;*/
+    z-index: 99999999;
+    background-image: url('images/scrollup.png');
+    right: 30px;
+    bottom: 30px;
+    transition: all 0.5s ease-in-out;
+
+/*.to-top{*/
+    /*text-align:center;*/
+/*}*/
+/*#scroll-to-top{*/
+    /*!*display:none;*!*/
+    /*position:fixed;*/
+    /*bottom:15px;*/
+    /*right:20px;*/
+    /*opacity:0.8;*/
+/*}*/
+
+#scroll-to-top.show {
+    visibility: visible;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+/*#scroll-to-top:hover{*/
+    /*opacity:1;*/
+/*}*/
