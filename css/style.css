@@ -1,3 +1,7 @@
+body {
+    padding-top: 120px;
+}
+
 /***************************************************************************/
 /*                                navi                                     */
 /***************************************************************************/
@@ -56,25 +60,31 @@
     display: none;
 }
 
-.zajawka2 {
+.feature_z-2 {
     background-image: url(../images/zajawka2_bg.png);
     background-repeat: repeat-x;
     width: 100%;
-    padding-bottom: 20px;
 }
 
-#sneak_peak p {
+.feature_z-2 p {
     text-align: center;
-    font-size: 2.2em;
+    font-size: 1.7em;
     color:white;
     font-family: "Open Sans";
     text-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.86);
+    padding-bottom: 50px;
 }
 
-.zajawka2 .btn {
-    background: #2e6da4;
-    color: white;
+.feature_z-2 a {
+    border: white solid;
+    box-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.46);
+    padding: 15px;
+    text-align: center;
+    font-size: 0.8em;
+    color:white;
+    font-family: "Open Sans";
     margin: 10px;
+    text-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.86);
 }
 @media all and (min-width: 768px) {
     .feature_z-tablet {
@@ -122,49 +132,52 @@
 /***************************************************************************/
 /*                         zapis na premierę                               */
 /***************************************************************************/
-.container-fluid.registration {
+.registration {
     padding: 0;
     background-image: url("../images/spear.png");
     opacity: 0.95;
     min-height: 550px;
     border: solid 10px #a5f8c3;
-}
-.container.registration {
     padding-top: 140px;
 }
-.container-fluid.registration h2 {
+.registration h2 {
     font-size: 32px;
-    font-family: Pontano, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: 700;
     text-align: center;
 }
-.container-fluid.registration p {
+.registration p {
     font-size: 20px;
-    font-family: Pontano, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(41, 40, 40);
     font-weight: 500;
     text-align: center;
 }
-label{
+.registration .form-group label{
     color: rgb(0, 0, 0);
     font-size: 20px;
-    font-family: Pontano, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     text-align: center;
 }
-form input {
-    background: transparent;
-    border: 1px solid darkorange;
+.registration .form-control {
+    background: rgba(256, 256, 256, 0.6);
     color: #ffffff;
+    text-align: center;
+    border: solid #a5f8c3 2px;
+    font-size: 16px;
+
 }
-.btnpremiera {
+.registration .btnpremiera {
     background: #a5f8c3;
     color: black;
     width: 100%;
     font-size: 20px;
-    font-family: Pontano, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 140px;
 }
 /***************************************************************************/
 /*                            info o zespole                               */
@@ -201,10 +214,6 @@ form input {
 
 }
 
-body {
-    padding-top: 70px;
-}
-
 .teamtext{
     min-height: 200px;
 }
@@ -223,87 +232,65 @@ body {
 /***************************************************************************/
 /*                    dodatkowe info o produkcie                           */
 /***************************************************************************/
-.title {
+#details .title {
     text-align: center;
     margin: 15px;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     color: #3b404f;
-    margin-bottom: 70px;
 }
 
-.title h1 {
+#details h1 {
     font-size: 32px;
-    margin-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
     margin-bottom: 25px;
     font-weight: 300;
     line-height: 1.4;
+    text-transform: uppercase;
+    color: #3b404f;
 }
 
-
-.title h2 {
+#details .title h2 {
     font-size: 20px;
     margin-bottom: 25px;
     font-weight: 300;
+    font-family: 'Open Sans', sans-serif;;
 }
-/*
-.title::after {
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 1px;
-    margin-left: -250px;
-    background-color: black;
-}*/
-.product-info-title {
-    background-color: lightgray;
-    /*height: 200px;*/
+#details .box1, .box2 {
+    margin-bottom: 60px;
 }
-.product-info {
-    /*margin-top: 200px;*/
-    background-color: #FFFFFF;
-    opacity: 0.8;
-    padding-top: 6em;
-    padding-bottom: 6em;
-}
-
-.box1, .box2 {
-}
-.style1 {
+#details .style1 {
     padding: 0;
 }
-.style1 li {
+#details .style1 li {
     list-style: none;
     border-top: solid 1px lightgray;
 }
-
-.style1 li p {
-    font-family: 'Helvetica', sans-serif;
+#details .style1 li p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    font-weight: 300%;
+    font-weight: 300;
     line-height: 40px;
 }
-.img {
+#details .img {
     text-align: center;
 }
-.icon {
+#details .icon {
     width: 60px;
     height: 60px;
     opacity: 0.8;
 }
-.style1 ul li p span .glyphicon {
-    margin-right: 20px;
-    
-}
-.function{
-    padding: 40px;
+
+#details .function{
+    padding-right: 40px;
+    padding-left: 40px;
 }
 #details{
     background-color: #daf8e5;
     padding-bottom: 40px;
-    
 }
 /***************************************************************************/
 /*                                footer                                   */
