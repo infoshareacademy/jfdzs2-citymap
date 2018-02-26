@@ -343,20 +343,6 @@
             }
         });
     });
-    $(function(){
-
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > 100) {
-                $('#scroll-to-top').addClass('show');
-            } else {
-                $('#scroll-to-top').removeClass('show');
-            }
-        });
-
-        $('#scroll-to-top').click(function() {
-            $('body').animate({scrollTop: 0}, 400, 'linear');
-        });
-    });
 
     $(document).ready(function() {
         var scrollToTop = $('#scroll-to-top');
