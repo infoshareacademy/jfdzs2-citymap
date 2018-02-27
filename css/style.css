@@ -209,6 +209,13 @@ body {
     display: -webkit-flex;
     flex-wrap: wrap;
 }
+.btn-default{
+    width:50%;
+    margin-bottom:10px;
+}
+.fa {
+    font-size: 200%;
+}
 
 #flip_container {
     position: relative;
@@ -225,10 +232,11 @@ body {
     height: 100%;
     transform-style: preserve-3d;
     transition: all 1.0s linear;
+    border-radius: 50%;
   }
   #flip_container:hover #flip_card {
     transform: rotateY(180deg);
-    box-shadow: -5px 5px 5px #aaa;
+ 
   }
   .face {
     position: absolute;
@@ -244,7 +252,9 @@ body {
     color: white;
     text-align: center;
     background-color: #aaa;
+    padding-top:50px;
   }
+ 
 @media (min-width: 992px) and (max-width: 1280px){
 .col-md-3 {
     width: 50%;}
