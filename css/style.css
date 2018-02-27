@@ -285,7 +285,8 @@ body {
 #cookie-warn{
     position: fixed;
     bottom: 0;
-    background: #EEE;
+    /*background: rgba(156, 255, 252, 0.2);*/
+    background: rgba(256, 256, 256, 0.2);
     margin: 0;
     padding: 15px;
     width: 100%;
@@ -294,15 +295,21 @@ body {
 }
 
 #cookie-warn a{
-    color: #D66E1A;
+    color: #192440;
     text-transform: uppercase;
     float: right;
     padding-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Myriad Pro', sans-serif;
+    margin-bottom: 5px;
 }
 
 #cookie-warn p{
-    font-size: 12px;
+    font-size: 16px;
     color: #333;
+    margin-top: 15px;
+    font-family: 'Myriad Pro', sans-serif;
 }
 /***************************************************************************/
 /*                                footer                                   */
