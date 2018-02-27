@@ -12,7 +12,7 @@ body {
 /*                                navi                                     */
 /***************************************************************************/
 .navbar-default {
-    background-color: #757575;
+    background-color: #192440;
 }
 
 .navbar-brand {
@@ -20,9 +20,23 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #daf8e5;
+    color: white;
     font-size: 20px;
     padding-top: 50px;
+}
+
+/*.navbar-default .navbar-nav>li:hover {*/
+    /*background-color: blue;*/
+/*}*/
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: blue;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+    font-weight: bold;
+    color: #9CFFFC;
+    text-decoration: underline;
 }
 
 .navbar-toggle{
