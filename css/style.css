@@ -210,7 +210,41 @@ body {
     flex-wrap: wrap;
 }
 
-
+#flip_container {
+    position: relative;
+    margin: 10px auto;
+    width: 255px;
+    height: 255px;
+    z-index: 1;
+  }
+  #flip_container {
+    perspective: 1000;
+  }
+  #flip_card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+  }
+  #flip_container:hover #flip_card {
+    transform: rotateY(180deg);
+    box-shadow: -5px 5px 5px #aaa;
+  }
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #aaa;
+  }
 @media (min-width: 992px) and (max-width: 1280px){
 .col-md-3 {
     width: 50%;}
