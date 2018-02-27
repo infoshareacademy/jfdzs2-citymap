@@ -125,6 +125,7 @@ body {
     min-height: 550px;
     border: solid 10px #a5f8c3;
     padding-top: 140px;
+    width: 100%;
 }
 .registration h2 {
     font-size: 32px;
