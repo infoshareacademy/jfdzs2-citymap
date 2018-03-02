@@ -325,15 +325,18 @@
 <!-------------------------------------------------------------------------------->
 <!-------------------------scroll to top button----------------------------------->
 <!-------------------------------------------------------------------------------->
-
-<a href="#sneak-peak" title="to_top" id="scroll-to-top"><img src="images/scrollup.png" alt="strzałka do góry"/></a>
+<div class="scroll-to-top ">
+	<span class="scroll-top-inner">
+		<i class="fa fa-2x fa-arrow-circle-up"></i>
+	</span>
+</div>
 
 
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('a[href^="#"]').on('click', function(event) {
+        $('.navbar-default a[href^="#"]').on('click', function(event) {
             var target = $( $(this).attr('href') );
             if (target.length ) {
                 event.preventDefault();
@@ -344,24 +347,27 @@
         });
     });
 
-    $(document).ready(function() {
-        var scrollToTop = $('#scroll-to-top');
+    $(function(){
 
-        $(window).on('scroll', function () {
-            var self = $(this),
-                height = self.height(),
-                top = self.scrollTop();
+        $(document).on( 'scroll', function(){
 
-            if(top > height) {
-                if(!scrollToTop.is(':visible')) {
-                    scrollToTop.show();
-                }
+            if ($(window).scrollTop() > 100) {
+                $('.scroll-to-top').addClass('show');
             } else {
-                scrollToTop.hide();
+                $('.scroll-to-top').removeClass('show');
             }
         });
+
+        $('.scroll-to-top').on('click', scrollToTop);
     });
 
+    function scrollToTop() {
+        verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+        element = $('body');
+        offset = element.offset();
+        offsetTop = offset.top;
+        $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+    }
 </script>
 
 </body>
