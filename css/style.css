@@ -125,16 +125,16 @@ body {
     }
 }
 
- /***************************************************************************/
-/*                         4 ikony                              */
 /***************************************************************************/
-.feature-productInfo {
+/*                         4 ikony                                         */
+/***************************************************************************/
+.feature-product-info {
     background-color: white;
     min-height: 200px;
     text-align: center;
 }
 
-.feature-productInfo  {
+.feature-product-info  {
     color: #757575;
     margin: 10px;
 }
