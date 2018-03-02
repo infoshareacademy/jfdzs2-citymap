@@ -285,32 +285,42 @@ body {
 #cookie-warn{
     position: fixed;
     bottom: 0;
-    /*background: rgba(156, 255, 252, 0.2);*/
-    background: rgba(256, 256, 256, 0.2);
+    left: 0;
+    background: rgba(256, 256, 256, 0.6);
     margin: 0;
-    padding: 15px;
     width: 100%;
     display: none;
     z-index: 99;
 }
-
+#cookie-warn .cookie-icon {
+    padding-top: 1.6rem;
+}
+#cookie-warn .cookie-info p{
+     font-size: 16px;
+     color: #333;
+     margin-top: 15px;
+     font-family: 'Myriad Pro', sans-serif;
+ }
 #cookie-warn a{
+    float: right;
     color: #192440;
     text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Myriad Pro', sans-serif;
+    margin-bottom: 5px;
+}
+#cookie-warn a:hover{
     float: right;
-    padding-right: 20px;
+    color: #9CFFFC;
+    text-decoration: none;
+    text-transform: uppercase;
     font-size: 18px;
     font-weight: bold;
     font-family: 'Myriad Pro', sans-serif;
     margin-bottom: 5px;
 }
 
-#cookie-warn p{
-    font-size: 16px;
-    color: #333;
-    margin-top: 15px;
-    font-family: 'Myriad Pro', sans-serif;
-}
 /***************************************************************************/
 /*                                footer                                   */
 /***************************************************************************/
