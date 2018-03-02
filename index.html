@@ -10,6 +10,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon-icon-36x36.png">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
     <title>City Map</title>
 </head>
 <body>
@@ -325,7 +327,7 @@
 <!-------------------------------------------------------------------------------->
 <!-------------------------scroll to top button----------------------------------->
 <!-------------------------------------------------------------------------------->
-<div class="scroll-to-top ">
+<div class="scroll-to-top">
 	<span class="scroll-top-inner">
 		<i class="fa fa-2x fa-arrow-circle-up"></i>
 	</span>
@@ -334,42 +336,6 @@
 
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('.navbar-default a[href^="#"]').on('click', function(event) {
-            var target = $( $(this).attr('href') );
-            if (target.length ) {
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: target.offset().top - 120
-                }, 2000);
-            }
-        });
-    });
-
-    $(function(){
-
-        $(document).on( 'scroll', function(){
-
-            if ($(window).scrollTop() > 100) {
-                $('.scroll-to-top').addClass('show');
-            } else {
-                $('.scroll-to-top').removeClass('show');
-            }
-        });
-
-        $('.scroll-to-top').on('click', scrollToTop);
-    });
-
-    function scrollToTop() {
-        verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
-        element = $('body');
-        offset = element.offset();
-        offsetTop = offset.top;
-        $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
-    }
-</script>
-
 </body>
 </html>
 
