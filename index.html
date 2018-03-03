@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/shrink-menu.js"></script>
     <link rel="shortcut icon" href="images/favicon-icon-36x36.png">
     <title>City Map</title>
 </head>
@@ -27,13 +29,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#sneak_peak">
+                <a class="navbar-brand" href="#sneak-peak">
                     <img alt="logo" class="logo" src="images/City_map_logo_napis.png">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Funkcje</a></li>
+                    <li><a href="#product-info">Funkcje</a></li>
                     <li><a href="#form">Zapis na premierę</a></li>
                     <li><a href="#team">Nasz zespół</a></li>
                     <li><a href="#details">Szczegóły</a></li>
@@ -45,16 +47,16 @@
 <!-------------------------------------------------------------------------------->
 <!----------------------------------Zajawka--------------------------------------->
 <!-------------------------------------------------------------------------------->
-<section id="sneak_peak">
+<section id="sneak-peak">
 
 
-    <div class="feature_z">
-        <img src="images/zajawka2_kom.png" alt="" class="feature_z-phones">
-        <img src="images/zajawka2_Desktop.png" alt="" class="feature_z-desktop">
-        <img src="images/zajawka2_tablet.png" alt="" class="feature_z-tablet">
+    <div class="feature-z">
+        <img src="images/zajawka2_kom.png" alt="" class="feature-z-phones">
+        <img src="images/zajawka2_Desktop.png" alt="" class="feature-z-desktop">
+        <img src="images/zajawka2_tablet.png" alt="" class="feature-z-tablet">
     </div>
 
-    <div class="container feature_z-2">
+    <div class="container feature-z-2">
         <div class="row">
             <p class="col-xs-12 col-md-6 col-lg-6">Z CityMap zobaczysz Szczecin jakiego jeszcze nie znałeś. </p>
             <p class="col-xs-12 col-md-6 col-lg-6">Pozwól nam pokazać Ci jak sprawnie, szybko i w jednym miejscu znaleźć to czego szukasz w naszym pięknym portowym mieście.</p>
@@ -66,9 +68,9 @@
 <!-------------------------------------------------------------------------------->
 <!---------------------------------4ikony---------------------------------------->
 <!-------------------------------------------------------------------------------->
-<section id="4_ikons">
+<section id="product-info">
    
-    <div class="feature-producktInfo">
+    <div class="feature-productInfo">
     <div class="container">
        <div class="row">
            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -263,60 +265,106 @@
 <!-------------------------------------------------------------------------------->
 <section id="details">
     <div class="container">
-    <div class="row">
-        <div class="asiacontainer text-center">
-            <h1>CityMap zrobi to za Ciebie!</h1>
-        </div>
-    </div>
-    <div class="function">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="box1">
-                <div class="img"><img class="icon" src="images/map.png"></div>
-                <div class="title">
-                    <h2>Bez problemu:</h2>
-                </div>
-                <ul class="style1">
-                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Zlokalizuje to, co Ciebie interesuje</p></li>
-                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Szybko wyszuka najbliżej położony interesujący obiekt</p></li>
-                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Sprawdzi w jakim czasie możesz dojść od Twojej aktualnej lokalizacji</p></li>
-                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Poda Ci ważne informacje wybranego miejsca takie jak: godziny otwarcia, dokładniejszy adres, telefon kontaktowy, zdjęcie obiektu, adres strony www</p></li>
-                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Poda Ci, jaką ocenę ma zlokalizowany obiekt według innych użytkowników, wraz z opiniami, czy jest warty zobaczenia</p></li>
-                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Możesz zapisać interesujący obiekt na swoją listę miejsc do odwiedzenia</p></li>
-                    <li><p><span class="glyphicon glyphicon-arrow-right"></span> Sprawdzisz jakie są jeszcze inne obiekty w pobliżu zlokalizowanego przez ciebie miejsca</p></li>
-                </ul>
+        <div class="row">
+            <div class="asiacontainer text-center">
+                <h1>CityMap zrobi to za Ciebie!</h1>
             </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="box2">
-                    <div class="img"><img class="icon" src="images/location.png"></div>
-                        <div class="title">
-                            <h2>Pomoże znaleźć:</h2>
-                        </div>
-                        <ul class="style1">
-                            <li><p><span class="glyphicon glyphicon-plus"></span> Apteki</p></li>
-                            <li><p><span class="glyphicon glyphicon-cutlery"></span> Restauracje</p></li>
-                            <li><p><span class="glyphicon glyphicon-bed"></span> Hotele</p></li>
-                            <li><p><span class="glyphicon glyphicon-shopping-cart"></span> Sklepy</p></li>
-                            <li><p><span class="glyphicon glyphicon-piggy-bank"></span> Banki</p></li>
-                            <li><p><span class="glyphicon glyphicon-usd"></span> Bankomaty</p></li>
-                            <li><p><span class="glyphicon glyphicon-leaf"></span> Parki</p></li>
-                            <li><p><span class="glyphicon glyphicon-education"></span> Obiekty sportowe</p></li>
-                            <li><p><span class="glyphicon glyphicon-picture"></span> Muzea</p></li>
-                            <li><p><span class="glyphicon glyphicon-music"></span> Imprezy</p></li>
-                            <li><p><span class="glyphicon glyphicon-film"></span> Kina</p></li>
-                        </ul>
+        <div class="function">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="box1">
+                    <div class="img"><img class="icon" src="images/map.png"></div>
+                    <div class="title">
+                        <h2>Bez problemu:</h2>
+                    </div>
+                    <ul class="style1">
+                        <li><p><span class="glyphicon glyphicon-arrow-right"></span> Zlokalizuje to, co Ciebie interesuje</p></li>
+                        <li><p><span class="glyphicon glyphicon-arrow-right"></span> Szybko wyszuka najbliżej położony interesujący obiekt</p></li>
+                        <li><p><span class="glyphicon glyphicon-arrow-right"></span> Sprawdzi w jakim czasie możesz dojść od Twojej aktualnej lokalizacji</p></li>
+                        <li><p><span class="glyphicon glyphicon-arrow-right"></span> Poda Ci ważne informacje wybranego miejsca takie jak: godziny otwarcia, dokładniejszy adres, telefon kontaktowy, zdjęcie obiektu, adres strony www</p></li>
+                        <li><p><span class="glyphicon glyphicon-arrow-right"></span> Poda Ci, jaką ocenę ma zlokalizowany obiekt według innych użytkowników, wraz z opiniami, czy jest warty zobaczenia</p></li>
+                        <li><p><span class="glyphicon glyphicon-arrow-right"></span> Możesz zapisać interesujący obiekt na swoją listę miejsc do odwiedzenia</p></li>
+                        <li><p><span class="glyphicon glyphicon-arrow-right"></span> Sprawdzisz jakie są jeszcze inne obiekty w pobliżu zlokalizowanego przez ciebie miejsca</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="box2">
+                        <div class="img"><img class="icon" src="images/location.png"></div>
+                            <div class="title">
+                                <h2>Pomoże znaleźć:</h2>
+                            </div>
+                            <ul class="style1">
+                                <li><p><span class="glyphicon glyphicon-plus"></span> Apteki</p></li>
+                                <li><p><span class="glyphicon glyphicon-cutlery"></span> Restauracje</p></li>
+                                <li><p><span class="glyphicon glyphicon-bed"></span> Hotele</p></li>
+                                <li><p><span class="glyphicon glyphicon-shopping-cart"></span> Sklepy</p></li>
+                                <li><p><span class="glyphicon glyphicon-piggy-bank"></span> Banki</p></li>
+                                <li><p><span class="glyphicon glyphicon-usd"></span> Bankomaty</p></li>
+                                <li><p><span class="glyphicon glyphicon-leaf"></span> Parki</p></li>
+                                <li><p><span class="glyphicon glyphicon-education"></span> Obiekty sportowe</p></li>
+                                <li><p><span class="glyphicon glyphicon-picture"></span> Muzea</p></li>
+                                <li><p><span class="glyphicon glyphicon-music"></span> Imprezy</p></li>
+                                <li><p><span class="glyphicon glyphicon-film"></span> Kina</p></li>
+                            </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
+
+<!-------------------------------------------------------------------------------->
+<!----------------------------------footer---------------------------------------->
+<!-------------------------------------------------------------------------------->
+
 <footer>
     <div class="panel-footer text-center">
         <p class="copyright">&copy; COPYRIGHT 2018 - CITYMAP</p>
     </div>
 </footer>
+
+<!-------------------------------------------------------------------------------->
+<!-------------------------scroll to top button----------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<a href="#sneak-peak" title="to_top" id="scroll-to-top"><img src="images/scrollup.png" alt="strzałka do góry"/></a>
+
+
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('a[href^="#"]').on('click', function(event) {
+            var target = $( $(this).attr('href') );
+            if (target.length ) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 50
+                }, 2000);
+            }
+        });
+    });
+
+    $(document).ready(function() {
+        var scrollToTop = $('#scroll-to-top');
+
+        $(window).on('scroll', function () {
+            var self = $(this),
+                height = self.height(),
+                top = self.scrollTop();
+
+            if(top > height) {
+                if(!scrollToTop.is(':visible')) {
+                    scrollToTop.show();
+                }
+            } else {
+                scrollToTop.hide();
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
+
