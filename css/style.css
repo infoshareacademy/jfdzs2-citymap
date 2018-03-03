@@ -15,9 +15,9 @@ body {
     background-color: #192440;
 }
 
-/*.navbar-brand {*/
-    /*padding-top: 30px;*/
-/*}*/
+.navbar-brand {
+    padding-top: 30px;
+}
 
 .navbar-default .navbar-nav>li>a {
     color: white;
@@ -35,11 +35,11 @@ body {
     text-decoration: underline;
 }
 
-/*.navbar-toggle{*/
-    /*padding: 20px 20px;*/
-    /*margin-top: 20px;*/
-    /*margin-right: 40px*/
-/*}*/
+.navbar-toggle{
+    padding: 20px 20px;
+    margin-top: 20px;
+    margin-right: 40px
+}
 
 .logo {
     height: 25px;

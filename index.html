@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/shrink-menu.js"></script>
     <link rel="shortcut icon" href="images/favicon-icon-36x36.png">
     <title>City Map</title>
 </head>
@@ -361,31 +363,6 @@
             }
         });
     });
-
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('nav').addClass('shrink');
-        } else {
-            $('nav').removeClass('shrink');
-        }
-    });
-
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('a').addClass('padding');
-        } else {
-            $('a').removeClass('padding');
-        }
-    });
-
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('.navbar-brand').addClass('resize-logo');
-        } else {
-            $('.navbar-brand').removeClass('resize-logo');
-        }
-    });
-
 </script>
 
 </body>
