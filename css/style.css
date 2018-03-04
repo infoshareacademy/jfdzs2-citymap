@@ -119,51 +119,55 @@ body {
 /*                         zapis na premierę                               */
 /***************************************************************************/
 .registration {
-    padding: 0;
-    background-image: url("../images/spear.png");
+    background-image: url("../images/form-background.png");
     opacity: 0.95;
-    min-height: 550px;
-    border: solid 10px #a5f8c3;
+    min-height: 650px;
     padding-top: 140px;
+    width: 100%;
 }
 .registration h2 {
-    font-size: 32px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
+    font-size: 42px;
+    font-family: "Myriad Pro", sans-serif;
+    color: white;
+    font-weight: 600;
     text-align: center;
+    line-height: 1.3em;
+    border-bottom: solid 1.5px #9CFFFC;
+    margin-bottom: 15px;
 }
 .registration p {
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(41, 40, 40);
-    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: lighter;
+    color: #9CFFFC;
     text-align: center;
 }
 .registration .form-group label{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
+    padding-top: 15px;
+    color: white;
+    font-size: 21px;
+    font-family: 'Myriad Pro', sans-serif;
     font-weight: 500;
     text-align: center;
 }
 .registration .form-control {
-    background: rgba(256, 256, 256, 0.6);
-    color: #ffffff;
+    background: rgba(256, 256, 256, 0);
+    color: white;
     text-align: center;
-    border: solid #a5f8c3 2px;
-    font-size: 16px;
-
+    border: solid #9CFFFC 1px;
+    border-radius: 21px;
+    font-size: 20px;
 }
 .registration .btnpremiera {
-    background: #a5f8c3;
+    margin-top: 15px;
+    background: #9CFFFC;
+    border-radius: 21px;
     color: black;
     width: 100%;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    font-family: 'Myriad Pro', sans-serif;
     font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 140px;
+    margin-bottom: 100px;
 }
 /***************************************************************************/
 /*                            info o zespole                               */
@@ -218,6 +222,18 @@ body {
 /***************************************************************************/
 /*                    dodatkowe info o produkcie                           */
 /***************************************************************************/
+#details .main-title h1 {
+    font-size: 42px;
+    font-family: 'Myriad Pro', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    line-height: 1.3em;
+    border-bottom: solid 1.5px #192440;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    color: #192440;
+}
 #details .title {
     text-align: center;
     margin: 15px;
@@ -225,18 +241,6 @@ body {
     text-transform: uppercase;
     color: #3b404f;
 }
-
-#details h1 {
-    font-size: 32px;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    font-weight: 300;
-    line-height: 1.4;
-    text-transform: uppercase;
-    color: #3b404f;
-}
-
 #details .title h2 {
     font-size: 20px;
     margin-bottom: 25px;
