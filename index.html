@@ -28,13 +28,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#sneak_peak">
+                <a class="navbar-brand" href="#sneak-peak">
                     <img alt="logo" class="logo" src="images/City_map_logo_napis.png">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Funkcje</a></li>
+                    <li><a href="#product-info">Funkcje</a></li>
                     <li><a href="#form">Zapis na premierę</a></li>
                     <li><a href="#team">Nasz zespół</a></li>
                     <li><a href="#details">Szczegóły</a></li>
@@ -46,16 +46,16 @@
 <!-------------------------------------------------------------------------------->
 <!----------------------------------Zajawka--------------------------------------->
 <!-------------------------------------------------------------------------------->
-<section id="sneak_peak">
+<section id="sneak-peak">
 
 
-    <div class="feature_z">
-        <img src="images/zajawka2_kom.png" alt="" class="feature_z-phones">
-        <img src="images/zajawka2_Desktop.png" alt="" class="feature_z-desktop">
-        <img src="images/zajawka2_tablet.png" alt="" class="feature_z-tablet">
+    <div class="feature-z">
+        <img src="images/zajawka2_kom.png" alt="" class="feature-z-phones">
+        <img src="images/zajawka2_Desktop.png" alt="" class="feature-z-desktop">
+        <img src="images/zajawka2_tablet.png" alt="" class="feature-z-tablet">
     </div>
 
-    <div class="container feature_z-2">
+    <div class="container feature-z-2">
         <div class="row">
             <p class="col-xs-12 col-md-6 col-lg-6">Z CityMap zobaczysz Szczecin jakiego jeszcze nie znałeś. </p>
             <p class="col-xs-12 col-md-6 col-lg-6">Pozwól nam pokazać Ci jak sprawnie, szybko i w jednym miejscu znaleźć to czego szukasz w naszym pięknym portowym mieście.</p>
@@ -67,9 +67,9 @@
 <!-------------------------------------------------------------------------------->
 <!---------------------------------4ikony---------------------------------------->
 <!-------------------------------------------------------------------------------->
-<section id="4_ikons">
+<section id="product-info">
    
-    <div class="feature-producktInfo">
+    <div class="feature-product-info">
     <div class="container">
        <div class="row">
            <div class="col-lg-3 col-md-3 col-sm-6 ">
@@ -321,8 +321,22 @@
         <p class="copyright">&copy; COPYRIGHT 2018 - CITYMAP</p>
     </div>
 </footer>
-<script src="bootstrap/jquery.min.js"></script>
-<script src="bootstrap/bootstrap.min.js"></script>
 
+<script src="bootstrap/jquery.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></scri
+<script>
+    $(document).ready(function() {
+        $('a[href^="#"]').on('click', function(event) {
+            var target = $( $(this).attr('href') );
+            if (target.length ) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 120
+                }, 2000);
+            }
+        });
+    });
+</script>
 </body>
 </html>
+
