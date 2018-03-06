@@ -132,6 +132,8 @@ body {
     background-color: white;
     min-height: 200px;
     text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30 px;
 }
 
 .feature-product-info  {
@@ -140,6 +142,17 @@ body {
 }
 .img {
     margin: 20px;
+}
+
+i.fa {
+
+    font-size:130px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+h3{
+    padding-bottom: 20px;
 }
 
 /***************************************************************************/
@@ -226,6 +239,9 @@ body {
     font-size:130%;
 
 }
+.btn{
+    margin-bottom: 5px;
+}
 
 .teamtext{
     min-height: 200px;
@@ -241,6 +257,11 @@ body {
 @media (min-width: 992px) and (max-width: 1280px){
 .col-md-3 {
     width: 50%;}
+}
+@media (max-width: 992px){
+    .asiacontainer {
+        padding: 30px 20px 10px 20px;
+    }
 }
 /***************************************************************************/
 /*                    dodatkowe info o produkcie                           */
