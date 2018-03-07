@@ -1,10 +1,10 @@
 body {
-    padding-top: 88px;
+    padding-top: 65px;
 }
 
 @media all and (min-width: 768px) {
     body {
-        padding-top: 120px;
+        padding-top: 85px;
     }
 }
 
@@ -61,68 +61,9 @@ body {
 /***************************************************************************/
 /*                                zajawka                                  */
 /***************************************************************************/
-.feature-z img {
-    width: 100%;
-}
-
-.feature-z-tablet {
-    display: none;
-}
-
-.feature-z-desktop {
-    display: none;
-}
-
-.feature-z-2 {
-    background-image: url(../images/zajawka2_bg.png);
-    background-repeat: repeat-x;
-    width: 100%;
-}
-
-.feature-z-2 p {
-    text-align: center;
-    font-size: 1.7em;
-    color:white;
-    font-family: "Open Sans";
-    text-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.86);
-    padding-bottom: 50px;
-}
-
-.feature-z-2 a {
-    border: white solid;
-    box-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.46);
-    padding: 15px;
-    text-align: center;
-    font-size: 0.8em;
-    color:white;
-    font-family: "Open Sans";
-    margin: 10px;
-    text-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.86);
-}
-@media all and (min-width: 768px) {
-    .feature-z-tablet {
-        display: block;
-    }
-
-    .feature-z-desktop {
-        display: none;
-    }
-
-    .feature-z-phones {
-        display: none;
-    }
-}
-
-@media all and (min-width: 1280px) {
-    .feature-z-tablet {
-        display: none;
-    }
-    .feature-z-desktop {
-        display: block;
-    }
-    .feature-z-phones {
-        display: none;
-    }
+.carousel-inner img {
+    min-height: 600px;
+    object-fit: cover;
 }
 
 /***************************************************************************/
