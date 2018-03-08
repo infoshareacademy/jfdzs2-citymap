@@ -239,6 +239,9 @@ h3{
     font-size:130%;
 
 }
+.btn{
+    margin-bottom: 5px;
+}
 
 .teamtext{
     min-height: 200px;
@@ -298,6 +301,11 @@ h3{
 @media (min-width: 992px) and (max-width: 1280px){
 .col-md-3 {
     width: 50%;}
+}
+@media (max-width: 992px){
+    .asiacontainer {
+        padding: 30px 20px 10px 20px;
+    }
 }
 /***************************************************************************/
 /*                    dodatkowe info o produkcie                           */
