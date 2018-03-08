@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon-icon-36x36.png">>
     <link rel="stylesheet" href="css/style.css">
@@ -28,14 +30,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#sneak_peak">
+                    <a class="navbar-brand" href="#sneak-peak">
                         <img alt="logo" class="logo" src="images/City_map_logo_napis.png">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#">Funkcje</a>
+                            <a href="#product-info">Funkcje</a>
                         </li>
                         <li>
                             <a href="#form">Zapis na premierę</a>
@@ -54,21 +56,20 @@
     <!-------------------------------------------------------------------------------->
     <!----------------------------------Zajawka--------------------------------------->
     <!-------------------------------------------------------------------------------->
-    <section id="sneak_peak">
+    <section id="sneak-peak">
 
 
-        <div class="feature_z">
-            <img src="images/zajawka2_kom.png" alt="" class="feature_z-phones">
-            <img src="images/zajawka2_Desktop.png" alt="" class="feature_z-desktop">
-            <img src="images/zajawka2_tablet.png" alt="" class="feature_z-tablet">
+        <div class="feature-z">
+            <img src="images/zajawka2_kom.png" alt="" class="feature-z-phones">
+            <img src="images/zajawka2_Desktop.png" alt="" class="feature-z-desktop">
+            <img src="images/zajawka2_tablet.png" alt="" class="feature-z-tablet">
         </div>
 
-        <div class="container feature_z-2">
+        <div class="container feature-z-2">
             <div class="row">
                 <p class="col-xs-12 col-md-6 col-lg-6">Z CityMap zobaczysz Szczecin jakiego jeszcze nie znałeś. </p>
                 <p class="col-xs-12 col-md-6 col-lg-6">Pozwól nam pokazać Ci jak sprawnie, szybko i w jednym miejscu znaleźć to czego szukasz w naszym pięknym portowym
-                    mieście.
-                </p>
+                    mieście.</p>
                 <p>
                     <a href="#form">Zapisy na premierę
                         <i class="fas fa-angle-double-down"></i>
@@ -81,27 +82,28 @@
     <!-------------------------------------------------------------------------------->
     <!---------------------------------4ikony---------------------------------------->
     <!-------------------------------------------------------------------------------->
-    <section id="4_ikons">
+    <section id="product-info">
 
-        <div class="feature-producktInfo">
+        <div class="feature-product-info">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <img class="img" src="images/feature-info-icon1.png" />
-                        <p>Przykładowy tekst 1</p>
+                    <div class="col-lg-3 col-md-3 col-sm-6 ">
+                        <i class="fa fa-user-circle-o faa-tada animated " aria-hidden="true"></i>
+                        <h3>Przyjazny dla użytkownika </h3>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <img class="img" src="images/feature-info-icon2.png" />
-                        <p>Przykładowy tekst 2</p>
+                    <div class="col-lg-3 col-md-3 col-sm-6 ">
+                        <i class="fa fa-mobile faa-tada animated " aria-hidden="true"></i>
+                        <h3>Dostosowany do urządzeń mobilnych</h3>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <img class="img" src="images/feature-info-icon3.png" />
-                        <p>Przykładowy tekst 3</p>
+                    <div class="col-lg-3 col-md-3 col-sm-6 ">
+                        <i class="fa fa-map-o faa-tada animated " aria-hidden="true"></i>
+                        <h3>Szybka lokalizacja wybranego miejsca</h3>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <img class="img" src="images/feature-info-icon4.png" />
-                        <p>Przykładowy tekst 4</p>
+                    <div class="col-lg-3 col-md-3 col-sm-6 ">
+                        <i class="fa fa-clock-o faa-tada animated " aria-hidden="true"></i>
+                        <h3>Oszczędność czasu</h3>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -153,124 +155,140 @@
 
         <section class="container text-center sec-title text-center wow fadeInUp animated">
             <div class="row equal teampart">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
+                    <a href="#demo" data-toggle="collapse">
+                        <img src="images/Kasia.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
+                    </a>
+                    <p class="text-center namepadding">
+                        <strong>Kasia S.</strong>
+                    </p>
+                    <div id="demo" class="collapse">
+                        <div class="teamtext">
+                            <p>Z zawodu architekt</p>
+                            <p>Pije dużo zielonej herbaty, uczy się kodowania</p>
+                            <p>Nie znosi nudy, ani siedzenia w miejscu </p>
+                            <p>Jest zawsze krok do przodu</p>
+                        </div>
+
+                        <a href="https://github.com/katarzyna-stepczynska" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-github"></span> GitHub
+                            </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/katarzynastepczynska/" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-linkedin-square"></span> LinkedIn
+                            </button>
+                        </a>
+                        <a href="#" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-user-circle"></span> O mnie
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
 
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
-                    <div id="flip-container">
-                        <div id="flip-card" class="shadow">
-                            <div class="front face">
-                                <img src="images/Kasia.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
-                            </div>
-                            <div class=" img-circle back face center ">
+                    <a href="#demo2" data-toggle="collapse">
+                        <img src="images/Asia.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
+                    </a>
+                    <p class="text-center namepadding">
+                        <strong>Asia D.</strong>
+                    </p>
+                    <div id="demo2" class="collapse">
+                        <div class="teamtext">
+                            <p>Zakochana w podróżach</p>
+                            <p>Roztrzepana i zawsze w biegu</p>
+                            <p>Pilnie uczy się kodowania,</p>
+                            <p>wiążąc z nim swoją przyszłość</p>
+                        </div>
 
-                                <a href="https://github.com/katarzyna-stepczynska" target="_blank">
-                                    <button type="button" class="btn btn-default">
-                                        <span class="fa fa-github"></span>
-                                    </button>
-                                </a>
-                                <a href="https://www.linkedin.com/in/katarzynastepczynska/" target="_blank">
-                                    <button type="button" class="btn btn-default">
-                                        <span class="fa fa-linkedin-square"></span>
-                                    </button>
-                                </a>
-                                <a href="https://www.linkedin.com/in/katarzynastepczynska/" target="_blank">
-                                    <button type="button" class="btn btn-default">
-                                        <span class="fa fa-user"></span>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
+                        <a href="https://github.com/JoannaDS" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-github"></span> GitHub
+                            </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joanna-dabrowska-slaby-bb2723ab/" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-linkedin-square"></span> LinkedIn
+                            </button>
+                        </a>
+                        <a href="#" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-user-circle"></span> O mnie
+                            </button>
+                        </a>
                     </div>
-                    <p class="text-center namepadding">
-                        <strong>Kasia</strong>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
-                    <div id="flip-container">
-                        <div id="flip-card" class="shadow">
-                            <div class="front face">
-                                <img src="images/Asia.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
-                            </div>
-                            <div class="img-circle back face center">
-                                <a href="https://github.com/JoannaDS" target="_blank">
-                                    <button type="button" class="btn btn-default">
-                                        <span class="fa fa-github"></span>
-                                    </button>
-                                </a>
-                                <a href="https://www.linkedin.com/in/joanna-dabrowska-slaby-bb2723ab/" target="_blank">
-                                    <button type="button" class="btn btn-default">
-                                        <span class="fa fa-linkedin-square"></span>
-                                    </button>
-                                </a>
-                                <a href="https://www.linkedin.com/in/joanna-dabrowska-slaby-bb2723ab/" target="_blank">
-                                    <button type="button" class="btn btn-default">
-                                        <span class="fa fa-user"></span>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-center namepadding">
-                        <strong>Asia</strong>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
-                    <div id="flip-container">
-                        <div id="flip-card" class="shadow">
-                            <div class="front face">
-                                <img src="images/Patryk.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
-                            </div>
-                            <div class="img-circle back face center">
-                                <a href="https://github.com/patrykmielcarz" target="_blank">
-                                    <button type="button" class="btn btn-default">
-                                        <span class="fa fa-github"></span>
-                                    </button>
-                                </a>
-                                <a href="https://github.com/patrykmielcarz" target="_blank">
-                                    <button type="button" class="btn btn-default">
-                                        <span class="fa fa-linkedin-square"></span>
-                                    </button>
-                                </a>
-                                <a href="https://github.com/patrykmielcarz" target="_blank">
-                                    <button type="button" class="btn btn-default">
-                                        <span class="fa fa-user"></span>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-center namepadding">
-                        <strong>Patryk</strong>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
-                    <div id="flip-container">
-                        <div id="flip-card" class="shadow">
-                            <div class="front face">
-                                <img src="images/Bartek.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
-                            </div>
-                            <div class="img-circle back face center">
-                                <a href="https://github.com/BartoszSierakowski" target="_blank">
-                                    <button type="button" class="btn btn-default">
-                                        <span class="fa fa-github"></span>
-                                    </button>
-                                </a>
-                                <a href="https://www.linkedin.com/in/bartosz-sierakowski-281445101/" target="_blank">
-                                    <button type="button" class="btn btn-default">
-                                        <span class="fa fa-linkedin-square"></span>
-                                    </button>
-                                </a>
-                                <a href="https://www.linkedin.com/in/bartosz-sierakowski-281445101/" target="_blank">
-                                    <button type="button" class="btn btn-default">
-                                        <span class="fa fa-user"></span>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-center namepadding">
-                        <strong>Bartek</strong>
                 </div>
 
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
+                    <a href="#demo3" data-toggle="collapse">
+                        <img src="images/Patryk.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
+                    </a>
+                    <p class="text-center namepadding">
+                        <strong>Patryk M.</strong>
+                    </p>
+                    <div id="demo3" class="collapse">
+                        <div class="teamtext">
+                            <p>Fajny chłopak.</p>
+                            <p>Nie chciał mi dać swoich danych.</p>
+                            <p>Więc jest co jest.</p>
+                            <p>Czekam na info.</p>
+                        </div>
+
+                        <a href="https://github.com/patrykmielcarz" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-github"></span> GitHub
+                            </button>
+                        </a>
+                        <a href="#" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-linkedin-square"></span> LinkedIn
+                            </button>
+                        </a>
+                        <a href="#" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-user-circle"></span> O mnie
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
+                    <a href="#demo4" data-toggle="collapse">
+                        <img src="images/Bartek.jpg" class="img-circle team" alt="Random Name" width="200" height="200">
+                    </a>
+                    <p class="text-center namepadding">
+                        <strong>Bartek S.</strong>
+                    </p>
+                    <div id="demo4" class="collapse">
+                        <div class="teamtext">
+                            <p>Fajny chłopak</p>
+                            <p>Nie chciał mi dać swoich danych</p>
+                            <p>Więc jest co jest.</p>
+                            <p>Czekam na info</p>
+                        </div>
+
+                        <a href="https://github.com/BartoszSierakowski" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-github"></span> GitHub
+                            </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bartosz-sierakowski-281445101/" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-linkedin-square"></span> LinkedIn
+                            </button>
+                        </a>
+                        <a href="#" target="_blank">
+                            <button type="button" class="btn btn-default">
+                                <span class="fa fa-user-circle"></span> O mnie
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
-
     </section>
 
     <!-------------------------------------------------------------------------------->
@@ -322,8 +340,7 @@
                             <li>
                                 <p>
                                     <span class="glyphicon glyphicon-arrow-right"></span> Sprawdzisz jakie są jeszcze inne obiekty w pobliżu zlokalizowanego przez ciebie
-                                    miejsca
-                                </p>
+                                    miejsca</p>
                             </li>
                         </ul>
                     </div>
@@ -393,8 +410,22 @@
             <p class="copyright">&copy; COPYRIGHT 2018 - CITYMAP</p>
         </div>
     </footer>
+
     <script src="bootstrap/jquery.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
+            <script>
+            $(document).ready(function () {
+                $('a[href^="#"]').on('click', function (event) {
+                    var target = $($(this).attr('href'));
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top - 120
+                        }, 2000);
+                    }
+                });
+            });
+    </script>
 </body>
 
 </html>
