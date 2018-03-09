@@ -222,65 +222,74 @@ body {
 /***************************************************************************/
 /*                    dodatkowe info o produkcie                           */
 /***************************************************************************/
-#details .main-title h1 {
-    font-size: 42px;
-    font-family: 'Myriad Pro', sans-serif;
-    text-align: center;
-    margin-top: 30px;
-    font-weight: 600;
-    line-height: 1.3em;
-    border-bottom: solid 1.5px #192440;
-    padding-bottom: 30px;
-    text-transform: uppercase;
-    color: #192440;
+#details{
+    background-color: #daf8e5;
+    padding-bottom: 40px;
 }
-#details .title {
+#details .main-title h1 {
+     font-size: 32px;
+     font-family: 'Myriad Pro', sans-serif;
+     text-align: center;
+     margin-top: 30px;
+     font-weight: 600;
+     line-height: 1.3em;
+     padding-bottom: 20px;
+     text-transform: uppercase;
+     color: #192440;
+ }
+#details .title h2 {
     text-align: center;
     margin: 15px;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    color: #3b404f;
-}
-#details .title h2 {
+    color: #192440;
     font-size: 20px;
     margin-bottom: 25px;
-    font-weight: 300;
-    font-family: 'Open Sans', sans-serif;;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Myriad Pro', sans-serif;
+    border-bottom: solid 1.5px #192440;
+    border-top: solid 1.5px #192440;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
-#details .box1, .box2 {
-    margin-bottom: 60px;
-}
-#details .style1 {
-    padding: 0;
-}
-#details .style1 li {
-    list-style: none;
-    border-top: solid 1px lightgray;
-}
-#details .style1 li p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 300;
-    line-height: 40px;
-}
-#details .img {
-    text-align: center;
-}
-#details .icon {
-    width: 60px;
-    height: 60px;
-    opacity: 0.8;
-}
-
 #details .function{
     padding-right: 40px;
     padding-left: 40px;
 }
-#details{
-    background-color: #daf8e5;
-    padding-bottom: 40px;
+#details .box{
+    margin-bottom: 15px;
+    text-align: center;
+}
+/*#details .style1 {*/
+    /*padding: 0;*/
+/*}*/
+/*#details .style1 li {*/
+    /*list-style: none;*/
+    /*border-top: solid 1px lightgray;*/
+
+#details .icon {
+    border: 1px solid #192440;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    z-index: 1;
+    text-align: center;
+}
+#details .image-icon {
+    margin-top: 13px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #192440;
+}
+#details .icon-text{
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #192440;
+    text-align: center;
 }
 /***************************************************************************/
 /*                                footer                                   */
