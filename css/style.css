@@ -286,7 +286,7 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
-    background: rgba(256, 256, 256, 0.6);
+    background: #192440;
     margin: 0;
     width: 100%;
     display: none;
@@ -294,20 +294,23 @@ body {
 }
 #cookie-warn .cookie-icon {
     padding-top: 1.6rem;
+    margin: 0 auto;
+    text-align: center;
 }
 #cookie-warn .cookie-info p{
      font-size: 16px;
-     color: #333;
+     color: white;
      margin-top: 15px;
      font-family: 'Myriad Pro', sans-serif;
  }
 #cookie-warn a{
     float: right;
-    color: #192440;
+    color: white;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: bold;
     font-family: 'Myriad Pro', sans-serif;
+    margin-top: 15px;
     margin-bottom: 5px;
 }
 #cookie-warn a:hover{
@@ -318,9 +321,9 @@ body {
     font-size: 18px;
     font-weight: bold;
     font-family: 'Myriad Pro', sans-serif;
+    margin-top: 15px;
     margin-bottom: 5px;
 }
-
 /***************************************************************************/
 /*                                footer                                   */
 /***************************************************************************/
