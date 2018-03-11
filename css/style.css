@@ -25,10 +25,6 @@ body {
     padding-top: 50px;
 }
 
-/*.navbar-default .navbar-nav>li:hover {*/
-    /*background-color: blue;*/
-/*}*/
-
 .navbar-default .navbar-nav>li>a:hover {
     color: blue;
 }
@@ -139,21 +135,34 @@ body {
     }
 }
 
- /***************************************************************************/
-/*                         4 ikony                              */
 /***************************************************************************/
-.feature-productInfo {
+/*                         4 ikony                                         */
+/***************************************************************************/
+.feature-product-info {
     background-color: white;
     min-height: 200px;
     text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
-.feature-productInfo  {
+.feature-product-info  {
     color: #757575;
     margin: 10px;
 }
 .img {
     margin: 20px;
+}
+
+i.fa {
+
+    font-size:130px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+h3{
+    padding-bottom: 20px;
 }
 
 /***************************************************************************/
@@ -220,14 +229,14 @@ body {
     border-color: #a5f8c3;
 }
 .namepadding{
-    
+
     font-size: 200%;
     color: #757575;
 }
 .teampart{
     background-color: rgb(255, 255, 255);
     padding-bottom:40px;
-   
+
 }
 .asiacontainer {
     padding: 60px 120px 20px 120px;
@@ -239,6 +248,9 @@ body {
     padding: 20px;
     font-size:130%;
 
+}
+.btn{
+    margin-bottom: 5px;
 }
 
 .teamtext{
@@ -253,8 +265,13 @@ body {
 
 
 @media (min-width: 992px) and (max-width: 1280px){
-.col-md-3 {
-    width: 50%;}
+    .col-md-3 {
+        width: 50%;}
+}
+@media (max-width: 992px){
+    .asiacontainer {
+        padding: 30px 20px 10px 20px;
+    }
 }
 /***************************************************************************/
 /*                    dodatkowe info o produkcie                           */
@@ -324,7 +341,7 @@ body {
 /***************************************************************************/
 .panel-footer {
     font-size: 20px;
-    background-color: #757575;
+    background-color: #192440;
     color: white;
     padding: 50px;
 }
@@ -332,21 +349,16 @@ body {
 /***************************************************************************/
 /*                         scroll to top button                            */
 /***************************************************************************/
-.scroll-to-top {
+
+.fa-arrow-circle-o-up {
+    font-size: 60px;
     position: fixed;
     opacity: 0;
     visibility: hidden;
     overflow: hidden;
     text-align: center;
-    z-index: 99999999;
-    background-color: #777777;
-    color: #eeeeee;
-    width: 50px;
-    height: 48px;
-    line-height: 48px;
     right: 30px;
     bottom: 30px;
-    padding-top: 5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -357,14 +369,9 @@ body {
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-.scroll-to-top:hover {
-    background-color: #888888;
-}
-.scroll-to-top.show {
+
+.fa-arrow-circle-o-up.show {
     visibility:visible;
     cursor:pointer;
-    opacity: 0.4;
-}
-.scroll-to-top i.fa {
-    line-height: inherit;
+    opacity: 0.5;
 }

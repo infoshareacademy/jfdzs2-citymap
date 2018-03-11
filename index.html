@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon-icon-36x36.png">
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
+    <link rel="shortcut icon" href="images/favicon-icon-36x36.png">
+    <link rel="stylesheet" href="css/style.css">
     <title>City Map</title>
 </head>
 <body>
@@ -69,28 +70,29 @@
 <!---------------------------------4ikony---------------------------------------->
 <!-------------------------------------------------------------------------------->
 <section id="product-info">
-   
-    <div class="feature-productInfo">
-    <div class="container">
-       <div class="row">
-           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-               <img class="img" src="images/feature-info-icon1.png"/>
-               <p>Przykładowy tekst 1</p>
-           </div>
-           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-               <img class="img" src="images/feature-info-icon2.png"/>
-               <p>Przykładowy tekst 2</p>
-           </div>
-           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-               <img class="img" src="images/feature-info-icon3.png"/>
-               <p>Przykładowy tekst 3</p>
-           </div>
-           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-               <img class="img" src="images/feature-info-icon4.png"/>
-               <p>Przykładowy tekst 4</p>
-           </div>
-       </div>
-    </div>
+
+    <div class="feature-product-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 ">
+                    <i class="fa fa-user-circle-o faa-tada animated " aria-hidden="true"></i>
+                    <h3>Przyjazny dla użytkownika </h3>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 ">
+                    <i class="fa fa-mobile faa-tada animated " aria-hidden="true"></i>
+                    <h3>Dostosowany do urządzeń mobilnych</h3>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 ">
+                    <i class="fa fa-map-o faa-tada animated " aria-hidden="true"></i>
+                    <h3>Szybka lokalizacja wybranego miejsca</h3>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 ">
+                    <i class="fa fa-clock-o faa-tada animated " aria-hidden="true"></i>
+                    <h3>Oszczędność czasu</h3>
+                </div>
+
+            </div>
+        </div>
     </div>
 </section>
 <!-------------------------------------------------------------------------------->
@@ -116,7 +118,7 @@
                             <label for="email">E-mail:</label>
                             <input type="email" class="form-control" id="email" placeholder="Wpisz adres e-mail...">
                         </div>
-        <div class="col-md-12"><button type="submit" class="btn btnpremiera">Wyślij</button></div>
+                        <div class="col-md-12"><button type="submit" class="btn btnpremiera">Wyślij</button></div>
                     </div>
                 </form>
             </div>
@@ -132,8 +134,8 @@
         <p><em>Sprawdź naszą aplikację już dziś!</em></p><br>
         <p>Stworzyli ją dla Ciebie:</p>
     </div>
-  
-    <section class="container-fluid text-center sec-title text-center wow fadeInUp animated">
+
+    <section class="container text-center sec-title text-center wow fadeInUp animated">
         <div class="row equal teampart">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
                 <a href="#demo" data-toggle="collapse">
@@ -148,22 +150,22 @@
                         <p>Jest zawsze krok do przodu</p>
                     </div>
 
-                    <a href="https://web.facebook.com/kate.step" target="_blank">
-                        <button type="button" class="btn btn-default">
-                            <span class="fa fa-facebook"></span> Facebook
-                          </button>
-                    </a>
                     <a href="https://github.com/katarzyna-stepczynska" target="_blank">
                         <button type="button" class="btn btn-default">
                             <span class="fa fa-github"></span> GitHub
-                          </button>
+                        </button>
                     </a>
                     <a href="https://www.linkedin.com/in/katarzynastepczynska/" target="_blank">
                         <button type="button" class="btn btn-default">
-                            <span class="fa fa-facebook"></span> Facebook
-                          </button>
+                            <span class="fa fa-linkedin-square"></span> LinkedIn
+                        </button>
                     </a>
-                    
+                    <a href="#" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-user-circle"></span> O mnie
+                        </button>
+                    </a>
+
                 </div>
             </div>
 
@@ -173,27 +175,28 @@
                 </a>
                 <p class="text-center namepadding"><strong>Asia D.</strong></p>
                 <div id="demo2" class="collapse">
-                        <div class="teamtext">
-                            <p>Zakochana w podróżach</p>
-                            <p>Roztrzepana i zawsze w biegu</p>
-                            <p>Pilnie uczy się kodowania,</p>
-                            <p>wiążąc z nim swoją przyszłość</p>
-                           </div> 
-                    <a href="https://web.facebook.com/joanna.ds.14" target="_blank">
+                    <div class="teamtext">
+                        <p>Zakochana w podróżach</p>
+                        <p>Roztrzepana i zawsze w biegu</p>
+                        <p>Pilnie uczy się kodowania,</p>
+                        <p>wiążąc z nim swoją przyszłość</p>
+                    </div>
+
+                    <a href="https://github.com/JoannaDS" target="_blank">
                         <button type="button" class="btn btn-default">
-                            <span class="fa fa-facebook"></span> Facebook
-                          </button>
-                          </a>
-                          <a href="https://github.com/JoannaDS" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-github"></span> GitHub
-                              </button>
-                        </a>
-                        <a href="https://www.linkedin.com/in/joanna-dabrowska-slaby-bb2723ab/" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-linkedin-square"></span> LinkedIn
-                              </button>
-                        </a>
+                            <span class="fa fa-github"></span> GitHub
+                        </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/joanna-dabrowska-slaby-bb2723ab/" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-linkedin-square"></span> LinkedIn
+                        </button>
+                    </a>
+                    <a href="#" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-user-circle"></span> O mnie
+                        </button>
+                    </a>
                 </div>
             </div>
 
@@ -203,27 +206,28 @@
                 </a>
                 <p class="text-center namepadding"><strong>Patryk M.</strong></p>
                 <div id="demo3" class="collapse">
-                        <div class="teamtext">
-                            <p>Fajny chłopak.</p>
-                            <p>Nie chciał mi dać swoich danych.</p>
-                            <p>Więc jest co jest.</p>
-                            <p>Czekam na info.</p>
-                            </div>
-                    <a href="https://web.facebook.com/hrs.szn" target="_blank">
+                    <div class="teamtext">
+                        <p>Fajny chłopak.</p>
+                        <p>Nie chciał mi dać swoich danych.</p>
+                        <p>Więc jest co jest.</p>
+                        <p>Czekam na info.</p>
+                    </div>
+
+                    <a href="https://github.com/patrykmielcarz" target="_blank">
                         <button type="button" class="btn btn-default">
-                            <span class="fa fa-facebook"></span> Facebook
-                          </button>
-                          </a>
-                          <a href="https://github.com/patrykmielcarz" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-github"></span> GitHub
-                              </button>
-                        </a>
-                        <a href="#" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-linkedin-square"></span> LinkedIn
-                              </button>
-                        </a>
+                            <span class="fa fa-github"></span> GitHub
+                        </button>
+                    </a>
+                    <a href="#" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-linkedin-square"></span> LinkedIn
+                        </button>
+                    </a>
+                    <a href="#" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-user-circle"></span> O mnie
+                        </button>
+                    </a>
                 </div>
             </div>
 
@@ -233,27 +237,28 @@
                 </a>
                 <p class="text-center namepadding"><strong>Bartek S.</strong></p>
                 <div id="demo4" class="collapse">
-                        <div class="teamtext">
-                            <p>Fajny chłopak</p>
-                            <p>Nie chciał mi dać swoich danych</p>
-                            <p>Więc jest co jest.</p>
-                            <p>Czekam na info</p>
-                           </div> 
-                    <a href="https://web.facebook.com/bartosz.sierakowski.9" target="_blank">
+                    <div class="teamtext">
+                        <p>Fajny chłopak</p>
+                        <p>Nie chciał mi dać swoich danych</p>
+                        <p>Więc jest co jest.</p>
+                        <p>Czekam na info</p>
+                    </div>
+
+                    <a href="https://github.com/BartoszSierakowski" target="_blank">
                         <button type="button" class="btn btn-default">
-                            <span class="fa fa-facebook"></span> Facebook
-                          </button>
-                          </a>
-                          <a href="https://github.com/BartoszSierakowski" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-github"></span> GitHub
-                              </button>
-                        </a>
-                        <a href="https://www.linkedin.com/in/bartosz-sierakowski-281445101/" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-linkedin-square"></span> LinkedIn
-                              </button>
-                        </a>
+                            <span class="fa fa-github"></span> GitHub
+                        </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bartosz-sierakowski-281445101/" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-linkedin-square"></span> LinkedIn
+                        </button>
+                    </a>
+                    <a href="#" target="_blank">
+                        <button type="button" class="btn btn-default">
+                            <span class="fa fa-user-circle"></span> O mnie
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -290,24 +295,23 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="box2">
-                        <div class="img"><img class="icon" src="images/location.png"></div>
-                            <div class="title">
-                                <h2>Pomoże znaleźć:</h2>
-                            </div>
-                            <ul class="style1">
-                                <li><p><span class="glyphicon glyphicon-plus"></span> Apteki</p></li>
-                                <li><p><span class="glyphicon glyphicon-cutlery"></span> Restauracje</p></li>
-                                <li><p><span class="glyphicon glyphicon-bed"></span> Hotele</p></li>
-                                <li><p><span class="glyphicon glyphicon-shopping-cart"></span> Sklepy</p></li>
-                                <li><p><span class="glyphicon glyphicon-piggy-bank"></span> Banki</p></li>
-                                <li><p><span class="glyphicon glyphicon-usd"></span> Bankomaty</p></li>
-                                <li><p><span class="glyphicon glyphicon-leaf"></span> Parki</p></li>
-                                <li><p><span class="glyphicon glyphicon-education"></span> Obiekty sportowe</p></li>
-                                <li><p><span class="glyphicon glyphicon-picture"></span> Muzea</p></li>
-                                <li><p><span class="glyphicon glyphicon-music"></span> Imprezy</p></li>
-                                <li><p><span class="glyphicon glyphicon-film"></span> Kina</p></li>
-                            </ul>
+                    <div class="img"><img class="icon" src="images/location.png"></div>
+                    <div class="title">
+                        <h2>Pomoże znaleźć:</h2>
                     </div>
+                    <ul class="style1">
+                        <li><p><span class="glyphicon glyphicon-plus"></span> Apteki</p></li>
+                        <li><p><span class="glyphicon glyphicon-cutlery"></span> Restauracje</p></li>
+                        <li><p><span class="glyphicon glyphicon-bed"></span> Hotele</p></li>
+                        <li><p><span class="glyphicon glyphicon-shopping-cart"></span> Sklepy</p></li>
+                        <li><p><span class="glyphicon glyphicon-piggy-bank"></span> Banki</p></li>
+                        <li><p><span class="glyphicon glyphicon-usd"></span> Bankomaty</p></li>
+                        <li><p><span class="glyphicon glyphicon-leaf"></span> Parki</p></li>
+                        <li><p><span class="glyphicon glyphicon-education"></span> Obiekty sportowe</p></li>
+                        <li><p><span class="glyphicon glyphicon-picture"></span> Muzea</p></li>
+                        <li><p><span class="glyphicon glyphicon-music"></span> Imprezy</p></li>
+                        <li><p><span class="glyphicon glyphicon-film"></span> Kina</p></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -327,15 +331,10 @@
 <!-------------------------------------------------------------------------------->
 <!-------------------------scroll to top button----------------------------------->
 <!-------------------------------------------------------------------------------->
-<div class="scroll-to-top">
-	<span class="scroll-top-inner">
-		<i class="fa fa-2x fa-arrow-circle-up"></i>
-	</span>
-</div>
-
+<span class="scroll-to-top fa fa-arrow-circle-o-up"></span>
 
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
+
 </body>
 </html>
-
