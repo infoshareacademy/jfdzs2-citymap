@@ -343,7 +343,12 @@ h3{
     font-size: 20px;
     background-color: #192440;
     color: white;
-    padding: 50px;
+    padding-top: 20px;
+}
+@media all and (min-width: 768px) {
+    .panel-footer {
+        padding: 50px;
+    }
 }
 
 /***************************************************************************/
