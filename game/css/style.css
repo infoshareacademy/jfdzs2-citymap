@@ -1,0 +1,62 @@
+body{
+    background-color:#192440;
+    height: 100%;
+    
+    
+}
+#board {
+    width:720px;
+    height:540px;
+    border: #9CFFFC solid 1px;
+    background-color: #192440;
+    margin:0 auto;
+    margin-top: 80px;
+  }
+  
+#board > div {
+    background-color: #f1f1f1;
+    width: 150px;
+    margin: 15px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 30px;
+    float:left;
+  }
+  #box1{
+        background-image: url("../images/1-kosciol krolowej korony polskiejv2.jpg");
+        background-repeat: no-repeat;
+        width:150px;
+        height:150px;
+  }
+  #box2{
+    background-image: url("../images/2-teatr letniv2.jpg");
+    background-repeat: no-repeat;
+    width:150px;
+    height:150px;
+}
+#box3{
+    background-image: url("../images/1-kosciol krolowej korony polskiejv2.jpg");
+    background-repeat: no-repeat;
+    width:150px;
+    height:150px;
+}
+#box4{
+    background-image: url("../images/2-teatr letniv2.jpg");
+    background-repeat: no-repeat;
+    width:150px;
+    height:150px;
+}
+#box5{
+    background-image: url("../images/1-kosciol krolowej korony polskiejv2.jpg");
+    background-repeat: no-repeat;
+    width:150px;
+    height:150px;
+}
+#box6{
+    background-image: url("../images/1-kosciol krolowej korony polskiejv2.jpg");
+    background-repeat: no-repeat;
+    width:150px;
+    height:150px;
+}
+
+  
