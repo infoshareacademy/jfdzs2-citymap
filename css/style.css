@@ -62,7 +62,7 @@ body {
 /*                                zajawka                                  */
 /***************************************************************************/
 .carousel-inner img {
-    min-height: 600px;
+    min-height: 500px;
     object-fit: cover;
 }
 
