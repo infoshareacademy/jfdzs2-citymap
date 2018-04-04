@@ -5,12 +5,16 @@ body{
     
 }
 #board {
-    width:720px;
-    height:540px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 40%;
     border: #9CFFFC solid 1px;
     background-color: #192440;
     margin:0 auto;
     margin-top: 80px;
+ 
+    
   }
   
 #board > div {
@@ -21,6 +25,7 @@ body{
     line-height: 150px;
     font-size: 30px;
     float:left;
+    border: #9CFFFC solid 1px;
   }
   #box1{
         background-image: url("../images/1-kosciol krolowej korony polskiejv2.jpg");
