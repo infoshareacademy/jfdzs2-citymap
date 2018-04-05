@@ -12,14 +12,15 @@ body{
     border: #9CFFFC solid 1px;
     background-color: #192440;
     margin:0 auto;
-    margin-top: 40px;
+    margin-top: 20px;
  
     
   }
   
 #board > div {
-    background-color: #f1f1f1;
+    background-color: #9CFFFC;
     width: 150px;
+    height: 150px;
     margin: 15px;
     text-align: center;
     line-height: 150px;
