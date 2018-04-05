@@ -66,6 +66,20 @@ body {
     object-fit: cover;
 }
 
+.carousel-caption {
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    font-family: 'Myriad Pro', sans-serif;
+    margin-bottom: 15%;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 0%;
+}
+
+.carousel-caption h3 {
+    font-size: 40px;
+}
+
 /***************************************************************************/
 /*                         4 ikony                                         */
 /***************************************************************************/
