@@ -1,5 +1,11 @@
 body {
-    padding-top: 120px;
+    padding-top: 88px;
+}
+
+@media all and (min-width: 768px) {
+    body {
+        padding-top: 120px;
+    }
 }
 
 /***************************************************************************/
@@ -7,7 +13,6 @@ body {
 /***************************************************************************/
 .navbar-default {
     background-color: #757575;
-    min-height:120px;
 }
 
 .navbar-brand {
@@ -20,39 +25,61 @@ body {
     padding-top: 50px;
 }
 
-.navbar-header{
-    height:120px;
-}
 .navbar-toggle{
     padding: 20px 20px;
     margin-top: 20px;
     margin-right: 40px
 }
+
 .logo {
-    height: 50px;
+    height: 25px;
+}
+
+@media all and (min-width: 288px) {
+    .logo {
+        height: 30px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .logo {
+        height: 50px;
+    }
+    .navbar-default {
+        min-height:120px;
+    }
+    .navbar-header{
+        height:120px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .navbar-default .navbar-nav > li > a {
+        font-size: 15px;
+    }
 }
 /***************************************************************************/
 /*                                zajawka                                  */
 /***************************************************************************/
-.feature_z img {
+.feature-z img {
     width: 100%;
 }
 
-.feature_z-tablet {
+.feature-z-tablet {
     display: none;
 }
 
-.feature_z-desktop {
+.feature-z-desktop {
     display: none;
 }
 
-.feature_z-2 {
+.feature-z-2 {
     background-image: url(../images/zajawka2_bg.png);
     background-repeat: repeat-x;
     width: 100%;
 }
 
-.feature_z-2 p {
+.feature-z-2 p {
     text-align: center;
     font-size: 1.7em;
     color:white;
@@ -61,7 +88,7 @@ body {
     padding-bottom: 50px;
 }
 
-.feature_z-2 a {
+.feature-z-2 a {
     border: white solid;
     box-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.46);
     padding: 15px;
@@ -73,41 +100,43 @@ body {
     text-shadow: 0px 6px 8.64px rgba(0, 0, 0, 0.86);
 }
 @media all and (min-width: 768px) {
-    .feature_z-tablet {
+    .feature-z-tablet {
         display: block;
     }
 
-    .feature_z-desktop {
+    .feature-z-desktop {
         display: none;
     }
 
-    .feature_z-phones {
+    .feature-z-phones {
         display: none;
     }
 }
 
 @media all and (min-width: 1280px) {
-    .feature_z-tablet {
+    .feature-z-tablet {
         display: none;
     }
-    .feature_z-desktop {
+    .feature-z-desktop {
         display: block;
     }
-    .feature_z-phones {
+    .feature-z-phones {
         display: none;
     }
 }
 
- /***************************************************************************/
-/*                         4 ikony                              */
 /***************************************************************************/
-.feature-producktInfo {
+/*                         4 ikony                                         */
+/***************************************************************************/
+.feature-product-info {
     background-color: white;
     min-height: 200px;
     text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30 px;
 }
 
-.feature-producktInfo  {
+.feature-product-info  {
     color: #757575;
     margin: 10px;
 }
@@ -115,56 +144,70 @@ body {
     margin: 20px;
 }
 
+i.fa {
+
+    font-size:130px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+h3{
+    padding-bottom: 20px;
+}
+
 /***************************************************************************/
 /*                         zapis na premierę                               */
 /***************************************************************************/
 .registration {
-    padding: 0;
-    background-image: url("../images/spear.png");
+    background-image: url("../images/form-background.png");
     opacity: 0.95;
-    min-height: 550px;
-    border: solid 10px #a5f8c3;
+    min-height: 650px;
     padding-top: 140px;
     width: 100%;
 }
 .registration h2 {
-    font-size: 32px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
+    font-size: 42px;
+    font-family: "Myriad Pro", sans-serif;
+    color: white;
+    font-weight: 600;
     text-align: center;
+    line-height: 1.3em;
+    border-bottom: solid 1.5px #9CFFFC;
+    margin-bottom: 15px;
 }
 .registration p {
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(41, 40, 40);
-    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: lighter;
+    color: #9CFFFC;
     text-align: center;
 }
 .registration .form-group label{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
+    padding-top: 15px;
+    color: white;
+    font-size: 21px;
+    font-family: 'Myriad Pro', sans-serif;
     font-weight: 500;
     text-align: center;
 }
 .registration .form-control {
-    background: rgba(256, 256, 256, 0.6);
-    color: #ffffff;
+    background: rgba(256, 256, 256, 0);
+    color: white;
     text-align: center;
-    border: solid #a5f8c3 2px;
-    font-size: 16px;
-
+    border: solid #9CFFFC 1px;
+    border-radius: 21px;
+    font-size: 20px;
 }
 .registration .btnpremiera {
-    background: #a5f8c3;
+    margin-top: 15px;
+    background: #9CFFFC;
+    border-radius: 21px;
     color: black;
     width: 100%;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    font-family: 'Myriad Pro', sans-serif;
     font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 140px;
+    margin-bottom: 100px;
 }
 /***************************************************************************/
 /*                            info o zespole                               */
@@ -200,6 +243,9 @@ body {
     font-size:130%;
 
 }
+.btn{
+    margin-bottom: 5px;
+}
 
 .teamtext{
     min-height: 200px;
@@ -210,74 +256,133 @@ body {
     display: -webkit-flex;
     flex-wrap: wrap;
 }
+.btn-default{
+    width:50%;
+    margin-bottom:10px;
+}
+.fa {
+    font-size: 200%;
+}
 
-
+#flip-container {
+    position: relative;
+    margin: 10px auto;
+    width: 255px;
+    height: 255px;
+    z-index: 1;
+  }
+  #flip-container {
+    perspective: 1000;
+  }
+  #flip-card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.6s linear;
+    border-radius: 50%;
+  }
+  #flip-container:hover #flip-card {
+    transform: rotateY(180deg);
+ 
+  }
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #aaa;
+    padding-top:50px;
+  }
+ 
 @media (min-width: 992px) and (max-width: 1280px){
 .col-md-3 {
     width: 50%;}
 }
+@media (max-width: 992px){
+    .asiacontainer {
+        padding: 30px 20px 10px 20px;
+    }
+}
 /***************************************************************************/
 /*                    dodatkowe info o produkcie                           */
 /***************************************************************************/
-#details .title {
+#details{
+    background-color: #daf8e5;
+    padding-bottom: 40px;
+}
+#details .main-title h1 {
+     font-size: 32px;
+     font-family: 'Myriad Pro', sans-serif;
+     text-align: center;
+     margin-top: 30px;
+     font-weight: 600;
+     line-height: 1.3em;
+     padding-bottom: 20px;
+     text-transform: uppercase;
+     color: #192440;
+ }
+#details .title h2 {
     text-align: center;
     margin: 15px;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    color: #3b404f;
-}
-
-#details h1 {
-    font-size: 32px;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    font-weight: 300;
-    line-height: 1.4;
-    text-transform: uppercase;
-    color: #3b404f;
-}
-
-#details .title h2 {
+    color: #192440;
     font-size: 20px;
     margin-bottom: 25px;
-    font-weight: 300;
-    font-family: 'Open Sans', sans-serif;;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Myriad Pro', sans-serif;
+    border-bottom: solid 1.5px #192440;
+    border-top: solid 1.5px #192440;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
-#details .box1, .box2 {
-    margin-bottom: 60px;
-}
-#details .style1 {
-    padding: 0;
-}
-#details .style1 li {
-    list-style: none;
-    border-top: solid 1px lightgray;
-}
-#details .style1 li p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 300;
-    line-height: 40px;
-}
-#details .img {
-    text-align: center;
-}
-#details .icon {
-    width: 60px;
-    height: 60px;
-    opacity: 0.8;
-}
-
 #details .function{
     padding-right: 40px;
     padding-left: 40px;
 }
-#details{
-    background-color: #daf8e5;
-    padding-bottom: 40px;
+#details .box{
+    margin-bottom: 15px;
+    text-align: center;
+}
+/*#details .style1 {*/
+    /*padding: 0;*/
+/*}*/
+/*#details .style1 li {*/
+    /*list-style: none;*/
+    /*border-top: solid 1px lightgray;*/
+
+#details .icon {
+    border: 1px solid #192440;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    z-index: 1;
+    text-align: center;
+    margin: 0 auto;
+}
+#details .image-icon {
+    margin-top: 13px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #192440;
+}
+#details .icon-text{
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #192440;
+    text-align: center;
 }
 /***************************************************************************/
 /*                                cookie                                   */
