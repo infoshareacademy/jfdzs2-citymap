@@ -13,6 +13,27 @@ var cart12 = $('#box12');
 var points = $('#points p:nth-child(1)');
 var move = $('#move');
 
+// EndGame detection
+
+var result = {
+    currentPairsRevealed: 0,
+    totalPairs: (Array.from(document.querySelectorAll('.cart')).length / 2),
+}
+
+function increaseResult () {
+    result.currentPairsRevealed++;
+
+    if(result.currentPairsRevealed === result.totalPairs) {
+        console.log(highScore())
+    }
+}
+
+
+// ---------
+
+
+console.log('result', result);
+
 
 cart1.click( function() { if(nextClick === true) {reveal(1)};});
 cart2.click( function() { if(nextClick === true) {reveal(2)};});
@@ -76,7 +97,10 @@ function reveal(cart)
 
                 if (tabAcceptedAlreadyClick[hidesecondcart - 1] === true && tabAcceptedAlreadyClick[numberFisrtCartVisible - 1] === true) {
 
+                    increaseResult();
+
                     timer1 = setTimeout(hideAcceptedCart, 1000);
+
                 }
 
             }
@@ -112,3 +136,12 @@ function hideDontAcceptedCart() {
     $('#picture-'+numberFisrtCartVisible).attr('src','images/city2.png');
     nextClick = true;
 }
+
+// Score---------
+
+function highScore(totalPoints){
+    totalPoints= (pointsPlayer/numbermove)*100;
+    return totalPoints;
+}
+
+// ------------
