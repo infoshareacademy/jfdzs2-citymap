@@ -93,8 +93,6 @@ function reveal(cart)
             choosenFirstCart = arrayCart[cart - 1];
         }
     }
-
-
 }
 
 function hideAcceptedCart() {
@@ -111,4 +109,9 @@ function hideDontAcceptedCart() {
     $('#picture-'+hidesecondcart).attr('src','images/city2.png');
     $('#picture-'+numberFisrtCartVisible).attr('src','images/city2.png');
     nextClick = true;
+}
+
+function highScore(totalPoints){
+    totalPoints = (pointsPlayer/numbermove)*100;
+    return totalPoints;
 }
