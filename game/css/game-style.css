@@ -1,3 +1,4 @@
+/*STYLE DLA GRY*/
 body    {
     margin: 0px;
     padding: 0px;
@@ -42,7 +43,7 @@ body    {
 
 #points{
     border: #9CFFFC solid 2px;
-    height: 130px;
+    height: 150px;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -51,14 +52,18 @@ body    {
 }
 
 #points p {
-    color: whitesmoke;
-    font-size: 40px;
+    color: white;
+    font-size: 20px;
     text-align: center;
     padding: 0px;
     margin: 0px;
-    line-height: 63px;
+    line-height: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Myriad Pro', sans-serif;
 }
 
+/*STYLE DLA MENU*/
  .btn-game {
     margin-top: 22px;
     background: #9CFFFC;
