@@ -59,3 +59,13 @@ body    {
     line-height: 63px;
 }
 
+ .btn-game {
+    margin-top: 22px;
+    background: #9CFFFC;
+    border-radius: 21px;
+    color: #192440;
+    width: 50%;
+    font-size: 21px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 500;
+    margin-bottom: 22px;

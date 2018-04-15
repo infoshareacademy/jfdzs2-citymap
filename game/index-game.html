@@ -2,8 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/game-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon-icon-36x36.png">
+
+    <title>City Map</title>
 </head>
 <body>
 <div id="logo">
@@ -11,20 +19,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </div>
 <div id="board">
-    <div class="cart" id="box1"><img id="picture-1" src="images/city2.png"></div>
-    <div class="cart" id="box2"><img id="picture-2" src="images/city2.png"></div>
-    <div class="cart" id="box3"><img id="picture-3" src="images/city2.png"></div>
-    <div class="cart" id="box4"><img id="picture-4" src="images/city2.png"></div>
-    <div class="cart" id="box5"><img id="picture-5" src="images/city2.png"></div>
-    <div class="cart" id="box6"><img id="picture-6" src="images/city2.png"></div>
-    <div class="cart" id="box7"><img id="picture-7" src="images/city2.png"></div>
-    <div class="cart" id="box8"><img id="picture-8" src="images/city2.png"></div>
-    <div class="cart" id="box9"><img id="picture-9" src="images/city2.png"></div>
-    <div class="cart" id="box10"><img id="picture-10" src="images/city2.png"></div>
-    <div class="cart" id="box11"><img id="picture-11" src="images/city2.png"></div>
-    <div class="cart" id="box12"><img id="picture-12" src="images/city2.png"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game"><a href="game/index-game-easy.html">Easy</a></button></div>
+            <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game"><a href="game/index-game-difficult.html">Difficult</a></button></div>
+            <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game"><a href="game/index-instruction.html">Instruction</a></button></div>
+            <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game"><a href="game/index-results.html">Results</a></button></div>
+            <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game"><a href="game/index.html">Home</a></button></div>
+        </div>
+    </div>
+
+
+
 </div>
-<div id="points"><p>Points : 0</p><p id="move">Move : 0</p></div>
-<script src="js/app.js"></script>
 </body>
 </html>
