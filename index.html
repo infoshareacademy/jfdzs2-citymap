@@ -9,10 +9,13 @@
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome-animation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="images/favicon-icon-36x36.png">>
-    <title>City Map</title>
-    <!-- DODANO SKRYPT DO CIASTECZEK, DODANY SKRYPT jQerry DO CIASTECZEK -->
+    <link rel="shortcut icon" href="images/favicon-icon-36x36.png">
+    <!-- DODANO SKRYPT JQUERRY -->
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- DODANO SKRYPT DO SCROLLUPA -->
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <title>City Map</title>
+    <!-- DODANO SKRYPT DO CIASTECZEK -->
     <script type="text/javascript" src="js/cookie-info.js"></script>
 </head>
 <body>
@@ -23,8 +26,7 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                        aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -62,7 +64,6 @@
         <img src="images/zajawka2_Desktop.png" alt="" class="feature-z-desktop">
         <img src="images/zajawka2_tablet.png" alt="" class="feature-z-tablet">
     </div>
-
     <div class="container feature-z-2">
         <div class="row">
             <p class="col-xs-12 col-md-6 col-lg-6">Z CityMap zobaczysz Szczecin jakiego jeszcze nie znałeś. </p>
@@ -76,7 +77,7 @@
 <!-------------------------------------------------------------------------------->
 <section id="product-info">
     <div class="feature-product-info">
-    <div class="container">
+      <div class="container">
        <div class="row">
            <div class="col-lg-3 col-md-3 col-sm-6 ">
                <i class="fa fa-user-circle-o faa-tada animated-hover " aria-hidden="true"></i>
@@ -94,8 +95,8 @@
                <i class="fa fa-clock-o faa-tada animated-hover " aria-hidden="true"></i>
                <h3>Oszczędność czasu</h3>
            </div>
-       </div>
-    </div>
+        </div>
+      </div>
     </div>
 </section>
 <!-------------------------------------------------------------------------------->
@@ -267,7 +268,6 @@
 <!-------------------------------------------------------------------------------->
 <section id="details">
     <div class="container">
-        <div class="row">
             <div class="main-title">
                 <h1>CityMap zrobi to za Ciebie!</h1>
             </div>
@@ -385,8 +385,12 @@
         <p class="copyright">&copy; COPYRIGHT 2018 - CITYMAP</p>
     </div>
 </footer>
+<!-------------------------------------------------------------------------------->
+<!-------------------------scroll to top button----------------------------------->
+<!-------------------------------------------------------------------------------->
+<span class="scroll-to-top fa fa-arrow-circle-o-up"></span>
 <script src="bootstrap/jquery.min.js"></script>
-  <script src="bootstrap/bootstrap.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
 <script>
     $(document).ready(function() {
         $('a[href^="#"]').on('click', function(event) {
