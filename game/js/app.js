@@ -93,6 +93,19 @@ function reveal(cart)
             choosenFirstCart = arrayCart[cart - 1];
         }
     }
+
+    setTimeout( function() {
+        /**
+         * Ta funkcja nam sprawdza czy są jakieś true w arrayu! Potem mozemy podpiac sobie cos innego pod to, na razie tylko wstawilam alert
+         */
+        var isThereTrue = tabAcceptedAlreadyClick.find( function(item){
+            return item === true
+        })
+     
+        if (!isThereTrue) {
+            alert("Game Over")
+        }
+    }, 2000)
 }
 
 function hideAcceptedCart() {
