@@ -12,7 +12,7 @@ body {
 /*                                navi                                     */
 /***************************************************************************/
 .navbar-default {
-    background-color: #757575;
+    background-color: #192440;
 }
 
 .navbar-brand {
@@ -20,9 +20,19 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #daf8e5;
+    color: white;
     font-size: 20px;
     padding-top: 50px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: blue;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+    font-weight: bold;
+    color: #9CFFFC;
+    text-decoration: underline;
 }
 
 .navbar-toggle{
@@ -87,7 +97,7 @@ body {
     min-height: 200px;
     text-align: center;
     padding-bottom: 30px;
-    padding-top: 30 px;
+    padding-top: 30px;
 }
 
 .feature-product-info  {
@@ -177,14 +187,14 @@ h3{
     border-color: #a5f8c3;
 }
 .namepadding{
-    
+
     font-size: 200%;
     color: #757575;
 }
 .teampart{
     background-color: rgb(255, 255, 255);
     padding-bottom:40px;
-   
+
 }
 .asiacontainer {
     padding: 60px 120px 20px 120px;
@@ -257,8 +267,8 @@ h3{
   }
  
 @media (min-width: 992px) and (max-width: 1280px){
-.col-md-3 {
-    width: 50%;}
+    .col-md-3 {
+        width: 50%;}
 }
 @media (max-width: 992px){
     .asiacontainer {
@@ -388,7 +398,42 @@ h3{
 /***************************************************************************/
 .panel-footer {
     font-size: 20px;
-    background-color: #757575;
+    background-color: #192440;
     color: white;
-    padding: 50px;
+    padding-top: 20px;
+}
+@media all and (min-width: 768px) {
+    .panel-footer {
+        padding: 50px;
+    }
+}
+
+/***************************************************************************/
+/*                         scroll to top button                            */
+/***************************************************************************/
+
+.fa-arrow-circle-o-up {
+    font-size: 60px;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    right: 30px;
+    bottom: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.fa-arrow-circle-o-up.show {
+    visibility:visible;
+    cursor:pointer;
+    opacity: 0.5;
 }
