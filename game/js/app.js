@@ -22,9 +22,9 @@ var result = {
 
 function increaseResult () {
     result.currentPairsRevealed++;
-
+    pointsPlayer++;
     if(result.currentPairsRevealed === result.totalPairs) {
-        console.log(highScore())
+        console.log(highScore());
     }
 }
 
@@ -32,7 +32,7 @@ function increaseResult () {
 // ---------
 
 
-console.log('result', result);
+//console.log('result', result);
 
 
 cart1.click( function() { if(nextClick === true) {reveal(1)};});
@@ -64,7 +64,7 @@ function shuffle(a) {
 
 arrayCart = shuffle(arrayCart);
 
-console.log(arrayCart)
+//console.log(arrayCart)
 
 var tabAcceptedAlreadyClick= [true,true,true,true,true,true,true,true,true,true,true,true];
 
@@ -85,8 +85,8 @@ function reveal(cart)
         clearTimeout(timer2);
         clearTimeout(timer1);
         $('#picture-' + cart).attr('src', 'images/' + arrayCart[cart - 1] + '.png')
-        console.log(cart);
-        console.log(numberFisrtCartVisible);
+        //console.log(cart);
+        //console.log(numberFisrtCartVisible);
         if (secondChoose === true && cart !== numberFisrtCartVisible) {
 
             numbermove++;
@@ -96,9 +96,8 @@ function reveal(cart)
                 hidesecondcart = cart;
 
                 if (tabAcceptedAlreadyClick[hidesecondcart - 1] === true && tabAcceptedAlreadyClick[numberFisrtCartVisible - 1] === true) {
-
+    console.log('zwiększam')
                     increaseResult();
-
                     timer1 = setTimeout(hideAcceptedCart, 1000);
 
                 }
@@ -124,7 +123,6 @@ function reveal(cart)
 function hideAcceptedCart() {
     $('#picture-'+hidesecondcart).addClass('hidden-cart');
     $('#picture-'+numberFisrtCartVisible).addClass('hidden-cart');
-    pointsPlayer ++;
     points.text('Points : ' + pointsPlayer);
     tabAcceptedAlreadyClick[hidesecondcart-1] = false;
     tabAcceptedAlreadyClick[numberFisrtCartVisible-1] = false;
@@ -141,6 +139,8 @@ function hideDontAcceptedCart() {
 
 function highScore(totalPoints){
     totalPoints= (pointsPlayer/numbermove)*100;
+
+    // console.log(pointsPlayer,numbermove);
     return totalPoints;
 }
 
