@@ -11,7 +11,7 @@ body {
 /***************************************************************************/
 /*                                navi                                     */
 /***************************************************************************/
-.navbar-default {
+.navbar {
     background-color: #192440;
 }
 
@@ -19,17 +19,17 @@ body {
     padding-top: 30px;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar .navbar-nav>li>a {
     color: white;
     font-size: 20px;
     padding-top: 50px;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar .navbar-nav>li>a:hover {
     color: blue;
 }
 
-.navbar-default .navbar-nav>li>a:focus {
+.navbar .navbar-nav>li>a:focus {
     font-weight: bold;
     color: #9CFFFC;
     text-decoration: underline;
@@ -42,7 +42,7 @@ body {
 }
 
 .logo {
-    height: 25px;
+    height: 30px;
 }
 
 @media all and (min-width: 288px) {
@@ -53,20 +53,47 @@ body {
 
 @media all and (min-width: 768px) {
     .logo {
-        height: 50px;
+        height: 30px;
+        margin-top: 10px;
     }
-    .navbar-default {
+    .navbar {
         min-height:120px;
     }
     .navbar-header{
         height:120px;
     }
+    .top-nav-collapse .navbar-header {
+        min-height: 80px;
+    }
 }
 
-@media all and (min-width: 768px) and (max-width: 992px) {
-    .navbar-default .navbar-nav > li > a {
+@media all and (min-width: 992px) {
+    .logo {
+        height: 50px;
+        margin: 0;
+    }
+    .top-nav-collapse .navbar-header {
+        min-height: 60px;
         font-size: 15px;
     }
+}
+/***************************************************************************/
+/*                            navi-shrink                                  */
+/***************************************************************************/
+.top-nav-collapse .navbar-brand  {
+    top: 0;
+    padding-top: 10px;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+}
+.top-nav-collapse .navbar-nav>li>a {
+    font-size: 20px;
+    padding-top: 20px;
+    top: 0;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
 }
 /***************************************************************************/
 /*                                zajawka                                  */
@@ -445,4 +472,5 @@ h3{
     visibility:visible;
     cursor:pointer;
     opacity: 0.5;
+    font-size: 60px;
 }

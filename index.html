@@ -162,7 +162,7 @@
 <!-------------------------------------------------------------------------------->
 <section id="team">
     <div class="asiacontainer text-center">
-        <h3>Nasz team to gupa pasjonatów!</h3>
+        <h3>Nasz team to grupa pasjonatów!</h3>
         <p>
             <em>Sprawdź naszą aplikację już dziś!</em>
         </p>
@@ -451,6 +451,20 @@
                 }, 2000);
             }
         });
+    });
+</script>
+<script>
+    $(window).scroll(function(){
+        if($(".navbar").offset().top>50){
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    });
+    $(function(){$(document).on('click','a.page-scroll',function(event){
+        var $anchor=$(this);$('html, body').stop().animate({scrollTop:$($anchor.attr('href')).offset().top},1500,'easeInOutExpo');
+    event.preventDefault();
+    });
     });
 </script>
 </body>
