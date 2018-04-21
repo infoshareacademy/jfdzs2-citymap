@@ -21,6 +21,23 @@ body    {
     height: 450px;
 }
 
+#board-easy  {
+    max-width: 600px;
+    border: #9CFFFC solid 1px;
+    background-color: #192440;
+    margin:0 auto;
+    margin-top: 20px;
+    height: 450px;
+}
+#board-difficult  {
+    max-width: 600px;
+    border: #9CFFFC solid 1px;
+    background-color: #192440;
+    margin:0 auto;
+    margin-top: 20px;
+    height: 600px;
+}
+
 .cart {
     width: 136px;
     height: 136px;
@@ -65,12 +82,16 @@ body    {
 
 /*STYLE DLA MENU*/
  .btn-game {
-    margin-top: 22px;
-    background: #9CFFFC;
-    border-radius: 21px;
-    color: #192440;
-    width: 50%;
-    font-size: 21px;
-    font-family: 'Myriad Pro', sans-serif;
-    font-weight: 500;
-    margin-bottom: 22px;
+     margin-top: 22px;
+     background: #9CFFFC;
+     border-radius: 21px;
+     color: #192440;
+     width: 50%;
+     font-size: 21px;
+     font-family: 'Myriad Pro', sans-serif;
+     font-weight: 500;
+     margin-bottom: 22px;
+ }
+ .button-back{
+     text-align: center;
+ }
