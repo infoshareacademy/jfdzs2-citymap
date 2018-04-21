@@ -24,7 +24,10 @@ function increaseResult () {
     result.currentPairsRevealed++;
     pointsPlayer++;
     if(result.currentPairsRevealed === result.totalPairs) {
-        console.log(highScore());
+        console.log(highScore())
+
+        localStorage.setItem('score', highScore());
+
     }
 }
 
@@ -96,7 +99,7 @@ function reveal(cart)
                 hidesecondcart = cart;
 
                 if (tabAcceptedAlreadyClick[hidesecondcart - 1] === true && tabAcceptedAlreadyClick[numberFisrtCartVisible - 1] === true) {
-    console.log('zwiększam')
+    // console.log('zwiększam')
                     increaseResult();
                     timer1 = setTimeout(hideAcceptedCart, 1000);
 
@@ -139,9 +142,8 @@ function hideDontAcceptedCart() {
 
 function highScore(totalPoints){
     totalPoints= (pointsPlayer/numbermove)*100;
-
-    // console.log(pointsPlayer,numbermove);
     return totalPoints;
 }
 
 // ------------
+
