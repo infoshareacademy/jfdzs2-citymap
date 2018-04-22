@@ -94,9 +94,29 @@ body    {
      font-weight: 500;
      margin-bottom: 22px;
  }
+.btn-game a {
+    text-decoration: none;
+    color: #192440;
+}
+.btn-game a:hover {
+    text-decoration: none;
+    color: #192440;
+    font-weight: 600;
+}
+
  .button-back{
      text-align: center;
  }
+
+.btn-back a {
+    text-decoration: none;
+    color: #192440;
+}
+.btn-back a:hover {
+    text-decoration: none;
+    color: #192440;
+    font-weight: 600;
+}
 
  /*STYLE DLA INSTRUKCJI */
 #board-instruction  {
