@@ -18,14 +18,26 @@
     <img src="images/city.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </div>
-<div id="board">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game"><a href="index-game-easy.html">Easy</a></button></div>
-            <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game"><a href="index-game-difficult.html">Difficult</a></button></div>
-            <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game"><a href="index-instruction.html">Instruction</a></button></div>
-            <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game"><a href="index-results.html">Results</a></button></div>
-            <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game"><a href="../index.html">Home</a></button></div>
+<div id="board-instruction">
+    <div class="instruction-text">
+        <h2>Instrukcja gry CityMap Memory</h2>
+        <p>GRA PAMIĘCIOWA</p>
+        <ol>
+            <li>Odkryj wszystkie pary charakterystycznych obiektów dla naszego miasta</li>
+            <li>Zacznij od łatwego albo trudnego poziomu gry</li>
+            <li>Kliknięcie na kafelek odsłania go</li>
+            <li>Jeżeli drugi kliknięty kafelek jest taki sam jak pierwszy, wtedy zostaną usunięte z planszy i dostajesz punkt</li>
+            <li>Jeżeli drugi kliknięty kafelek jest różny od pierwszego, wtedy zostaną z powrotem zasłonięte</li>
+            <li>Każda próba jest liczona jako jeden ruch</li>
+            <li>Gra kończy się z chwilą usunięcia wszystkich kafelków z planszy</li>
+            <li>Dobrej Zabawy!</li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="button-back">
+            <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game"><a href="index-game.html">Powrót</a></button></div>
         </div>
     </div>
 </div>
