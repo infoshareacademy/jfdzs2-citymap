@@ -15,6 +15,9 @@ var move = $('#move');
 
 // EndGame detection
 
+
+
+
 var result = {
     currentPairsRevealed: 0,
     totalPairs: (Array.from(document.querySelectorAll('.cart')).length / 2),
@@ -27,7 +30,20 @@ function increaseResult () {
         console.log(highScore())
 
         localStorage.setItem('score', highScore());
+        var allScores = [];
+        allScores=JSON.parse(localStorage.getItem('allScores'));
 
+        console.log(allScores);
+        if (allScores) {
+            console.log(allScores)
+            allScores.push(highScore())
+        } else {
+
+            allScores = [];
+            allScores.push(highScore())
+        }
+
+        localStorage.setItem('allScores', JSON.stringify(allScores));
     }
 }
 
