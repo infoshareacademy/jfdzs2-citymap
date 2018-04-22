@@ -1,3 +1,17 @@
+@keyframes fadeInDown {
+    0% {
+        opacity:0;
+        transform: translateY(-20px)
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+
 body {
     padding-top: 65px;
 }
@@ -13,6 +27,7 @@ body {
 /***************************************************************************/
 .navbar {
     background-color: #192440;
+    border: none;
 }
 
 .navbar-brand {
@@ -86,7 +101,7 @@ body {
 }
 .top-nav-collapse .navbar-nav>li>a {
     font-size: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: fadeInDown;
