@@ -13,6 +13,40 @@ var cart12 = $('#box12');
 var points = $('#points p:nth-child(1)');
 var move = $('#move');
 
+// EndGame detection
+
+
+var result = {
+    currentPairsRevealed: 0,
+    totalPairs: (Array.from(document.querySelectorAll('.cart')).length / 2),
+}
+
+function increaseResult () {
+    result.currentPairsRevealed++;
+    pointsPlayer++;
+    if(result.currentPairsRevealed === result.totalPairs) {
+        console.log(highScore())
+
+        localStorage.setItem('score', highScore());
+        var allScores = [];
+        allScores=JSON.parse(localStorage.getItem('allScores'));
+
+        console.log(allScores);
+        if (allScores) {
+            console.log(allScores)
+            allScores.push(highScore())
+        } else {
+
+            allScores = [];
+            allScores.push(highScore())
+        }
+
+        localStorage.setItem('allScores', JSON.stringify(allScores));
+    }
+}
+
+
+//console.log('result', result);
 
 cart1.click( function() { if(nextClick === true) {reveal(1)};});
 cart2.click( function() { if(nextClick === true) {reveal(2)};});
@@ -43,7 +77,7 @@ function shuffle(a) {
 
 arrayCart = shuffle(arrayCart);
 
-console.log(arrayCart)
+//console.log(arrayCart)
 
 var tabAcceptedAlreadyClick= [true,true,true,true,true,true,true,true,true,true,true,true];
 
@@ -64,8 +98,8 @@ function reveal(cart)
         clearTimeout(timer2);
         clearTimeout(timer1);
         $('#picture-' + cart).attr('src', 'images/' + arrayCart[cart - 1] + '.png')
-        console.log(cart);
-        console.log(numberFisrtCartVisible);
+        //console.log(cart);
+        //console.log(numberFisrtCartVisible);
         if (secondChoose === true && cart !== numberFisrtCartVisible) {
 
             numbermove++;
@@ -75,8 +109,10 @@ function reveal(cart)
                 hidesecondcart = cart;
 
                 if (tabAcceptedAlreadyClick[hidesecondcart - 1] === true && tabAcceptedAlreadyClick[numberFisrtCartVisible - 1] === true) {
-
+                    // console.log('zwiększam')
+                    increaseResult();
                     timer1 = setTimeout(hideAcceptedCart, 1000);
+
                 }
 
             }
@@ -93,25 +129,11 @@ function reveal(cart)
             choosenFirstCart = arrayCart[cart - 1];
         }
     }
-
-    setTimeout( function() {
-        /**
-         * Ta funkcja nam sprawdza czy są jakieś true w arrayu! Potem mozemy podpiac sobie cos innego pod to, na razie tylko wstawilam alert
-         */
-        var isThereTrue = tabAcceptedAlreadyClick.find( function(item){
-            return item === true
-        })
-     
-        if (!isThereTrue) {
-            alert("Game Over")
-        }
-    }, 2000)
 }
 
 function hideAcceptedCart() {
     $('#picture-'+hidesecondcart).addClass('hidden-cart');
     $('#picture-'+numberFisrtCartVisible).addClass('hidden-cart');
-    pointsPlayer ++;
     points.text('Points : ' + pointsPlayer);
     tabAcceptedAlreadyClick[hidesecondcart-1] = false;
     tabAcceptedAlreadyClick[numberFisrtCartVisible-1] = false;
@@ -124,7 +146,10 @@ function hideDontAcceptedCart() {
     nextClick = true;
 }
 
+// Score---------
+
 function highScore(totalPoints){
-    totalPoints = (pointsPlayer/numbermove)*100;
+    totalPoints= (pointsPlayer/numbermove)*100;
     return totalPoints;
 }
+// ------------
