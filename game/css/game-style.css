@@ -22,20 +22,20 @@ body    {
 }
 
 #board-easy  {
-    max-width: 600px;
+    max-width: 590px;
     border: #9CFFFC solid 1px;
     background-color: #192440;
     margin:0 auto;
     margin-top: 20px;
-    height: 450px;
+    height: 440px;
 }
 #board-difficult  {
-    max-width: 600px;
+    max-width: 590px;
     border: #9CFFFC solid 1px;
     background-color: #192440;
     margin:0 auto;
     margin-top: 20px;
-    height: 600px;
+    height: 585px;
 }
 
 .cart {
@@ -43,7 +43,7 @@ body    {
     height: 136px;
     float: left;
     margin: 5px;
-    border: #9CFFFC solid 2px;
+    border: #9CFFFC solid 1px;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
