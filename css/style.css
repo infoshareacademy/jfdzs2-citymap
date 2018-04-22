@@ -54,34 +54,31 @@ body {
 @media all and (min-width: 768px) {
     .logo {
         height: 30px;
-        margin-top: 10px;
-    }
-    .navbar {
-        min-height:120px;
     }
     .navbar-header{
         height:120px;
     }
+    .navbar-brand {
+        padding-top: 30px;
+    }
     .top-nav-collapse .navbar-header {
         min-height: 80px;
     }
+    .navbar .top-nav-collapse {
+        min-height: 80px;
+    }
 }
-
 @media all and (min-width: 992px) {
     .logo {
         height: 50px;
-        margin: 0;
     }
     .top-nav-collapse .navbar-header {
-        min-height: 60px;
+        height: 60px;
         font-size: 15px;
+        margin: 0;
     }
 }
-/***************************************************************************/
-/*                            navi-shrink                                  */
-/***************************************************************************/
 .top-nav-collapse .navbar-brand  {
-    top: 0;
     padding-top: 10px;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -90,10 +87,13 @@ body {
 .top-nav-collapse .navbar-nav>li>a {
     font-size: 20px;
     padding-top: 20px;
-    top: 0;
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: fadeInDown;
+}
+.navbar .top-nav-collapse {
+    min-height: 80px;
+    margin: 0;
 }
 /***************************************************************************/
 /*                                zajawka                                  */
@@ -451,7 +451,7 @@ h3{
 .fa-arrow-circle-o-up {
     font-size: 60px;
     position: fixed;
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
     overflow: hidden;
     text-align: center;
@@ -471,6 +471,6 @@ h3{
 .fa-arrow-circle-o-up.show {
     visibility:visible;
     cursor:pointer;
-    opacity: 0.5;
+    opacity: 0.95;
     font-size: 60px;
 }
