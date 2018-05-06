@@ -67,7 +67,6 @@ body    {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-
 }
 
 #points p {
@@ -148,4 +147,49 @@ body    {
     color: #9CFFFC;
     text-align: center;
     font-weight: 600;
+}
+/*STYLE DLA NAME PLAYER */
+#board-name {
+    max-width: 600px;
+    border: #9CFFFC solid 1px;
+    background-color: #192440;
+    margin:0 auto;
+    margin-top: 20px;
+    height: 310px;
+}
+
+.player-name-box {
+    max-width: 570px;
+    text-align: center;
+    margin-top: 20px;
+}
+.player-name-box label {
+    font-size: 20px;
+    margin: 0 auto;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.player-name-box .player-name-write {
+    height: 34px;
+    padding: 20px;
+    width: 100%;
+    background: rgba(256, 256, 256, 0);
+    color: white;
+    text-align: center;
+    border: solid #9CFFFC 1px;
+    border-radius: 21px;
+    font-size: 20px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    display: block;
+}
+.player-name-box .player-name-error {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+}
+.player-name-box.error .player-name-error {
+    display: block;
 }
