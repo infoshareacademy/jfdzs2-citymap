@@ -15,17 +15,16 @@ var move = $('#move');
 
 // EndGame detection
 
-
 var result = {
     currentPairsRevealed: 0,
-    totalPairs: (Array.from(document.querySelectorAll('.cart')).length / 2),
-}
+    totalPairs: (Array.from(document.querySelectorAll('.cart')).length / 2)
+};
 
 function increaseResult () {
     result.currentPairsRevealed++;
     pointsPlayer++;
     if(result.currentPairsRevealed === result.totalPairs) {
-        console.log(highScore())
+        console.log(highScore());
 
         localStorage.setItem('score', highScore());
         var allScores = [];
@@ -33,7 +32,7 @@ function increaseResult () {
 
         console.log(allScores);
         if (allScores) {
-            console.log(allScores)
+            console.log(allScores);
             allScores.push(highScore())
         } else {
 
@@ -44,8 +43,6 @@ function increaseResult () {
         localStorage.setItem('allScores', JSON.stringify(allScores));
     }
 }
-
-
 //console.log('result', result);
 
 cart1.click( function() { if(nextClick === true) {reveal(1)};});
@@ -92,18 +89,18 @@ var timer2;
 var numbermove = 0;
 function reveal(cart)
 {
-    console.log(tabAcceptedAlreadyClick)
+    console.log(tabAcceptedAlreadyClick);
     if(tabAcceptedAlreadyClick[cart-1] === true) {
 
         clearTimeout(timer2);
         clearTimeout(timer1);
-        $('#picture-' + cart).attr('src', 'images/' + arrayCart[cart - 1] + '.png')
+        $('#picture-' + cart).attr('src', 'images/' + arrayCart[cart - 1] + '.png');
         //console.log(cart);
         //console.log(numberFisrtCartVisible);
         if (secondChoose === true && cart !== numberFisrtCartVisible) {
 
             numbermove++;
-            move.text('Move :' + numbermove)
+            move.text('Move :' + numbermove);
             nextClick = false;
             if (choosenFirstCart === arrayCart[cart - 1]) {
                 hidesecondcart = cart;
@@ -152,4 +149,53 @@ function highScore(totalPoints){
     totalPoints= (pointsPlayer/numbermove)*100;
     return totalPoints;
 }
-// ------------
+
+// name playera
+$(document).ready(function() {
+    $('#check-name').on('click', function () {
+        if ($('#name-of-player').val() !== '') {
+            $('.player-name-box').removeClass('error');
+        } else {
+            $('.player-name-box').addClass('error');
+            return false;
+        }
+    });
+    // if(result.currentPairsRevealed === result.totalPairs) {
+    //     $('.player-result-box').addClass('end');
+    //     var boxOfPlayerRegion = document.getElementsByClassName('player-result-box-end');
+    //     var playerName = $('#name-of-player').val();
+    //     playerName = document.createElement('p');
+    //     playerName.innerHTML = '<p id="player"></p>';
+    //     boxOfPlayerRegion.appendChild(playerName);
+    // } else {
+    //     $('.player-result-box').removeClass('end');
+    // }
+});
+
+// Score-tabela
+saveHighScore = function() {
+    increaseResult();
+    var showHighScoreTable = document.getElementById('showHighScore-table');
+    showHighScoreTable.addEventListener('click', showHighScore);
+};
+
+function showHighScore() {
+    var playerName = $('#name-of-player').val();
+    var movesOfPlayer = numbermove;
+    var pointsOfPlayer = highScore();
+
+    movesOfPlayer = document.getElementById('move');
+    playerName = document.getElementById('player');
+    pointsOfPlayer = document.getElementById('points');
+
+    var highScoreRegion = document.getElementById('highScoreBoard'),
+        highScoreTemplate = ''
+            + '<div class="line">'
+                + '<strong id="player"></strong>'
+                + '<span id="move"></span>'
+                + '<span id="points"></span>'
+            + '</div>';
+    HTMLelement = document.createElement('div');
+    HTMLelement.innerHTML = highScoreTemplate;
+    highScoreRegion.appendChild(HTMLelement);
+}

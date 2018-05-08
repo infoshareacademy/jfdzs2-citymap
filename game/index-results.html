@@ -8,24 +8,18 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>City Map - Memory</title>
+    <title>City Map - Memory - Results</title>
 </head>
 <body>
 <div id="logo">
     <img src="images/city.png">
 </div>
-<div id="board-name">
+<div id="board-result">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 player-name">
-                <div class="player-name-box">
-                    <label for="name-of-player">Nazwa gracza:</label>
-                    <input type="text" id="name-of-player" class="player-name-write" placeholder="Wpisz nazwę..." maxlength="12">
-                    <div class="player-name-error">Musisz wpisać nazwę gracza!</div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <button type="submit" class="btn btn-game" id="check-name"><a href="index-game-easy.html">Start</a></button>
+            <div class="col-md-12 highscore">
+                <h3>Wyniki gry:</h3>
+                <div class="highscore-board" id="highScoreBoard"></div>
             </div>
             <div class="col-md-12">
                 <button type="submit" class="btn btn-game" id="button-game"><a href="index-game.html">Powrót</a></button>

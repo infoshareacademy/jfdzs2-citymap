@@ -157,7 +157,6 @@ body    {
     margin-top: 20px;
     height: 310px;
 }
-
 .player-name-box {
     max-width: 570px;
     text-align: center;
@@ -191,5 +190,24 @@ body    {
     display: none;
 }
 .player-name-box.error .player-name-error {
+    display: block;
+}
+/*STYLE DLA RESULT */
+#board-result {
+    max-width: 600px;
+    border: #9CFFFC solid 1px;
+    background-color: #192440;
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 310px;
+}
+.player-result-box {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+}
+.player-result-box.end {
     display: block;
 }
