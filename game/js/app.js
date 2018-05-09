@@ -13,33 +13,6 @@ var cart12 = $('#box12');
 var points = $('#points p:nth-child(1)');
 var move = $('#move');
 
-// EndGame detection
-
-var result = {
-    currentPairsRevealed: 0,
-    totalPairs: (Array.from(document.querySelectorAll('.cart')).length / 2)
-};
-
-function increaseResult () {
-    result.currentPairsRevealed++;
-    pointsPlayer++;
-    if(result.currentPairsRevealed === result.totalPairs) {
-        console.log(highScore());
-
-        if (allScores) {
-            console.log(allScores);
-            allScores.push(highScore())
-        } else {
-
-            allScores = [];
-            allScores.push(highScore())
-        }
-
-        localStorage.setItem('allScores', JSON.stringify(allScores));
-    }
-}
-//console.log('result', result);
-
 cart1.click( function() { if(nextClick === true) {reveal(1)};});
 cart2.click( function() { if(nextClick === true) {reveal(2)};});
 cart3.click( function() { if(nextClick === true) {reveal(3)};});
@@ -144,6 +117,34 @@ function highScore(totalPoints){
     totalPoints= (pointsPlayer/numbermove)*100;
     return totalPoints;
 }
+// EndGame detection
+
+var result = {
+    currentPairsRevealed: 0,
+    totalPairs: (Array.from(document.querySelectorAll('.cart')).length / 2)
+};
+
+function increaseResult () {
+    result.currentPairsRevealed++;
+    pointsPlayer++;
+    if(result.currentPairsRevealed === result.totalPairs) {
+        console.log(highScore());
+
+        if (allScores) {
+            console.log(allScores);
+            allScores.push(highScore())
+        } else {
+
+            allScores = [];
+            allScores.push(highScore())
+        }
+        localStorage.setItem('score', highScore());
+        var allScores = [];
+        allScores = JSON.parse(localStorage.getItem('allScores'));
+        localStorage.setItem('allScores', JSON.stringify(allScores));
+    }
+}
+//console.log('result', result);
 
 // name playera
 $(document).ready(function() {
@@ -165,5 +166,11 @@ $(document).ready(function() {
     // } else {
     //     $('.player-result-box').removeClass('end');
     // }
+    $('#button-game-easy').on('click', function (r) {
+        $('.section-game-nameofplayer').show(r);
+        $('.section-game').hide(r);
+
+    });
 });
+
 
