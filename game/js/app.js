@@ -26,11 +26,6 @@ function increaseResult () {
     if(result.currentPairsRevealed === result.totalPairs) {
         console.log(highScore());
 
-        localStorage.setItem('score', highScore());
-        var allScores = [];
-        allScores=JSON.parse(localStorage.getItem('allScores'));
-
-        console.log(allScores);
         if (allScores) {
             console.log(allScores);
             allScores.push(highScore())
@@ -172,30 +167,3 @@ $(document).ready(function() {
     // }
 });
 
-// Score-tabela
-saveHighScore = function() {
-    increaseResult();
-    var showHighScoreTable = document.getElementById('showHighScore-table');
-    showHighScoreTable.addEventListener('click', showHighScore);
-};
-
-function showHighScore() {
-    var playerName = $('#name-of-player').val();
-    var movesOfPlayer = numbermove;
-    var pointsOfPlayer = highScore();
-
-    movesOfPlayer = document.getElementById('move');
-    playerName = document.getElementById('player');
-    pointsOfPlayer = document.getElementById('points');
-
-    var highScoreRegion = document.getElementById('highScoreBoard'),
-        highScoreTemplate = ''
-            + '<div class="line">'
-                + '<strong id="player"></strong>'
-                + '<span id="move"></span>'
-                + '<span id="points"></span>'
-            + '</div>';
-    HTMLelement = document.createElement('div');
-    HTMLelement.innerHTML = highScoreTemplate;
-    highScoreRegion.appendChild(HTMLelement);
-}
