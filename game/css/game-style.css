@@ -18,13 +18,12 @@ body    {
     max-width: 600px;
     border: #9CFFFC solid 1px;
     background-color: #192440;
-    margin:0 auto;
-    margin-top: 20px;
-    height: 450px;
+    margin: 20px auto;
+    min-height: 150px;
 }
 
 #board-easy  {
-    max-width: 590px;
+    width: 600px;
     border: #9CFFFC solid 1px;
     background-color: #192440;
     margin:0 auto;
@@ -39,7 +38,6 @@ body    {
     margin-top: 20px;
     height: 585px;
 }
-
 .cart {
     width: 136px;
     height: 136px;
@@ -89,7 +87,8 @@ body    {
 .section-game-difficult,
 .section-game-nameofplayer,
 .section-game-instruction,
-.section-game-results {
+.section-game-results,
+.section-game-chooselevel {
     display: none;
 }
  .btn-game {
@@ -102,7 +101,8 @@ body    {
      font-family: 'Myriad Pro', sans-serif;
      font-weight: 500;
      margin-bottom: 22px;
-     display: block
+     display: block;
+     text-align: center;
  }
 .btn-game a {
     text-decoration: none;
@@ -114,60 +114,42 @@ body    {
     font-weight: 600;
 }
 
- .button-back{
-     text-align: center;
- }
+ /*.button-back{*/
+     /*text-align: center;*/
+ /*}*/
 
-.btn-back a {
-    text-decoration: none;
-    color: #192440;
-}
-.btn-back a:hover {
-    text-decoration: none;
-    color: #192440;
-    font-weight: 600;
-}
+/*.btn-back a {*/
+    /*text-decoration: none;*/
+    /*color: #192440;*/
+/*}*/
+/*.btn-back a:hover {*/
+    /*text-decoration: none;*/
+    /*color: #192440;*/
+    /*font-weight: 600;*/
+/*}*/
 
  /*STYLE DLA INSTRUKCJI */
-#board-instruction  {
-    max-width: 650px;
-    border: #9CFFFC solid 1px;
-    background-color: #192440;
-    margin:0 auto;
-    margin-top: 20px;
-    height: 550px;
-}
 .instruction-text ol>li {
     color: #daf8e5;
-    font-size: 20px;
+    font-size: 12px;
     padding: 5px;
 }
 
 .instruction-text h2 {
-    font-size: 32px;
-    padding: 5px;
+    font-size: 20px;
+    margin: 20px;
     color: #9CFFFC;
-    text-align: center;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .instruction-text p {
-    font-size: 20px;
-    padding: 5px;
+    font-size: 15px;
+    margin: 20px;
     color: #9CFFFC;
-    text-align: center;
     font-weight: 600;
 }
 /*STYLE DLA NAME PLAYER */
-#board-name {
-    max-width: 600px;
-    border: #9CFFFC solid 1px;
-    background-color: #192440;
-    margin:0 auto;
-    margin-top: 20px;
-    height: 310px;
-}
 .player-name-box {
     max-width: 570px;
     text-align: center;
@@ -204,15 +186,6 @@ body    {
     display: block;
 }
 /*STYLE DLA RESULT */
-#board-result {
-    max-width: 600px;
-    border: #9CFFFC solid 1px;
-    background-color: #192440;
-    margin:0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    min-height: 310px;
-}
 .player-result-box {
     font-weight: 400;
     font-size: 15px;

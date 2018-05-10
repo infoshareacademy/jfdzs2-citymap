@@ -151,6 +151,8 @@ $(document).ready(function() {
     $('#check-name').on('click', function () {
         if ($('#name-of-player').val() !== '') {
             $('.player-name-box').removeClass('error');
+            $('.section-game-chooselevel').show();
+            $('.section-game-nameofplayer').hide();
         } else {
             $('.player-name-box').addClass('error');
             return false;
@@ -166,11 +168,39 @@ $(document).ready(function() {
     // } else {
     //     $('.player-result-box').removeClass('end');
     // }
-    $('#button-game-easy').on('click', function (r) {
+    $('#button-game-start').on('click', function (r) {
         $('.section-game-nameofplayer').show(r);
-        $('.section-game').hide(r);
+        $('.game-main-menu').hide(r);
+    });
+    $('#button-game-instruction').on('click', function (r) {
+        $('.section-game-instruction').show(r);
+        $('.game-main-menu').hide(r);
+    });
+    $('#button-game-instruction-return').on('click', function (r) {
+        $('.game-main-menu').show(r);
+        $('.section-game-instruction').hide(r);
+    });
+    $('#button-game-return').on('click', function (r) {
+        $('.game-main-menu').show(r);
+        $('.section-game-nameofplayer').hide(r);
+        $('.section-game-easy').hide(r);
+        $('.section-game-chooselevel').hide(r);
+        $('.section-game-instruction').hide(r);
 
     });
+    $('#button-game-easy').on('click', function (r) {
+        $('.section-game-easy').show(r);
+        $('.section-game-chooselevel').hide(r);
+    });
+    $('#button-game-difficult').on('click', function (r) {
+        $('.section-game-difficult').show(r);
+        $('.section-game-chooselevel').hide(r);
+    });
+    $('#button-game-results').on('click', function (r) {
+        $('.section-game-results').show(r);
+        $('.game-main-menu').hide(r);
+    });
+
 });
 
 
