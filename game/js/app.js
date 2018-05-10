@@ -87,6 +87,7 @@ function revealHard(cart) {
 function hideAcceptedCart() {
     $('#picture-'+hidesecondcart).addClass('hidden-cart');
     $('#picture-'+numberFisrtCartVisible).addClass('hidden-cart');
+    pointsPlayer++;
     points.text('Points : ' + pointsPlayer);
     tabAcceptedAlreadyClick[hidesecondcart-1] = false;
     tabAcceptedAlreadyClick[numberFisrtCartVisible-1] = false;
@@ -252,7 +253,7 @@ var result = {
 
 function increaseResult () {
     result.currentPairsRevealed++;
-    pointsPlayer++;
+    // pointsPlayer++;
     if(result.currentPairsRevealed === result.totalPairs) {
         console.log(highScore());
 

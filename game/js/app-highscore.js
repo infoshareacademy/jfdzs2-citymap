@@ -23,7 +23,7 @@ function showHighScore() {
     playerName = document.getElementById('player');
     pointsOfPlayer = document.getElementById('points');
 
-    var highScoreRegion = ,
+    var highScoreRegion = document.getElementById('highScoreBoard');
         highScoreTemplate = ''
             + '<div class="line">'
             + '<strong id="player"></strong>'
