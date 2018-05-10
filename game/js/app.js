@@ -168,37 +168,33 @@ $(document).ready(function() {
     // } else {
     //     $('.player-result-box').removeClass('end');
     // }
-    $('#button-game-start').on('click', function (r) {
-        $('.section-game-nameofplayer').show(r);
-        $('.game-main-menu').hide(r);
+    $('#button-game-start').on('click', function () {
+        $('.section-game-nameofplayer').show();
+        $('.game-main-menu').hide();
     });
-    $('#button-game-instruction').on('click', function (r) {
-        $('.section-game-instruction').show(r);
-        $('.game-main-menu').hide(r);
+    $('#button-game-instruction').on('click', function () {
+        $('.section-game-instruction').show();
+        $('.game-main-menu').hide();
     });
-    $('#button-game-instruction-return').on('click', function (r) {
-        $('.game-main-menu').show(r);
-        $('.section-game-instruction').hide(r);
+    $('.btn-game-return').on('click', function () {
+        $('.game-main-menu').show();
+        $('.section-game-nameofplayer').hide();
+        $('.section-game-easy').hide();
+        $('.section-game-chooselevel').hide();
+        $('.section-game-instruction').hide();
+        $('.section-game-results').hide();
     });
-    $('#button-game-return').on('click', function (r) {
-        $('.game-main-menu').show(r);
-        $('.section-game-nameofplayer').hide(r);
-        $('.section-game-easy').hide(r);
-        $('.section-game-chooselevel').hide(r);
-        $('.section-game-instruction').hide(r);
-
+    $('#button-game-easy').on('click', function () {
+        $('.section-game-easy').show();
+        $('.section-game-chooselevel').hide();
     });
-    $('#button-game-easy').on('click', function (r) {
-        $('.section-game-easy').show(r);
-        $('.section-game-chooselevel').hide(r);
+    $('#button-game-difficult').on('click', function () {
+        $('.section-game-difficult').show();
+        $('.section-game-chooselevel').hide();
     });
-    $('#button-game-difficult').on('click', function (r) {
-        $('.section-game-difficult').show(r);
-        $('.section-game-chooselevel').hide(r);
-    });
-    $('#button-game-results').on('click', function (r) {
-        $('.section-game-results').show(r);
-        $('.game-main-menu').hide(r);
+    $('#button-game-results').on('click', function () {
+        $('.section-game-results').show();
+        $('.game-main-menu').hide();
     });
 
 });

@@ -91,7 +91,8 @@ body    {
 .section-game-chooselevel {
     display: none;
 }
- .btn-game {
+ .btn-game,
+ .btn-game-return {
      margin-top: 22px;
      background: #9CFFFC;
      border-radius: 21px;
