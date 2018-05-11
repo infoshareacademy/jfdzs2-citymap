@@ -272,7 +272,7 @@ function increaseResult () {
         allScores = JSON.parse(localStorage.getItem('allScores'));
         localStorage.setItem('allScores', JSON.stringify(allScores));
     }
-    // infoOfEndGame();
+    infoOfEndGame();
 }
 
 function infoOfEndGame () {
