@@ -1,5 +1,6 @@
-var points = $('#points p:nth-child(1)');
-var move = $('#move');
+var points;
+var move;
+var playerName;
 
 function shuffle(a) {
     var j, x, i;
@@ -17,7 +18,6 @@ var arrayCartHard = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8];
 arrayCartHard = shuffle(arrayCartHard);
 
 var tabAcceptedAlreadyClick= [true,true,true,true,true,true,true,true,true,true,true,true];
-
 var choosenFirstCart;
 var secondChoose = false;
 var numberFisrtCartVisible;
@@ -100,8 +100,7 @@ function hideDontAcceptedCart() {
 }
 // ładowanie łatwego poziomu po kliknięciu
 function easeLevel() {
-    var playerName = $('#name-of-player').val();
-
+    playerName = $('#name-of-player').val();
     var easeLevelRegion = document.getElementById('region-easy'),
         easeLevelTemplate = ''
             + '<div id="board-easy">'
@@ -121,14 +120,14 @@ function easeLevel() {
             + '<div class="container">'
             + '<div class="row">'
             + '<div id="points"><p>Points : 0</p><p id="move">Move : 0</p></div>'
-            + '<div class="col-md-12 player-result-box"><p>Koniec gry. Gratulacje!</p>' + playerName + '</div>'
             + '<div class="col-md-12"><button type="submit" class="btn btn-ingame-return">Powrót</button></div>'
             + '</div>'
             + '</div>';
     HTMLelement = document.createElement('div');
     HTMLelement.innerHTML = easeLevelTemplate;
     easeLevelRegion.appendChild(HTMLelement);
-
+    points = $('#points p:nth-child(1)');
+    move = $('#move p:nth-child(2)');
     $(document).ready(function() {
         $('.btn-ingame-return').on('click', function () {
             $('.game-main-menu').show();
@@ -165,8 +164,7 @@ function easeLevel() {
 // ładowanie trudnego poziomu po kliknięciu
 
 function hardLevel() {
-    var playerName = $('#name-of-player').val();
-
+    playerName = $('#name-of-player').val();
     var hardLevelRegion = document.getElementById('region-difficult'),
         hardLevelTemplate = ''
             + '<div id="board-difficult">'
@@ -190,13 +188,14 @@ function hardLevel() {
             + '<div class="container">'
             + '<div class="row">'
             + '<div id="points"><p>Points : 0</p><p id="move">Move : 0</p></div>'
-            + '<div class="col-md-12 player-result-box"><p>Koniec gry. Gratulacje!</p>' + playerName + '</div>'
             + '<div class="col-md-12"><button type="submit" class="btn btn-ingame-return">Powrót</button></div>'
             + '</div>'
             + '</div>';
     HTMLelement = document.createElement('div');
     HTMLelement.innerHTML = hardLevelTemplate;
     hardLevelRegion.appendChild(HTMLelement);
+    points = $('#points p:nth-child(1)');
+    move = $('#move p:nth-child(2)');
     $(document).ready(function() {
         $('.btn-ingame-return').on('click', function () {
             $('.game-main-menu').show();
@@ -241,27 +240,27 @@ function hardLevel() {
 // Score---------
 
 function highScore(totalPoints){
-    totalPoints= (pointsPlayer/numbermove)*100;
+    totalPoints= (points/move)*100;
     return totalPoints;
 }
 // EndGame detection
 
 var result = {
     currentPairsRevealed: 0,
-    totalPairs: (Array.from(document.querySelectorAll('.cart')).length / 2)
+    // totalPairs: (Array.from(document.querySelectorAll('.cart')).length / 2)
+    totalPairsEasy: arrayCartEasy,
+    totalPairsHard: arrayCartHard
 };
 
 function increaseResult () {
     result.currentPairsRevealed++;
-    // pointsPlayer++;
-    if(result.currentPairsRevealed === result.totalPairs) {
+    // if(result.currentPairsRevealed === result.totalPairs) {
+    if(result.currentPairsRevealed === result.totalPairsEasy && result.currentPairsRevealed === result.totalPairsHard) {
         console.log(highScore());
-
         if (allScores) {
             console.log(allScores);
             allScores.push(highScore())
         } else {
-
             allScores = [];
             allScores.push(highScore())
         }
@@ -270,10 +269,19 @@ function increaseResult () {
         allScores = JSON.parse(localStorage.getItem('allScores'));
         localStorage.setItem('allScores', JSON.stringify(allScores));
     }
+    // infoOfEndGame();
 }
-//console.log('result', result);
+
+function infoOfEndGame () {
+    $(document).ready(function() {
+        $('.section-game-end').show();
+        $('.section-game-easy').hide();
+        $('.section-game-difficult').hide();
+    });
+}
 
 // name playera
+
 $(document).ready(function() {
     $('#check-name').on('click', function () {
         if ($('#name-of-player').val() !== '') {
@@ -285,16 +293,6 @@ $(document).ready(function() {
             return false;
         }
     });
-    // if(result.currentPairsRevealed === result.totalPairs) {
-    //     $('.player-result-box').addClass('end');
-    //     var boxOfPlayerRegion = document.getElementsByClassName('player-result-box-end');
-    //     var playerName = $('#name-of-player').val();
-    //     playerName = document.createElement('p');
-    //     playerName.innerHTML = '<p id="player"></p>';
-    //     boxOfPlayerRegion.appendChild(playerName);
-    // } else {
-    //     $('.player-result-box').removeClass('end');
-    // }
     $('#button-game-start').on('click', function () {
         $('.section-game-nameofplayer').show();
         $('.game-main-menu').hide();
@@ -310,6 +308,7 @@ $(document).ready(function() {
         $('.section-game-chooselevel').hide();
         $('.section-game-instruction').hide();
         $('.section-game-results').hide();
+        $('.section-game-end').hide();
     });
     $('#button-game-easy').on('click', function () {
         $('.section-game-easy').show();
@@ -326,3 +325,46 @@ $(document).ready(function() {
         $('.game-main-menu').hide();
     });
 });
+
+// Score-tabela
+localStorage.setItem('score', highScore());
+var allScores = [];
+allScores = JSON.parse(localStorage.getItem('allScores'));
+
+console.log(allScores);
+
+var selectorHighScore = document.getElementById('highScoreBoard');
+var highScoreTemplate = ''
+        + '<div class="line">'
+        + '<strong id="player"></strong>'
+        + '<span id="move"></span>'
+        + '<span id="points"></span>'
+        + '</div>';
+allScores.forEach(function(score, index){
+    var highScoreElements = document.createElement('p');
+    highScoreElements.innerText = (index + 1) + '. ' + score;
+    selectorHighScore.appendChild(highScoreElements);
+});
+
+// function showHighScore() {
+//     var playerName = $('#name-of-player').val();
+//     var movesOfPlayer = numbermove;
+//     var pointsOfPlayer = highScore();
+//
+//     movesOfPlayer = document.getElementById('move');
+//     playerName = document.getElementById('player');
+//     pointsOfPlayer = document.getElementById('points');
+//
+//     var highScoreRegion = ,
+//         highScoreTemplate = ''
+//             + '<div class="line">'
+//             + '<strong id="player"></strong>'
+//             + '<span id="move"></span>'
+//             + '<span id="points"></span>'
+//             + '</div>';
+//     HTMLelement = document.createElement('div');
+//     HTMLelement.innerHTML = highScoreTemplate;
+//     highScoreRegion.appendChild(HTMLelement);
+// }
+// var showHighScoreTable = document.getElementById('showHighScore-table');
+// showHighScoreTable.addEventListener('click', showHighScore);
