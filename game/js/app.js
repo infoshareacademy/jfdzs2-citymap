@@ -17,7 +17,8 @@ arrayCartEasy = shuffle(arrayCartEasy);
 var arrayCartHard = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8];
 arrayCartHard = shuffle(arrayCartHard);
 
-var tabAcceptedAlreadyClick= [true,true,true,true,true,true,true,true,true,true,true,true];
+var tabAcceptedAlreadyClickEasy= [true,true,true,true,true,true,true,true,true,true,true,true];
+var tabAcceptedAlreadyClickHard= [true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true];
 var choosenFirstCart;
 var secondChoose = false;
 var numberFisrtCartVisible;
@@ -29,8 +30,8 @@ var timer2;
 var numbermove = 0;
 
 function revealEasy(cart) {
-    console.log(tabAcceptedAlreadyClick);
-    if(tabAcceptedAlreadyClick[cart-1] === true) {
+    console.log(tabAcceptedAlreadyClickEasy);
+    if(tabAcceptedAlreadyClickEasy[cart-1] === true) {
         clearTimeout(timer2);
         clearTimeout(timer1);
         $('#picture-' + cart).attr('src', 'images/' + arrayCartEasy[cart - 1] + '.png');
@@ -40,7 +41,7 @@ function revealEasy(cart) {
             nextClick = false;
             if (choosenFirstCart === arrayCartEasy[cart - 1]) {
                 hidesecondcart = cart;
-                if (tabAcceptedAlreadyClick[hidesecondcart - 1] === true && tabAcceptedAlreadyClick[numberFisrtCartVisible - 1] === true) {
+                if (tabAcceptedAlreadyClickEasy[hidesecondcart - 1] === true && tabAcceptedAlreadyClickEasy[numberFisrtCartVisible - 1] === true) {
                     increaseResult();
                     timer1 = setTimeout(hideAcceptedCart, 1000);
                 }
@@ -57,8 +58,8 @@ function revealEasy(cart) {
     }
 }
 function revealHard(cart) {
-    console.log(tabAcceptedAlreadyClick);
-    if(tabAcceptedAlreadyClick[cart-1] === true) {
+    console.log(tabAcceptedAlreadyClickHard);
+    if(tabAcceptedAlreadyClickHard[cart-1] === true) {
         clearTimeout(timer2);
         clearTimeout(timer1);
         $('#picture-' + cart).attr('src', 'images/' + arrayCartHard[cart - 1] + '.png');
@@ -68,7 +69,7 @@ function revealHard(cart) {
             nextClick = false;
             if (choosenFirstCart === arrayCartHard[cart - 1]) {
                 hidesecondcart = cart;
-                if (tabAcceptedAlreadyClick[hidesecondcart - 1] === true && tabAcceptedAlreadyClick[numberFisrtCartVisible - 1] === true) {
+                if (tabAcceptedAlreadyClickHard[hidesecondcart - 1] === true && tabAcceptedAlreadyClickHard[numberFisrtCartVisible - 1] === true) {
                     increaseResult();
                     timer1 = setTimeout(hideAcceptedCart, 1000);
                 }
@@ -89,8 +90,10 @@ function hideAcceptedCart() {
     $('#picture-'+numberFisrtCartVisible).addClass('hidden-cart');
     pointsPlayer++;
     points.text('Points : ' + pointsPlayer);
-    tabAcceptedAlreadyClick[hidesecondcart-1] = false;
-    tabAcceptedAlreadyClick[numberFisrtCartVisible-1] = false;
+    tabAcceptedAlreadyClickEasy[hidesecondcart-1] = false;
+    tabAcceptedAlreadyClickEasy[numberFisrtCartVisible-1] = false;
+    tabAcceptedAlreadyClickHard[hidesecondcart-1] = false;
+    tabAcceptedAlreadyClickHard[numberFisrtCartVisible-1] = false;
     nextClick = true;
 }
 function hideDontAcceptedCart() {
