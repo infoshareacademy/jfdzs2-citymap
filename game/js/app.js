@@ -27,7 +27,7 @@ var pointsPlayer = 0;
 var nextClick = true;
 var timer1;
 var timer2;
-var numberMove;
+var numberMove=0;
 
 function revealEasy(cart) {
     console.log(tabAcceptedAlreadyClickEasy);
@@ -35,9 +35,7 @@ function revealEasy(cart) {
         clearTimeout(timer2);
         clearTimeout(timer1);
         $('#picture-' + cart).attr('src', 'images/' + arrayCartEasy[cart - 1] + '.png');
-        numberMove = 0;
-        numberMove++;
-        move.text('Move :' + numberMove);
+
         if (secondChoose === true && cart !== numberFisrtCartVisible) {
             nextClick = false;
             if (choosenFirstCart === arrayCartEasy[cart - 1]) {
@@ -87,8 +85,8 @@ function revealHard(cart) {
 function hideAcceptedCart() {
     $('#picture-'+hidesecondcart).addClass('hidden-cart');
     $('#picture-'+numberFisrtCartVisible).addClass('hidden-cart');
-    // numberMove++;
-    // move.text('Move :' + numberMove);
+    numberMove++;
+    move.text('Move :' + numberMove);
     pointsPlayer++;
     points.text('Points : ' + pointsPlayer);
     tabAcceptedAlreadyClickEasy[hidesecondcart-1] = false;
@@ -100,8 +98,8 @@ function hideAcceptedCart() {
 function hideDontAcceptedCart() {
     $('#picture-'+hidesecondcart).attr('src','images/city2.png');
     $('#picture-'+numberFisrtCartVisible).attr('src','images/city2.png');
-    // numberMove++;
-    // move.text('Move :' + numberMove);
+    numberMove++;
+    move.text('Move :' + numberMove);
     nextClick = true;
 }
 // ładowanie łatwego poziomu po kliknięciu
@@ -133,7 +131,7 @@ function easeLevel() {
     HTMLelement.innerHTML = easeLevelTemplate;
     easeLevelRegion.appendChild(HTMLelement);
     points = $('#points p:nth-child(1)');
-    move = $('#move p:nth-child(2)');
+    move = $('#move');
     $(document).ready(function() {
         $('.btn-ingame-return').on('click', function () {
             $('.game-main-menu').show();
@@ -201,7 +199,7 @@ function hardLevel() {
     HTMLelement.innerHTML = hardLevelTemplate;
     hardLevelRegion.appendChild(HTMLelement);
     points = $('#points p:nth-child(1)');
-    move = $('#move p:nth-child(2)');
+    move = $('#move');
     $(document).ready(function() {
         $('.btn-ingame-return').on('click', function () {
             $('.game-main-menu').show();
