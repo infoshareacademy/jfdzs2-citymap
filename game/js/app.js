@@ -258,7 +258,7 @@ var result = {
 function increaseResult () {
     result.currentPairsRevealed++;
     // if(result.currentPairsRevealed === result.totalPairs) {
-    if(result.currentPairsRevealed === result.totalPairsEasy && result.currentPairsRevealed === result.totalPairsHard) {
+    if(result.currentPairsRevealed === result.totalPairsEasy || result.currentPairsRevealed === result.totalPairsHard) {
         console.log(highScore());
         if (allScores) {
             console.log(allScores);
@@ -272,7 +272,7 @@ function increaseResult () {
         allScores = JSON.parse(localStorage.getItem('allScores'));
         localStorage.setItem('allScores', JSON.stringify(allScores));
     }
-    infoOfEndGame();
+    // infoOfEndGame();
 }
 
 function infoOfEndGame () {

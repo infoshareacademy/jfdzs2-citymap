@@ -9,9 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome-animation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="images/favicon-icon-36x36.png">
-    <link rel="stylesheet" href="css/style.css">
     <title>City Map</title>
+    <link rel="shortcut icon" href="images/favicon-icon-36x36.png">
+    <!-- DODANO SKRYPT JQUERRY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- DODANO SKRYPT DO SCROLLUPA -->
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <!-- DODANO SKRYPT DO CIASTECZEK -->
+    <script type="text/javascript" src="js/cookie-info.js"></script>
 </head>
 <body>
 <header>
@@ -21,8 +27,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -34,10 +39,18 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#product-info">Funkcje</a></li>
-                    <li><a href="#form">Zapis na premierę</a></li>
-                    <li><a href="#team">Nasz zespół</a></li>
-                    <li><a href="#details">Szczegóły</a></li>
+                    <li>
+                        <a href="#product-info">Funkcje</a>
+                    </li>
+                    <li>
+                        <a href="#form">Zapis na premierę</a>
+                    </li>
+                    <li>
+                        <a href="#team">Nasz zespół</a>
+                    </li>
+                    <li>
+                        <a href="#details">Szczegóły</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -47,50 +60,71 @@
 <!----------------------------------Zajawka--------------------------------------->
 <!-------------------------------------------------------------------------------->
 <section id="sneak-peak">
+    <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="4000" data-pause="hover">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner ">
+            <div class="item active">
+                <img src="./images/slider_img_1.png" alt="">
+                <!-- Opis slajdu -->
+                <div class="carousel-caption">
+                    <h3>Szczecin</h3>
+                    <p>Miasto portowe jakiego jeszcze nie znasz...</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/slider_img_2.png" alt="">
 
+                <div class="carousel-caption">
+                    <h3>Chcesz dobrze spędzić czas?</h3>
+                    <p>To nie problem! Sprawdź co się dzieje na zamku dzięki naszej aplikacji</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/slider_img_3.png" alt="">
 
-    <div class="feature-z">
-        <img src="images/zajawka2_kom.png" alt="" class="feature-z-phones">
-        <img src="images/zajawka2_Desktop.png" alt="" class="feature-z-desktop">
-        <img src="images/zajawka2_tablet.png" alt="" class="feature-z-tablet">
-    </div>
-
-    <div class="container feature-z-2">
-        <div class="row">
-            <p class="col-xs-12 col-md-6 col-lg-6">Z CityMap zobaczysz Szczecin jakiego jeszcze nie znałeś. </p>
-            <p class="col-xs-12 col-md-6 col-lg-6">Pozwól nam pokazać Ci jak sprawnie, szybko i w jednym miejscu znaleźć to czego szukasz w naszym pięknym portowym mieście.</p>
-            <p><a href="#form">Zapisy na premierę <i class="fas fa-angle-double-down"></i> </a></p>
+                <div class="carousel-caption">
+                    <h3>Masz ochotę na paprykarz? Ale nie wiesz gdzie zjeść?</h3>
+                    <p>Zapisz się na premierę - ściągnij aplikację i korzystaj!</p>
+                </div>
+            </div>
         </div>
+        <a class="left carousel-control" href="#carousel-example-generic2" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic2" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
     </div>
 </section>
-
 <!-------------------------------------------------------------------------------->
 <!---------------------------------4ikony---------------------------------------->
 <!-------------------------------------------------------------------------------->
 <section id="product-info">
-   
     <div class="feature-product-info">
-    <div class="container">
-       <div class="row">
-           <div class="col-lg-3 col-md-3 col-sm-6 ">
-               <i class="fa fa-user-circle-o faa-tada animated " aria-hidden="true"></i>
-               <h3>Przyjazny dla użytkownika </h3>
-           </div>
-           <div class="col-lg-3 col-md-3 col-sm-6 ">
-               <i class="fa fa-mobile faa-tada animated " aria-hidden="true"></i>
-               <h3>Dostosowany do urządzeń mobilnych</h3>
-           </div>
-           <div class="col-lg-3 col-md-3 col-sm-6 ">
-               <i class="fa fa-map-o faa-tada animated " aria-hidden="true"></i>
-               <h3>Szybka lokalizacja wybranego miejsca</h3>
-           </div>
-           <div class="col-lg-3 col-md-3 col-sm-6 ">
-               <i class="fa fa-clock-o faa-tada animated " aria-hidden="true"></i>
-               <h3>Oszczędność czasu</h3>
-           </div>
-
-       </div>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 ">
+                    <i class="fa fa-user-circle-o faa-tada animated-hover " aria-hidden="true"></i>
+                    <h3>Przyjazny dla użytkownika </h3>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 ">
+                    <i class="fa fa-mobile faa-tada animated-hover " aria-hidden="true"></i>
+                    <h3>Dostosowany do urządzeń mobilnych</h3>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 ">
+                    <i class="fa fa-map-o faa-tada animated-hover " aria-hidden="true"></i>
+                    <h3>Szybka lokalizacja wybranego miejsca</h3>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 ">
+                    <i class="fa fa-clock-o faa-tada animated-hover " aria-hidden="true"></i>
+                    <h3>Oszczędność czasu</h3>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <!-------------------------------------------------------------------------------->
@@ -102,7 +136,7 @@
             <div class="col-xs-12 col-sm-12 col-md-6">
                 <h2>Zapisz się na premierę
                     <br>
-                i bądź z nami!</h2>
+                    i bądź z nami!</h2>
                 <p>Twój adres emailowy zostanie użyty przez nas tylko RAZ.</p>
                 <p>Twoje dane są chronione i nie będą użyte do innego celu.</p>
             </div>
@@ -113,11 +147,15 @@
                             <label for="name">Imię:</label>
                             <input type="name" class="form-control" id="name" placeholder="Wpisz imię...">
                         </div>
-                        <div class="form-group col-xs-12 col-sm-6">
+                        <div class="form-group email-box col-xs-12 col-sm-6">
                             <label for="email">E-mail:</label>
                             <input type="email" class="form-control" id="email" placeholder="Wpisz adres e-mail...">
+                            <div class="email-error">Musisz wpisać adres email!</div>
                         </div>
-                        <div class="col-md-12"><button type="submit" class="btn btnpremiera" id="button-game"><a href="./game/index-game.html">Wyślij</a></button></div>
+                        <div class="col-md-12"><button type="submit" class="btn btnpremiera" id="checkemail-game">Wyślij</button></div>
+                        <div class="col-md-12 play-game">
+                            <h3>Dziękujęmy za rejestrację.</h3>
+                            <button type="submit" class="btn btnpremiera"><a href="./game/index-game.html">Zagraj w CityMap Memory!</a></button></div>
                     </div>
                 </form>
             </div>
@@ -129,141 +167,134 @@
 <!-------------------------------------------------------------------------------->
 <section id="team">
     <div class="asiacontainer text-center">
-        <h3>Nasz team to gupa pasjonatów!</h3>
-        <p><em>Sprawdź naszą aplikację już dziś!</em></p><br>
+        <h3>Nasz team to grupa pasjonatów!</h3>
+        <p>
+            <em>Sprawdź naszą aplikację już dziś!</em>
+        </p>
+        <br>
         <p>Stworzyli ją dla Ciebie:</p>
     </div>
-  
+
     <section class="container text-center sec-title text-center wow fadeInUp animated">
         <div class="row equal teampart">
+
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
-                <a href="#demo" data-toggle="collapse">
-                    <img src="images/Kasia.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
-                </a>
-                <p class="text-center namepadding"><strong>Kasia S.</strong></p>
-                <div id="demo" class="collapse">
-                    <div class="teamtext">
-                        <p>Z zawodu architekt</p>
-                        <p>Pije dużo zielonej herbaty, uczy się kodowania</p>
-                        <p>Nie znosi nudy, ani siedzenia w miejscu </p>
-                        <p>Jest zawsze krok do przodu</p>
+                <div id="flip-container">
+                    <div id="flip-card" class="shadow">
+                        <div class="front face">
+                            <img src="images/Kasia.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
+                        </div>
+                        <div class=" img-circle back face center ">
+
+                            <a href="https://github.com/katarzyna-stepczynska" target="_blank">
+                                <button type="button" class="btn btn-default">
+                                    <span class="fa fa-github"></span>
+                                </button>
+                            </a>
+                            <a href="https://www.linkedin.com/in/katarzynastepczynska/" target="_blank">
+                                <button type="button" class="btn btn-default">
+                                    <span class="fa fa-linkedin-square"></span>
+                                </button>
+                            </a>
+                            <a href="https://www.linkedin.com/in/katarzynastepczynska/" target="_blank">
+                                <button type="button" class="btn btn-default">
+                                    <span class="fa fa-user"></span>
+                                </button>
+                            </a>
+                        </div>
                     </div>
-
-                    <a href="https://github.com/katarzyna-stepczynska" target="_blank">
-                        <button type="button" class="btn btn-default">
-                            <span class="fa fa-github"></span> GitHub
-                          </button>
-                    </a>
-                    <a href="https://www.linkedin.com/in/katarzynastepczynska/" target="_blank">
-                        <button type="button" class="btn btn-default">
-                            <span class="fa fa-linkedin-square"></span> LinkedIn
-                          </button>
-                    </a>
-                    <a href="#" target="_blank">
-                        <button type="button" class="btn btn-default">
-                            <span class="fa fa-user-circle"></span> O mnie
-                          </button>
-                    </a>
-                    
                 </div>
+                <p class="text-center namepadding">
+                    <strong>Kasia</strong>
             </div>
-
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
-                <a href="#demo2" data-toggle="collapse">
-                    <img src="images/Asia.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
-                </a>
-                <p class="text-center namepadding"><strong>Asia D.</strong></p>
-                <div id="demo2" class="collapse">
-                        <div class="teamtext">
-                            <p>Zakochana w podróżach</p>
-                            <p>Roztrzepana i zawsze w biegu</p>
-                            <p>Pilnie uczy się kodowania,</p>
-                            <p>wiążąc z nim swoją przyszłość</p>
-                           </div> 
-                  
-                          <a href="https://github.com/JoannaDS" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-github"></span> GitHub
-                              </button>
-                        </a>
-                        <a href="https://www.linkedin.com/in/joanna-dabrowska-slaby-bb2723ab/" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-linkedin-square"></span> LinkedIn
-                              </button>
-                        </a>
-                        <a href="#" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-user-circle"></span> O mnie
-                              </button>
-                        </a>
+                <div id="flip-container">
+                    <div id="flip-card" class="shadow">
+                        <div class="front face">
+                            <img src="images/Asia.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
+                        </div>
+                        <div class="img-circle back face center">
+                            <a href="https://github.com/JoannaDS" target="_blank">
+                                <button type="button" class="btn btn-default">
+                                    <span class="fa fa-github"></span>
+                                </button>
+                            </a>
+                            <a href="https://www.linkedin.com/in/joanna-dabrowska-slaby-bb2723ab/" target="_blank">
+                                <button type="button" class="btn btn-default">
+                                    <span class="fa fa-linkedin-square"></span>
+                                </button>
+                            </a>
+                            <a href="https://www.linkedin.com/in/joanna-dabrowska-slaby-bb2723ab/" target="_blank">
+                                <button type="button" class="btn btn-default">
+                                    <span class="fa fa-user"></span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+                <p class="text-center namepadding">
+                    <strong>Asia</strong>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
+                <div id="flip-container">
+                    <div id="flip-card" class="shadow">
+                        <div class="front face">
+                            <img src="images/Patryk.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
+                        </div>
+                        <div class="img-circle back face center">
+                            <a href="https://github.com/patrykmielcarz" target="_blank">
+                                <button type="button" class="btn btn-default">
+                                    <span class="fa fa-github"></span>
+                                </button>
+                            </a>
+                            <a href="https://github.com/patrykmielcarz" target="_blank">
+                                <button type="button" class="btn btn-default">
+                                    <span class="fa fa-linkedin-square"></span>
+                                </button>
+                            </a>
+                            <a href="https://github.com/patrykmielcarz" target="_blank">
+                                <button type="button" class="btn btn-default">
+                                    <span class="fa fa-user"></span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center namepadding">
+                    <strong>Patryk</strong>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
+                <div id="flip-container">
+                    <div id="flip-card" class="shadow">
+                        <div class="front face">
+                            <img src="images/Bartek.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
+                        </div>
+                        <div class="img-circle back face center">
+                            <a href="https://github.com/BartoszSierakowski" target="_blank">
+                                <button type="button" class="btn btn-default">
+                                    <span class="fa fa-github"></span>
+                                </button>
+                            </a>
+                            <a href="https://www.linkedin.com/in/bartosz-sierakowski-281445101/" target="_blank">
+                                <button type="button" class="btn btn-default">
+                                    <span class="fa fa-linkedin-square"></span>
+                                </button>
+                            </a>
+                            <a href="https://www.linkedin.com/in/bartosz-sierakowski-281445101/" target="_blank">
+                                <button type="button" class="btn btn-default">
+                                    <span class="fa fa-user"></span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center namepadding">
+                    <strong>Bartek</strong>
             </div>
 
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
-                <a href="#demo3" data-toggle="collapse">
-                    <img src="images/Patryk.jpg" class="img-circle team" alt="Random Name" width="255" height="255">
-                </a>
-                <p class="text-center namepadding"><strong>Patryk M.</strong></p>
-                <div id="demo3" class="collapse">
-                        <div class="teamtext">
-                            <p>Fajny chłopak.</p>
-                            <p>Nie chciał mi dać swoich danych.</p>
-                            <p>Więc jest co jest.</p>
-                            <p>Czekam na info.</p>
-                            </div>
-                
-                          <a href="https://github.com/patrykmielcarz" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-github"></span> GitHub
-                              </button>
-                        </a>
-                        <a href="#" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-linkedin-square"></span> LinkedIn
-                              </button>
-                        </a>
-                        <a href="#" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-user-circle"></span> O mnie
-                              </button>
-                        </a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 member">
-                <a href="#demo4" data-toggle="collapse">
-                    <img src="images/Bartek.jpg" class="img-circle team" alt="Random Name" width="200" height="200">
-                </a>
-                <p class="text-center namepadding"><strong>Bartek S.</strong></p>
-                <div id="demo4" class="collapse">
-                        <div class="teamtext">
-                            <p>Fajny chłopak</p>
-                            <p>Nie chciał mi dać swoich danych</p>
-                            <p>Więc jest co jest.</p>
-                            <p>Czekam na info</p>
-                           </div> 
-                
-                          <a href="https://github.com/BartoszSierakowski" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-github"></span> GitHub
-                              </button>
-                        </a>
-                        <a href="https://www.linkedin.com/in/bartosz-sierakowski-281445101/" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-linkedin-square"></span> LinkedIn
-                              </button>
-                        </a>
-                        <a href="#" target="_blank">
-                            <button type="button" class="btn btn-default">
-                                <span class="fa fa-user-circle"></span> O mnie
-                              </button>
-                        </a>
-                </div>
-            </div>
         </div>
     </section>
 </section>
-
 <!-------------------------------------------------------------------------------->
 <!-------------------------Dodatkowe info o produkcie----------------------------->
 <!-------------------------------------------------------------------------------->
@@ -276,98 +307,144 @@
             <div class="title">
                 <h2>Bez problemu:</h2>
             </div>
-        <div class="function">
-            <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/placeholder.svg"></span></div>
-                <div class="icon-text col-sm-10"><p><strong>Zlokalizuje</strong> to, co Ciebie interesuje</p></div>
-            </div>
-            <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/stopwatch-4.svg"></span></div>
-                <div class="icon-text col-sm-10"><p><strong>Szybko wyszuka</strong> najbliżej położony interesujący obiekt</p></div>
-            </div>
-            <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/route.svg"></span></div>
-                <div class="icon-text col-sm-10"><p><strong>Sprawdzi</strong> w jakim czasie możesz dojść od Twojej aktualnej lokalizacji</p></div>
-            </div>
-            <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/map-location.svg"></span></div>
-                <div class="icon-text col-sm-10"><p><strong>Poda</strong> ważne informacje wybranego miejsca takie jak: godziny otwarcia, dokładniejszy adres, telefon kontaktowy, zdjęcie obiektu, adres strony www</p></div>
-            </div>
-            <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/list-1.svg"></span></div>
-                <div class="icon-text col-sm-10"><p><strong>Poda</strong>, jaką ocenę ma zlokalizowany obiekt według innych użytkowników, wraz z opiniami, czy jest warty zobaczenia</p></div>
-            </div>
-            <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/smartphone-10.svg"></span></div>
-                <div class="icon-text col-sm-10"><p><strong>Możesz</strong> zapisać interesujący obiekt na swoją listę miejsc do odwiedzenia</p></div>
-            </div>
-            <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/smartphone-11.svg"></span></div>
-                <div class="icon-text col-sm-10"><p><strong>Sprawdzi</strong>, jakie są jeszcze inne obiekty w pobliżu zlokalizowanego przez ciebie miejsca</p></div>
+            <div class="function">
+                <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/placeholder.svg"></span></div>
+                    <div class="icon-text col-sm-10"><p><strong>Zlokalizuje</strong> to, co Ciebie interesuje</p></div>
+                </div>
+                <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/stopwatch-4.svg"></span></div>
+                    <div class="icon-text col-sm-10"><p><strong>Szybko wyszuka</strong> najbliżej położony interesujący obiekt</p></div>
+                </div>
+                <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/route.svg"></span></div>
+                    <div class="icon-text col-sm-10"><p><strong>Sprawdzi</strong> w jakim czasie możesz dojść od Twojej aktualnej lokalizacji</p></div>
+                </div>
+                <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/map-location.svg"></span></div>
+                    <div class="icon-text col-sm-10"><p><strong>Poda</strong> ważne informacje wybranego miejsca takie jak: godziny otwarcia, dokładniejszy adres, telefon kontaktowy, zdjęcie obiektu, adres strony www</p></div>
+                </div>
+                <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/list-1.svg"></span></div>
+                    <div class="icon-text col-sm-10"><p><strong>Poda</strong>, jaką ocenę ma zlokalizowany obiekt według innych użytkowników, wraz z opiniami, czy jest warty zobaczenia</p></div>
+                </div>
+                <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/smartphone-10.svg"></span></div>
+                    <div class="icon-text col-sm-10"><p><strong>Możesz</strong> zapisać interesujący obiekt na swoją listę miejsc do odwiedzenia</p></div>
+                </div>
+                <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="icon col-sm-2"><span><img class="image-icon" src="images/svg/smartphone-11.svg"></span></div>
+                    <div class="icon-text col-sm-10"><p><strong>Sprawdzi</strong>, jakie są jeszcze inne obiekty w pobliżu zlokalizowanego przez ciebie miejsca</p></div>
+                </div>
             </div>
         </div>
-        </div>
+        <div class="row">
             <div class="title">
                 <h2>Pomoże znaleźć:</h2>
             </div>
-                <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
-                    <div class="icon"><span><img class="image-icon" src="images/svg/hospital.svg"></span></div>
-                    <div class="icon-text"><p>Apteki</p></div>
-                </div>
-                <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
-                    <div class="icon"><span><img class="image-icon" src="images/svg/restaurant.svg"></span></div>
-                    <div class="icon-text"><p>Restauracje</p></div>
-                </div>
-                <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
-                    <div class="icon"><span><img class="image-icon" src="images/svg/bed.svg"></span></div>
-                    <div class="icon-text"><p>Hotele</p></div>
-                </div>
-                <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
-                    <div class="icon"><span><img class="image-icon" src="images/svg/shopping-bag.svg"></span></div>
-                    <div class="icon-text"><p>Sklepy</p></div>
-                </div>
-                <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
-                    <div class="icon"><span><img class="image-icon" src="images/svg/money-bag.svg"></span></div>
-                    <div class="icon-text"><p>Banki</p></div>
-                </div>
-                <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
-                    <div class="icon"><span><img class="image-icon" src="images/svg/atm.svg"></span></div>
-                    <div class="icon-text"><p>Bankomaty</p></div>
-                </div>
-                <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
-                    <div class="icon"><span><img class="image-icon" src="images/svg/leaves.svg"></span></div>
-                    <div class="icon-text"><p>Parki</p></div>
-                </div>
-                <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
-                    <div class="icon"><span><img class="image-icon" src="images/svg/gym.svg"></span></div>
-                    <div class="icon-text"><p>Obiekty sportowe</p></div>
-                </div>
-                <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
-                    <div class="icon"><span><img class="image-icon" src="images/svg/museum.svg"></span></div>
-                    <div class="icon-text"><p>Muzea</p></div>
-                </div>
-                <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
-                    <div class="icon"><span><img class="image-icon" src="images/svg/disco-ball.svg"></span></div>
-                    <div class="icon-text"><p>Imprezy</p></div>
-                </div>
-                <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
-                    <div class="icon"><span><img class="image-icon" src="images/svg/popcorn.svg"></span></div>
-                    <div class="icon-text"><p>Kina</p></div>
-                </div>
-                <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
-                    <div class="icon"><span><img class="image-icon" src="images/svg/worldwide.svg"></span></div>
-                    <div class="icon-text"><p>I wiele innych</p></div>
-                </div>
+            <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="icon"><span><img class="image-icon" src="images/svg/hospital.svg"></span></div>
+                <div class="icon-text"><p>Apteki</p></div>
+            </div>
+            <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="icon"><span><img class="image-icon" src="images/svg/restaurant.svg"></span></div>
+                <div class="icon-text"><p>Restauracje</p></div>
+            </div>
+            <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="icon"><span><img class="image-icon" src="images/svg/bed.svg"></span></div>
+                <div class="icon-text"><p>Hotele</p></div>
+            </div>
+            <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="icon"><span><img class="image-icon" src="images/svg/shopping-bag.svg"></span></div>
+                <div class="icon-text"><p>Sklepy</p></div>
+            </div>
+            <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="icon"><span><img class="image-icon" src="images/svg/money-bag.svg"></span></div>
+                <div class="icon-text"><p>Banki</p></div>
+            </div>
+            <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="icon"><span><img class="image-icon" src="images/svg/atm.svg"></span></div>
+                <div class="icon-text"><p>Bankomaty</p></div>
+            </div>
+            <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="icon"><span><img class="image-icon" src="images/svg/leaves.svg"></span></div>
+                <div class="icon-text"><p>Parki</p></div>
+            </div>
+            <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="icon"><span><img class="image-icon" src="images/svg/gym.svg"></span></div>
+                <div class="icon-text"><p>Obiekty sportowe</p></div>
+            </div>
+            <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="icon"><span><img class="image-icon" src="images/svg/museum.svg"></span></div>
+                <div class="icon-text"><p>Muzea</p></div>
+            </div>
+            <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="icon"><span><img class="image-icon" src="images/svg/disco-ball.svg"></span></div>
+                <div class="icon-text"><p>Imprezy</p></div>
+            </div>
+            <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="icon"><span><img class="image-icon" src="images/svg/popcorn.svg"></span></div>
+                <div class="icon-text"><p>Kina</p></div>
+            </div>
+            <div class="box center col-lg-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="icon"><span><img class="image-icon" src="images/svg/worldwide.svg"></span></div>
+                <div class="icon-text"><p>I wiele innych</p></div>
+            </div>
+        </div>
     </div>
 </section>
+<!-------------------------------------------------------------------------------->
+<!-------------------------Informacja o ciasteczkach------------------------------>
+<!-------------------------------------------------------------------------------->
+<section id="cookie-warn">
+    <div class="container">
+        <div class="row">
+            <div class="cookie-icon col-md-1 hidden-sm hidden-xs">
+                <img src="images/icons-cookie.png" height="50" width="50">
+            </div>
+            <div class="cookie-info col-md-9">
+                <p><strong>UWAGA!</strong> Niniejsza strona korzysta z plików cookies. Informacje uzyskane za pomocą cookies wykorzystywane są głównie w celach statystycznych. Pozostając na stronie godzisz się na ich zapisywanie w Twojej przeglądarce.
+                </p>
+            </div>
+            <div class="col-md-2">
+                <a href="javascript:void(0);" id="close-cookie-warn"><span class="glyphicon glyphicon-remove"></span> Zamknij</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------------------------------------------------------------->
+<!-----------------------------WIELOJEZYCZNOSC------------------------------------>
+<!-------------------------------------------------------------------------------->
+<section class="translate">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>Przetłumacz stronę:</p>
+                <div class="text-center" id="google-translate-element"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------------------------------------------------------------->
+<!----------------------------------FOOTER---------------------------------------->
+<!-------------------------------------------------------------------------------->
 <footer>
     <div class="panel-footer text-center">
         <p class="copyright">&copy; COPYRIGHT 2018 - CITYMAP</p>
     </div>
 </footer>
-
+<!-------------------------------------------------------------------------------->
+<!-------------------------scroll to top button----------------------------------->
+<!-------------------------------------------------------------------------------->
+<span class="scroll-to-top fa fa-arrow-circle-o-up"></span>
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'pl', includedLanguages: 'en,de,ru,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google-translate-element');
+    }
+</script>
 <script>
     $(document).ready(function() {
         $('a[href^="#"]').on('click', function(event) {
@@ -381,6 +458,30 @@
         });
     });
 </script>
+<script>
+    $(window).scroll(function(){
+        if($(".navbar").offset().top>200){
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    });
+    $(function(){$(document).on('click','a.page-scroll',function(event){
+        var $anchor=$(this);$('html, body').stop().animate({scrollTop:$($anchor.attr('href')).offset().top},1500,'easeInOutExpo');
+        event.preventDefault();
+    });
+    });
+</script>
+<script>
+    $('#checkemail-game').on('click', function(){
+        if ($('#email').val() !== '') {
+            $('.email-box').removeClass('error');
+        } else {
+            $('.email-box').addClass('error');
+            return false;
+        }
+        $('.play-game').show();
+    })
+</script>
 </body>
 </html>
-
