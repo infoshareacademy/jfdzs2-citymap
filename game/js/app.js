@@ -27,7 +27,7 @@ var pointsPlayer = 0;
 var nextClick = true;
 var timer1;
 var timer2;
-var numbermove = 0;
+var numberMove = 0;
 
 function revealEasy(cart) {
     console.log(tabAcceptedAlreadyClickEasy);
@@ -36,8 +36,6 @@ function revealEasy(cart) {
         clearTimeout(timer1);
         $('#picture-' + cart).attr('src', 'images/' + arrayCartEasy[cart - 1] + '.png');
         if (secondChoose === true && cart !== numberFisrtCartVisible) {
-            numbermove++;
-            move.text('Move :' + numbermove);
             nextClick = false;
             if (choosenFirstCart === arrayCartEasy[cart - 1]) {
                 hidesecondcart = cart;
@@ -63,9 +61,9 @@ function revealHard(cart) {
         clearTimeout(timer2);
         clearTimeout(timer1);
         $('#picture-' + cart).attr('src', 'images/' + arrayCartHard[cart - 1] + '.png');
+        numberMove++;
+        move.text('Move :' + numberMove);
         if (secondChoose === true && cart !== numberFisrtCartVisible) {
-            numbermove++;
-            move.text('Move :' + numbermove);
             nextClick = false;
             if (choosenFirstCart === arrayCartHard[cart - 1]) {
                 hidesecondcart = cart;
@@ -88,6 +86,8 @@ function revealHard(cart) {
 function hideAcceptedCart() {
     $('#picture-'+hidesecondcart).addClass('hidden-cart');
     $('#picture-'+numberFisrtCartVisible).addClass('hidden-cart');
+    numberMove++;
+    move.text('Move :' + numberMove);
     pointsPlayer++;
     points.text('Points : ' + pointsPlayer);
     tabAcceptedAlreadyClickEasy[hidesecondcart-1] = false;
@@ -99,6 +99,8 @@ function hideAcceptedCart() {
 function hideDontAcceptedCart() {
     $('#picture-'+hidesecondcart).attr('src','images/city2.png');
     $('#picture-'+numberFisrtCartVisible).attr('src','images/city2.png');
+    numberMove++;
+    move.text('Move :' + numberMove);
     nextClick = true;
 }
 // ładowanie łatwego poziomu po kliknięciu
@@ -251,8 +253,8 @@ function highScore(totalPoints){
 var result = {
     currentPairsRevealed: 0,
     // totalPairs: (Array.from(document.querySelectorAll('.cart')).length / 2)
-    totalPairsEasy: arrayCartEasy,
-    totalPairsHard: arrayCartHard
+    totalPairsEasy: arrayCartEasy/2,
+    totalPairsHard: arrayCartHard/2
 };
 
 function increaseResult () {
@@ -338,11 +340,11 @@ console.log(allScores);
 
 var selectorHighScore = document.getElementById('highScoreBoard');
 var highScoreTemplate = ''
-        + '<div class="line">'
-        + '<strong id="player"></strong>'
-        + '<span id="move"></span>'
-        + '<span id="points"></span>'
-        + '</div>';
+        // + '<div class="line">'
+        // + '<strong id="player"></strong>'
+        // + '<span id="move"></span>'
+        // + '<span id="points"></span>'
+        // + '</div>';
 allScores.forEach(function(score, index){
     var highScoreElements = document.createElement('p');
     highScoreElements.innerText = (index + 1) + '. ' + score;
