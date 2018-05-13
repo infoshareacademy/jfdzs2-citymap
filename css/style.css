@@ -318,7 +318,6 @@ h3{
 }
 #flip-container:hover #flip-card {
     transform: rotateY(180deg);
-
 }
 .face {
     position: absolute;
