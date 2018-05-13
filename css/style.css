@@ -1,3 +1,17 @@
+@keyframes fadeInDown {
+    0% {
+        opacity:0;
+        transform: translateY(-20px)
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+
 body {
     padding-top: 65px;
 }
@@ -11,25 +25,26 @@ body {
 /***************************************************************************/
 /*                                navi                                     */
 /***************************************************************************/
-.navbar-default {
+.navbar {
     background-color: #192440;
+    border: none;
 }
 
 .navbar-brand {
     padding-top: 30px;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar .navbar-nav>li>a {
     color: white;
     font-size: 20px;
     padding-top: 50px;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar .navbar-nav>li>a:hover {
     color: blue;
 }
 
-.navbar-default .navbar-nav>li>a:focus {
+.navbar .navbar-nav>li>a:focus {
     font-weight: bold;
     color: #9CFFFC;
     text-decoration: underline;
@@ -42,7 +57,7 @@ body {
 }
 
 .logo {
-    height: 25px;
+    height: 30px;
 }
 
 @media all and (min-width: 288px) {
@@ -53,20 +68,47 @@ body {
 
 @media all and (min-width: 768px) {
     .logo {
-        height: 50px;
-    }
-    .navbar-default {
-        min-height:120px;
+        height: 30px;
     }
     .navbar-header{
         height:120px;
     }
-}
-
-@media all and (min-width: 768px) and (max-width: 992px) {
-    .navbar-default .navbar-nav > li > a {
-        font-size: 15px;
+    .navbar-brand {
+        padding-top: 30px;
     }
+    .top-nav-collapse .navbar-header {
+        min-height: 80px;
+    }
+    .navbar .top-nav-collapse {
+        min-height: 80px;
+    }
+}
+@media all and (min-width: 992px) {
+    .logo {
+        height: 50px;
+    }
+    .top-nav-collapse .navbar-header {
+        height: 60px;
+        font-size: 15px;
+        margin: 0;
+    }
+}
+.top-nav-collapse .navbar-brand  {
+    padding-top: 10px;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+}
+.top-nav-collapse .navbar-nav>li>a {
+    font-size: 20px;
+    padding-top: 30px;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+}
+.navbar .top-nav-collapse {
+    min-height: 80px;
+    margin: 0;
 }
 /***************************************************************************/
 /*                                zajawka                                  */
@@ -424,7 +466,7 @@ h3{
 .fa-arrow-circle-o-up {
     font-size: 60px;
     position: fixed;
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
     overflow: hidden;
     text-align: center;
@@ -444,5 +486,6 @@ h3{
 .fa-arrow-circle-o-up.show {
     visibility:visible;
     cursor:pointer;
-    opacity: 0.5;
+    opacity: 0.95;
+    font-size: 60px;
 }
