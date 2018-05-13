@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/game-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+    <title>City Map - Memory</title>
+</head>
+<body>
+<div id="logo">
+    <img src="images/city.png">
+</div>
+<div class="section-game">
+    <div class="game-main-menu">
+        <div class="board">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game-start">Gra</button></div>
+                    <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game-instruction">Instrukcja</button></div>
+                    <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game-results">Tabela wyników</button></div>
+                    <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game"><a href="../index.html">Powrót do strony głównej</a></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-game-nameofplayer">
+        <div class="board">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="player-name-box">
+                            <label for="name-of-player">Nazwa gracza:</label>
+                            <input type="text" id="name-of-player" class="player-name-write" placeholder="Wpisz nazwę..." maxlength="12">
+                            <div class="player-name-error">Musisz wpisać nazwę gracza!</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-game" id="check-name">Start</button>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-game-return">Powrót</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-game-chooselevel">
+        <div class="board">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game-easy">Łatwy poziom</button></div>
+                    <div class="col-md-12"><button type="submit" class="btn btn-game" id="button-game-difficult">Trudny poziom</button></div>
+                    <div class="col-md-12"><button type="submit" class="btn btn-game-return">Powrót</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-game-easy">
+        <div id="region-easy"></div>
+    </div>
+    <div class="section-game-difficult">
+        <div id="region-difficult"></div>
+    </div>
+    <div class="section-game-instruction">
+        <div class="board">
+            <div class="container">
+                <div class="row">
+                    <div class="instruction-text">
+                    <h2>Instrukcja gry CityMap Memory</h2>
+                    <p>GRA PAMIĘCIOWA</p>
+                    <ol>
+                        <li>Odkryj wszystkie pary charakterystycznych obiektów dla naszego miasta</li>
+                        <li>Zacznij od łatwego albo trudnego poziomu gry</li>
+                        <li>Kliknięcie na kafelek odsłania go</li>
+                        <li>Jeżeli drugi kliknięty kafelek jest taki sam jak pierwszy, wtedy zostaną usunięte z planszy i dostajesz punkt</li>
+                        <li>Jeżeli drugi kliknięty kafelek jest różny od pierwszego, wtedy zostaną z powrotem zasłonięte</li>
+                        <li>Każda próba jest liczona jako jeden ruch</li>
+                        <li>Gra kończy się z chwilą usunięcia wszystkich kafelków z planszy</li>
+                        <li>Dobrej Zabawy!</li>
+                    </ol>
+                    </div>
+                    <div class="col-md-12"><button type="submit" class="btn btn-game-return">Powrót</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-game-results">
+        <div class="board">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 highscore">
+                        <h3>Wyniki gry:</h3>
+                        <div class="highscore-board" id="highScoreBoard"></div>
+                    </div>
+                    <div class="col-md-12"><button type="submit" class="btn btn-game-return">Powrót</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-game-end">
+        <div class="board">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="player-end-box">
+                            <div class="col-md-12 player-result-box"><p>Koniec gry. Gratulacje!</p></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12"><button type="submit" class="btn btn-resultview">Tabela wyników</button></div>
+                    <div class="col-md-12"><button type="submit" class="btn btn-game-return">Powrót</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

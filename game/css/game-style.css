@@ -1,0 +1,214 @@
+/*STYLE DLA GRY*/
+body    {
+    margin: 0px;
+    padding: 0px;
+    background-color: #192440;
+    font-family: 'Myriad Pro', sans-serif;
+    color: #9CFFFC;
+}
+
+#logo   {
+    display: block;
+    margin-left: 34%;
+    width: 50%;
+    padding:30px;
+}
+
+.board  {
+    max-width: 600px;
+    border: #9CFFFC solid 1px;
+    background-color: #192440;
+    margin: 20px auto;
+    min-height: 150px;
+}
+
+#board-easy  {
+    width: 590px;
+    border: #9CFFFC solid 1px;
+    background-color: #192440;
+    margin:0 auto;
+    margin-top: 20px;
+    height: 440px;
+}
+#board-difficult  {
+    max-width: 590px;
+    border: #9CFFFC solid 1px;
+    background-color: #192440;
+    margin:0 auto;
+    margin-top: 20px;
+    height: 585px;
+}
+.cart {
+    width: 136px;
+    height: 136px;
+    float: left;
+    margin: 5px;
+    border: #9CFFFC solid 1px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.cart:hover{
+    filter: brightness(50%);
+    transition: all .3s ease-in-out;
+}
+
+.hidden-cart {
+    opacity: 0;
+    transition: all 1.0s ease-in-out;
+}
+
+#points{
+    border: #9CFFFC solid 2px;
+    height: 150px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#points p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    line-height: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Myriad Pro', sans-serif;
+}
+
+/*STYLE DLA MENU*/
+.game-main-menu {
+    display: block;
+}
+.section-game-easy,
+.section-game-difficult,
+.section-game-nameofplayer,
+.section-game-instruction,
+.section-game-results,
+.section-game-chooselevel,
+.section-game-end {
+    display: none;
+}
+ .btn-game,
+ .btn-game-return, .btn-resultview {
+     margin-top: 22px;
+     background: #9CFFFC;
+     border-radius: 21px;
+     color: #192440;
+     width: 50%;
+     font-size: 21px;
+     font-family: 'Myriad Pro', sans-serif;
+     font-weight: 500;
+     margin-bottom: 22px;
+     display: block;
+     text-align: center;
+ }
+.btn-ingame-return {
+    margin-top: 22px;
+    background: #9CFFFC;
+    border-radius: 21px;
+    color: #192440;
+    width: 50%;
+    font-size: 21px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 500;
+    margin-bottom: 22px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-game a {
+    text-decoration: none;
+    color: #192440;
+}
+.btn-game a:hover {
+    text-decoration: none;
+    color: #192440;
+    font-weight: 600;
+}
+
+ /*.button-back{*/
+     /*text-align: center;*/
+ /*}*/
+
+/*.btn-back a {*/
+    /*text-decoration: none;*/
+    /*color: #192440;*/
+/*}*/
+/*.btn-back a:hover {*/
+    /*text-decoration: none;*/
+    /*color: #192440;*/
+    /*font-weight: 600;*/
+/*}*/
+
+ /*STYLE DLA INSTRUKCJI */
+.instruction-text ol>li {
+    color: #daf8e5;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.instruction-text h2 {
+    font-size: 20px;
+    margin: 20px;
+    color: #9CFFFC;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.instruction-text p {
+    font-size: 15px;
+    margin: 20px;
+    color: #9CFFFC;
+    font-weight: 600;
+}
+/*STYLE DLA NAME PLAYER */
+.player-name-box, .player-end-box {
+    max-width: 570px;
+    text-align: center;
+    margin-top: 20px;
+}
+.player-name-box label {
+    font-size: 20px;
+    margin: 0 auto;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.player-name-box .player-name-write {
+    height: 34px;
+    padding: 20px;
+    width: 100%;
+    background: rgba(256, 256, 256, 0);
+    color: white;
+    text-align: center;
+    border: solid #9CFFFC 1px;
+    border-radius: 21px;
+    font-size: 20px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    display: block;
+}
+.player-name-box .player-name-error {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+}
+.player-name-box.error .player-name-error {
+    display: block;
+}
+/*STYLE DLA RESULT */
+.player-result-box {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+}
+.player-result-box.end {
+    display: block;
+}
